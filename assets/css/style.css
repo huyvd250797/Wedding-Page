@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*? --------------------------------- header --------------------------------- */
+
+.header {
+  background-color: var(--primary-color-4);
+  height: 70vh;
+}
+
+.header__logo-container {
+}
+
+.header__nav {
+}
+
+/* header logo */
+.header__logo-container {
+}
+
+/* header nav  */
+.header__nav-list {
+}
+
+.header__nav-item {
+  margin-top: 3.5vh;
+}
+
+.header__nav-link {
+  padding: 10px 25px;
+  display: block;
+  line-height: 2rem;
+  transition: all 0.3s, ease 0.3s;
+  color: var(--primary-color-5);
+  text-transform: uppercase;
+}
+
+.header__nav-link:hover {
+  cursor: pointer;
+  color: var(--primary-color-3);
+  transform: translateY(-2px);
+}
+
+.header__nav-link:active {
+  color: var(--primary-color-1);
+}
+
+/* header something */
+.header__something {
+}

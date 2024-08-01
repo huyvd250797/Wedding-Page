@@ -1,0 +1,17 @@
+/* reset css */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+:root {
+  /* tone color */
+  --primary-color-1: #796c6b;
+  --primary-color-2: #564a50;
+  --primary-color-3: #392e38;
+  --primary-color-4: #c2c2c4;
+  --primary-color-5: #a09594;
+}
