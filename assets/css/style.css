@@ -34,6 +34,7 @@
   transition: all 0.3s, ease 0.3s;
   color: var(--primary-color-5);
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .header__nav-link:hover {
