@@ -24,7 +24,7 @@
 
 /*? --------------------------------- COMMON --------------------------------- */
 .break-section {
-  margin-top: 5rem !important;
+  margin-top: 10rem !important;
 }
 
 /*? --------------------------------- header --------------------------------- */
@@ -86,6 +86,7 @@
 
 /*? --------------------------------- content --------------------------------- */
 
+/*TODO ---------------------------------- Aisle --------------------------------- */
 .content__aisle {
   padding: 0 100px;
 }
@@ -98,7 +99,7 @@
 }
 
 .content__aisle-title-nameGroom {
-  font-size: 2.4rem;
+  font-size: 2.8rem;
 }
 
 .content__aisle-title-ring {
@@ -106,7 +107,7 @@
 }
 
 .content__aisle-title-nameBride {
-  font-size: 2.4rem;
+  font-size: 2.8rem;
 }
 
 .content__aisle-content {
@@ -154,6 +155,71 @@
 .content__aisle-image-date {
   font-size: 2.2rem;
 }
+
+/*TODO ---------------------------------- Introduce --------------------------------- */
+.content__introduce {
+  padding: 0 100px;
+}
+
+/* Bride */
+.content__introduce-bride {
+}
+
+.content__introduce-bride-image {
+}
+
+.content__introduce-bride-image-img {
+  height: 70vh;
+  border-radius: 10px;
+}
+
+.content__introduce-bride-info {
+  padding: 0 30px;
+  width: 40%;
+}
+
+.content__introduce-bride-info--title {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.content__introduce-bride-info--name {
+  font-size: 2rem;
+}
+
+.content__introduce-bride-info--text {
+}
+
+/* Groom */
+.content__introduce-groom {
+}
+
+.content__introduce-groom-image {
+}
+
+.content__introduce-groom-image-img {
+  height: 70vh;
+  border-radius: 10px;
+}
+
+.content__introduce-groom-info {
+  padding: 0 30px;
+  width: 40%;
+}
+
+.content__introduce-groom-info--title {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.content__introduce-groom-info--name {
+  font-size: 2rem;
+}
+
+.content__introduce-groom-info--text {
+}
+
+/*TODO ---------------------------------- Love story --------------------------------- */
 
 /* ---------------------------------- MODAL --------------------------------- */
 .content__aisle-image-img--full-screen {

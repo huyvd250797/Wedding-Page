@@ -1,0 +1,33 @@
+/* PC */
+@media (min-width: 1024px) {
+}
+
+/* TABLET & PC */
+@media (min-width: 740px) {
+  .btn-compare-mobile {
+    display: none;
+  }
+}
+
+/* TABLET */
+@media (min-width: 740px) and (max-width: 1023px) {
+}
+
+/* MOBILE & TABLET */
+@media (max-width: 1023px) {
+}
+
+/* MOBILE */
+@media (max-width: 739px) {
+  .header__nav {
+    display: none;
+  }
+
+  .content__aisle {
+    flex-direction: column;
+  }
+
+  .content__aisle-title {
+    flex-direction: column;
+  }
+}
