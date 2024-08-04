@@ -2,11 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
+/*? --------------------------------- fonts --------------------------------- */
+.great-vibes-regular {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.kanit-500 {
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+}
+.kanit-400 {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+}
+.kanit-300 {
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+}
+
+/*? --------------------------------- COMMON --------------------------------- */
+.break-section {
+  margin-top: 5rem !important;
+}
+
 /*? --------------------------------- header --------------------------------- */
 
 .header {
-  background-color: var(--primary-color-4);
   height: 70vh;
+}
+
+.header__img-slider {
+  background-color: var(--primary-color-4);
+  /* background-image: url(../img/header/slider-img.JPG); */
+  /* background-size: contain; */
+  /* background-repeat: no-repeat; */
+  height: 100%;
 }
 
 .header__logo-container {
@@ -24,6 +56,7 @@
 }
 
 .header__nav-item {
+  list-style: none;
   margin-top: 3.5vh;
 }
 
@@ -49,4 +82,109 @@
 
 /* header something */
 .header__something {
+}
+
+/*? --------------------------------- content --------------------------------- */
+
+.content__aisle {
+  padding: 0 100px;
+}
+
+.content__aisle-info {
+  padding-right: 20px;
+}
+
+.content__aisle-title {
+}
+
+.content__aisle-title-nameGroom {
+  font-size: 2.4rem;
+}
+
+.content__aisle-title-ring {
+  font-size: 2rem;
+}
+
+.content__aisle-title-nameBride {
+  font-size: 2.4rem;
+}
+
+.content__aisle-content {
+}
+
+.content__aisle-content-text {
+}
+
+.content__aisle-content-church {
+  font-size: 1.4rem;
+}
+
+.content__aisle-content-date {
+  font-size: 1.2rem;
+}
+
+.content__aisle-content-address {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.content__aisle-direction {
+}
+
+.content__aisle-direction-map {
+  height: 100px;
+}
+
+.content__aisle-image {
+}
+
+.content__aisle-image-img {
+  width: 30%;
+  border-radius: 10px;
+  margin: 0 10px;
+  transition: all 0.7s;
+}
+
+.content__aisle-image-img:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+  box-shadow: 0px 0px 20px 5px var(--primary-color-5);
+}
+
+.content__aisle-image-date {
+  font-size: 2.2rem;
+}
+
+/* ---------------------------------- MODAL --------------------------------- */
+.content__aisle-image-img--full-screen {
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.content__aisle-image-img--full-screen:hover > .btn-close {
+  display: block;
+  opacity: 0.3;
+}
+
+.content__aisle-image-img--full-01 {
+  background-image: url(../img/aisle/652A4919.JPG);
+}
+
+.content__aisle-image-img--full-02 {
+  background-image: url(../img/aisle/652A5751.JPG);
+}
+
+.content__aisle-image-img--full-03 {
+  background-image: url(../img/aisle/652A5684.JPG);
+}
+
+.btn-close {
+  opacity: 0;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background-color: #fff;
+  transition: all 0.3s;
 }

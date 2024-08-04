@@ -15,3 +15,7 @@
   --primary-color-4: #c2c2c4;
   --primary-color-5: #a09594;
 }
+
+html {
+  scroll-behavior: smooth;
+}

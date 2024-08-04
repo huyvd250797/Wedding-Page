@@ -5,13 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wedding Page</title>
 
+    <!-- -------------------------- font  --------------------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- -------------------------- font  --------------------------- -->
+
     <link
       href="./assets/fonts/node_modules/@flaticon/flaticon-uicons/css/all/all.css"
       rel="stylesheet"
     />
 
     <!-- TailWind -->
-    <link rel="stylesheet" href="./assets/tailwindcss/src/output.css" />
+    <!-- <link rel="stylesheet" href="./assets/tailwindcss/src/output.css" /> -->
 
     <!-- Boostrap -->
     <link
@@ -26,48 +35,149 @@
   <body>
     <div class="wedding-page">
       <!--? ------------------------------- header -------------------------------- -->
-      <div class="header flex justify-evenly">
-        <!-- header logo -->
-        <div class="header__logo-container"></div>
+      <div class="header">
+        <div class="header__img-slider d-flex justify-content-evenly">
+          <!-- header logo -->
+          <div class="header__logo-container"></div>
 
-        <!-- header nav -->
-        <div class="header__nav">
-          <ul class="header__nav-list flex">
-            <li class="header__nav-item">
-              <a class="header__nav-link" href="">HOME</a>
-            </li>
-            <li class="header__nav-item">
-              <a class="header__nav-link" href="">Aisle</a>
-            </li>
-            <li class="header__nav-item">
-              <a class="header__nav-link" href="">Love story</a>
-            </li>
-            <li class="header__nav-item">
-              <a class="header__nav-link" href="">Reception</a>
-            </li>
-            <li class="header__nav-item">
-              <a class="header__nav-link" href="">Registry</a>
-            </li>
-            <li class="header__nav-item">
-              <a class="header__nav-link" href="">Schedule</a>
-            </li>
-            <li class="header__nav-item">
-              <a class="header__nav-link" href="">Photo</a>
-            </li>
-          </ul>
+          <!-- header nav -->
+          <div class="header__nav">
+            <ul class="header__nav-list d-flex">
+              <li class="header__nav-item">
+                <!-- <a class="header__nav-link" href="">HOME</a> -->
+                <a class="header__nav-link" href="">Trang chủ</a>
+              </li>
+              <li class="header__nav-item">
+                <!-- <a class="header__nav-link" href="">Aisle</a> -->
+                <a class="header__nav-link" href="#content-section">Lễ đường</a>
+              </li>
+              <li class="header__nav-item">
+                <!-- <a class="header__nav-link" href="">Love story</a> -->
+                <a class="header__nav-link" href="">Love story</a>
+              </li>
+              <li class="header__nav-item">
+                <!-- <a class="header__nav-link" href="">Reception</a> -->
+                <a class="header__nav-link" href="">Lễ cưới</a>
+              </li>
+              <li class="header__nav-item">
+                <!-- <a class="header__nav-link" href="">Registry</a> -->
+                <a class="header__nav-link" href="">Tham dự</a>
+              </li>
+              <li class="header__nav-item">
+                <!-- <a class="header__nav-link" href="">Schedule</a> -->
+                <a class="header__nav-link" href="">Lịch trình</a>
+              </li>
+              <li class="header__nav-item">
+                <!-- <a class="header__nav-link" href="">Photo</a> -->
+                <a class="header__nav-link" href="">Photo</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- header something -->
+          <div class="header__something"></div>
         </div>
-
-        <!-- header something -->
-        <div class="header__something"></div>
       </div>
 
       <!--? ------------------------------- content -------------------------------- -->
-      <div class="content">
+      <div id="content-section" class="content break-section">
         <!-- Aisle -->
-        <div class="content__aisle">
-          <div class="content__aisle-title"></div>
-          <div class="content__aisle-content"></div>
-          <div class="content__aisle-image"></div>
+        <div class="content__aisle d-flex justify-content-evenly">
+          <div class="content__aisle-info d-flex flex-column">
+            <!-- Aisle title  -->
+            <div
+              class="content__aisle-title d-flex justify-content-evenly align-items-center mb-2"
+            >
+              <div class="content__aisle-title-nameGroom great-vibes-regular">
+                Huy Vo
+              </div>
+              <div class="content__aisle-title-ring great-vibes-regular">
+                <i class="fi fi-ts-rings-wedding"></i>
+              </div>
+              <div class="content__aisle-title-nameBride great-vibes-regular">
+                Sao Dao
+              </div>
+            </div>
+
+            <!-- Aisle content  -->
+            <div class="content__aisle-content">
+              <div class="content__aisle-content-text mb-2">
+                Mời bạn đến tham dự ngày quan trọng nhất này, khi chúng tôi trao
+                đổi lời thề hôn nhân của chúng tôi tại lễ đường.
+              </div>
+              <div class="content__aisle-content-church kanit-500 mb-1">
+                Giáo xứ Thánh Phaolo
+              </div>
+              <div class="content__aisle-content-date kanit-400 kanit-500 mb-2">
+                Ngày 12 tháng 10 năm 2024
+              </div>
+              <div class="content__aisle-content-address kanit-400 mb-2">
+                Số 280, đường Vành Đai Trong, phường Bình Trị Đông B, quận Bình
+                Tân, thành phố Hồ Chí Minh
+              </div>
+            </div>
+
+            <!-- Aisle direction: view on map  -->
+            <div class="content__aisle-direction">
+              <iframe
+                class="content__aisle-direction-map border border-secondary-subtle"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15679.074364865683!2d106.616141!3d10.7523098!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752c328d8c3647%3A0xe3dd0258051ed020!2zTmjDoCB0aOG7nSBUaMOhbmggUGhhb2zDtA!5e0!3m2!1svi!2s!4v1722768685365!5m2!1svi!2s"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+
+          <!-- Aisle image -->
+          <div class="content__aisle-image justify-content-evenly">
+            <div class="content__aisle-image-container">
+              <img
+                data-bs-toggle="modal"
+                data-bs-target="#viewAisleImage01"
+                src="./assets/img/aisle/652A4919.JPG"
+                alt="652A4919"
+                class="content__aisle-image-img"
+              />
+              <img
+                data-bs-toggle="modal"
+                data-bs-target="#viewAisleImage02"
+                src="./assets/img/aisle/652A5751.JPG"
+                alt="652A5751"
+                class="content__aisle-image-img"
+              />
+              <img
+                data-bs-toggle="modal"
+                data-bs-target="#viewAisleImage03"
+                src="./assets/img/aisle/652A5684.JPG"
+                alt="652A5684"
+                class="content__aisle-image-img"
+              />
+            </div>
+
+            <div
+              class="content__aisle-image-date d-flex justify-content-evenly great-vibes-regular"
+            >
+              <div
+                class="content__aisle-image-date-text content__aisle-image-day"
+              >
+                12
+              </div>
+              <div
+                class="content__aisle-image-date-text content__aisle-image-month great-vibes-regular"
+              >
+                10
+              </div>
+              <div
+                class="content__aisle-image-date-text content__aisle-image-year great-vibes-regular"
+              >
+                2024
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- Love story -->
@@ -100,7 +210,7 @@
         </div>
 
         <!-- Photo -->
-        <div class="content__photo">
+        <div class="content__photo break-section">
           <p>Wedding Photo</p>
           <button>
             <a
@@ -119,6 +229,91 @@
         <div class="footer__title"></div>
         <div class="footer__content"></div>
         <div class="footer__QRcode"></div>
+      </div>
+    </div>
+
+    <!--! -------------------------------- MODAL -------------------------------- -->
+
+    <!--TODO ---------------------- content__aisle-image-img ----------------------- -->
+    <!-- Modal content__aisle-image-img 01 -->
+    <div
+      class="modal fade"
+      id="viewAisleImage01"
+      tabindex="-1"
+      aria-labelledby="viewAisleImage01Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div
+              class="content__aisle-image-img--full-screen content__aisle-image-img--full-01"
+            >
+              <!-- btn close modal -->
+              <span
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal content__aisle-image-img 02 -->
+    <div
+      class="modal fade"
+      id="viewAisleImage02"
+      tabindex="-1"
+      aria-labelledby="viewAisleImage02Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div
+              class="content__aisle-image-img--full-screen content__aisle-image-img--full-02"
+            >
+              <!-- btn close modal -->
+              <span
+                style="color: #fff !important"
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal content__aisle-image-img 03 -->
+    <div
+      class="modal fade"
+      id="viewAisleImage03"
+      tabindex="-1"
+      aria-labelledby="viewAisleImage03Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div
+              class="content__aisle-image-img--full-screen content__aisle-image-img--full-03"
+            >
+              <!-- btn close modal -->
+              <span
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
