@@ -220,8 +220,80 @@
 }
 
 /*TODO ---------------------------------- Love story --------------------------------- */
+.content__loveStory {
+}
 
-/* ---------------------------------- MODAL --------------------------------- */
+.content__loveStory-container {
+  padding: 80px;
+  background-color: var(--primary-color-1);
+}
+
+.content__loveStory-image {
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0px 0px 30px 5px var(--primary-color-2);
+}
+
+.content__loveStory-image-img {
+  height: 60vh;
+}
+
+.content__loveStory-info-container {
+  margin-left: 3rem;
+}
+
+.content__loveStory-title {
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.content__loveStory-content {
+  color: #fff;
+}
+
+/*TODO ---------------------------------- Our story --------------------------------- */
+.content__ourStory {
+}
+
+.content__ourStory-title--text01 {
+  font-size: 3rem;
+  letter-spacing: 8px;
+}
+
+.content__ourStory-title--text02 {
+}
+
+.content__ourStory-content {
+}
+
+.content__ourStory-content-first {
+}
+
+.content__ourStory-content-first-info {
+}
+
+.content__ourStory-content-first-image {
+}
+
+.content__ourStory-content-second {
+}
+
+.content__ourStory-content-second-image {
+}
+
+.content__ourStory-content-second-info {
+}
+
+.content__ourStory-content-final {
+}
+
+.content__ourStory-content-final-info {
+}
+
+.content__ourStory-content-final-image {
+}
+
+/** ---------------------------------- MODAL --------------------------------- */
 .content__aisle-image-img--full-screen {
   height: 90vh;
   width: 100%;
