@@ -22,6 +22,10 @@
   font-weight: 300;
 }
 
+.distant-stroke {
+  font-family: "Distant Stroke", sans-serif;
+}
+
 /*? --------------------------------- COMMON --------------------------------- */
 .break-section {
   margin-top: 10rem !important;
@@ -257,7 +261,7 @@
 
 .content__ourStory-title--text01 {
   font-size: 3rem;
-  letter-spacing: 8px;
+  letter-spacing: 5px;
 }
 
 .content__ourStory-title--text02 {
@@ -266,31 +270,122 @@
 .content__ourStory-content {
 }
 
+/* first */
 .content__ourStory-content-first {
 }
 
 .content__ourStory-content-first-info {
+  width: 40%;
+  padding: 20px 50px;
+  background-color: var(--primary-color-4-op);
+}
+
+.content__ourStory-content-first-info--title {
+  font-size: 5rem;
 }
 
 .content__ourStory-content-first-image {
 }
 
+.content__ourStory-content-first-image-img {
+  height: 70vh;
+}
+
+/* second */
 .content__ourStory-content-second {
 }
 
 .content__ourStory-content-second-image {
 }
 
-.content__ourStory-content-second-info {
+.content__ourStory-content-second-image-img {
+  height: 70vh;
 }
 
+.content__ourStory-content-second-info {
+  width: 40%;
+  padding: 20px 50px;
+  background-color: var(--primary-color-4-op);
+}
+
+.content__ourStory-content-second-info--title {
+  font-size: 5rem;
+}
+
+/* final */
 .content__ourStory-content-final {
 }
 
 .content__ourStory-content-final-info {
+  width: 40%;
+  padding: 20px 50px;
+  background-color: var(--primary-color-4-op);
+}
+
+.content__ourStory-content-final-info--title {
+  font-size: 5rem;
 }
 
 .content__ourStory-content-final-image {
+}
+
+.content__ourStory-content-final-image-img {
+  height: 70vh;
+}
+
+/*TODO ---------------------------------- Reception --------------------------------- */
+
+.content__reception {
+  background-color: var(--primary-color-3);
+  padding: 110px;
+}
+
+.content__reception--text {
+  color: var(--primary-color-4);
+}
+
+.content__reception-title {
+  margin-bottom: 70px;
+}
+
+.content__reception-title--text {
+  font-size: 1.8rem;
+  position: relative;
+}
+
+.content__reception-title--text::after {
+  content: "";
+  position: absolute;
+  color: var(--primary-color-4);
+  border-width: 0.5px 240px;
+  border-style: solid;
+  top: 85px;
+  right: -111px;
+}
+
+.content__reception-time {
+}
+
+.content__reception-time--text {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.content__reception-date {
+}
+
+.content__reception-date--text {
+  font-size: 4rem;
+  letter-spacing: 5px;
+  margin: 20px;
+}
+
+.content__reception-address {
+}
+
+.content__reception-address--text {
+  font-size: 1.2rem;
+  text-transform: uppercase;
 }
 
 /** ---------------------------------- MODAL --------------------------------- */

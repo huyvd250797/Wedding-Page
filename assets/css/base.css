@@ -14,6 +14,13 @@
   --primary-color-3: #392e38;
   --primary-color-4: #c2c2c4;
   --primary-color-5: #a09594;
+
+  /* tone color opacity */
+  --primary-color-1-op: rgb(121, 108, 107, 0.5);
+  --primary-color-2-op: rgb(86, 74, 80, 0.5);
+  --primary-color-3-op: rgb(57, 46, 56, 0.5);
+  --primary-color-4-op: rgb(194, 194, 196, 0.5);
+  --primary-color-5-op: rgb(160, 149, 148, 0.5);
 }
 
 html {
