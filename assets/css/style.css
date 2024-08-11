@@ -95,6 +95,10 @@
   padding: 0 100px;
 }
 
+.content__aisle-title-ring-img {
+  height: 6vh;
+}
+
 .content__aisle-info {
   padding-right: 20px;
 }
@@ -336,12 +340,14 @@
 /*TODO ---------------------------------- Reception --------------------------------- */
 
 .content__reception {
-  background-color: var(--primary-color-3);
+  background-color: var(--primary-color-4);
   padding: 110px;
+  /* padding-bottom: 20px; */
+  position: relative;
 }
 
 .content__reception--text {
-  color: var(--primary-color-4);
+  color: var(--primary-color-3);
 }
 
 .content__reception-title {
@@ -356,7 +362,7 @@
 .content__reception-title--text::after {
   content: "";
   position: absolute;
-  color: var(--primary-color-4);
+  color: var(--primary-color-3);
   border-width: 0.5px 240px;
   border-style: solid;
   top: 85px;
@@ -386,6 +392,88 @@
 .content__reception-address--text {
   font-size: 1.2rem;
   text-transform: uppercase;
+}
+
+/*TODO ---------------------------------- Event --------------------------------- */
+.content__event {
+  background-color: var(--primary-color-4-op);
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.content__event-title {
+  font-size: 2.3rem;
+}
+
+.content__event-type {
+}
+
+.content__event-type-arch-img,
+.content__event-type-champagne-img,
+.content__event-type-dinner-img {
+  height: 9vh;
+}
+
+/* line horizontal line */
+.content__event-time::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 1.5px;
+  background-color: var(--primary-color-1);
+  top: 51%;
+}
+
+.content__event-time {
+  font-size: 1.2rem;
+  margin-top: 90px;
+}
+
+/* vertical line 1 */
+.content__event-time-welcome::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 9%;
+  background-color: var(--primary-color-1);
+  top: 51%;
+  left: 30%;
+}
+
+.content__event-time-welcome {
+}
+
+/* vertical line 2 */
+.content__event-time-ceremony::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 9%;
+  background-color: var(--primary-color-1);
+  top: 51%;
+  left: 50%;
+}
+
+.content__event-time-ceremony {
+}
+
+/* vertical line 3 */
+.content__event-time-dinner::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 9%;
+  background-color: var(--primary-color-1);
+  top: 51%;
+  left: 70%;
+}
+
+.content__event-time-dinner {
+}
+
+.content__event-text {
+  font-size: 3.2rem;
+  padding: 15px 0;
 }
 
 /** ---------------------------------- MODAL --------------------------------- */
