@@ -37,7 +37,9 @@
     <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <link rel="stylesheet" href="./assets/css/template-component.css" />
   </head>
+
   <body>
     <div class="wedding-page">
       <!--? ------------------------------- header -------------------------------- -->
@@ -63,11 +65,7 @@
               </li>
               <li class="header__nav-item">
                 <!-- <a class="header__nav-link" href="">Reception</a> -->
-                <a class="header__nav-link" href="">Lễ cưới</a>
-              </li>
-              <li class="header__nav-item">
-                <!-- <a class="header__nav-link" href="">Registry</a> -->
-                <a class="header__nav-link" href="">Tham dự</a>
+                <a class="header__nav-link" href="#contentReception">Lễ cưới</a>
               </li>
 
               <li class="header__nav-item">
@@ -95,7 +93,11 @@
                 Huy Vo
               </div>
               <div class="content__aisle-title-ring great-vibes-regular">
-                <img src="./assets/img/aisle/love.png" alt="" class="content__aisle-title-ring-img">
+                <img
+                  src="./assets/img/aisle/love.png"
+                  alt=""
+                  class="content__aisle-title-ring-img"
+                />
               </div>
               <div class="content__aisle-title-nameBride great-vibes-regular">
                 Sao Dao
@@ -315,7 +317,9 @@
             <div
               class="content__ourStory-content-first d-flex justify-content-center mb-5"
             >
-              <div class="content__ourStory-content-first-info border rounded-start">
+              <div
+                class="content__ourStory-content-first-info border rounded-start"
+              >
                 <div
                   class="content__ourStory-content-first-info--title distant-stroke"
                 >
@@ -336,7 +340,7 @@
                   love
                 </div>
               </div>
-              <div class="content__ourStory-content-first-image ">
+              <div class="content__ourStory-content-first-image">
                 <img
                   src="./assets/img/our-story/picture-first.JPG"
                   alt=""
@@ -356,18 +360,24 @@
                   class="content__ourStory-content-second-image-img"
                 />
               </div>
-              <div class="content__ourStory-content-second-info border rounded-end">
+              <div
+                class="content__ourStory-content-second-info border rounded-end"
+              >
                 <div
                   class="content__ourStory-content-second-info--title distant-stroke"
                 >
                   Three years later
                 </div>
                 <div class="content__ourStory-content-second-info--content">
-                  A year after, they were continuing their love journey by creating and sharing beautiful memories with each other.
+                  A year after, they were continuing their love journey by
+                  creating and sharing beautiful memories with each other.
                 </div>
 
                 <div class="content__ourStory-content-first-info--ps">
-                  Even if we've had so many smiles and frowns, twists and turns, and ups and downs in the first year of relationship, I can say we were strongly bonded and getting to understand each other more
+                  Even if we've had so many smiles and frowns, twists and turns,
+                  and ups and downs in the first year of relationship, I can say
+                  we were strongly bonded and getting to understand each other
+                  more
                 </div>
               </div>
             </div>
@@ -376,14 +386,20 @@
             <div
               class="content__ourStory-content-final d-flex justify-content-center mb-5"
             >
-              <div class="content__ourStory-content-final-info border rounded-start">
+              <div
+                class="content__ourStory-content-final-info border rounded-start"
+              >
                 <div
                   class="content__ourStory-content-final-info--title distant-stroke"
                 >
                   Finally
                 </div>
                 <div class="content__ourStory-content-final-info--content">
-                  20th of October, 2024 was their 4-year anniversary and also a 'happy ending' day for both of them. Hien had decided to surprise Hai with a secret proposal. Of course, Hai said 'Yes' to Hien, and the proposal was really successful with precious help from their close friends and family members. ♥
+                  20th of October, 2024 was their 4-year anniversary and also a
+                  'happy ending' day for both of them. Hien had decided to
+                  surprise Hai with a secret proposal. Of course, Hai said 'Yes'
+                  to Hien, and the proposal was really successful with precious
+                  help from their close friends and family members. ♥
                 </div>
 
                 <div class="content__ourStory-content-final-info--ps">
@@ -400,161 +416,264 @@
                 />
               </div>
             </div>
+          </div>
 
+          <!-- TODO ------------------------------ Reception ------------------------------ -->
+          <div
+            id="contentReception"
+            class="content__reception mt-5 d-flex justify-content-center flex-column align-items-center w-100"
+          >
+            <div class="content__reception-title">
+              <!-- Welcome -->
+              <div
+                class="content__reception-title--text content__reception--text kanit-400"
+              >
+                Trân trọng kính mời
+              </div>
+            </div>
+            <div class="content__reception-time">
+              <!-- Time -->
+              <div
+                class="content__reception-time--text content__reception--text kanit-300"
+              >
+                Vào lúc 11 giờ 00, Chủ Nhật
+              </div>
+            </div>
+            <div class="content__reception-date">
+              <!-- Date -->
+              <div
+                class="content__reception-date--text content__reception--text kanit-500"
+              >
+                20.10.2024
+              </div>
+            </div>
+            <!-- Place -->
+            <div
+              class="content__reception-address d-flex flex-column align-items-center"
+            >
+              Tại nhà hàng tiệc cưới
+              <!-- Restaurant -->
+              <div
+                class="content__reception-address-restaurant content__reception--text kanit-500"
+              >
+                <!-- ! target="_blank" -> Open link in new tab -->
+                <a
+                  class="content__reception-address-restaurant--link"
+                  href="https://maps.app.goo.gl/jf815R1up9YKgeK36"
+                  target="_blank"
+                >
+                  KIM CENTER
+                </a>
+              </div>
+              <!-- Address -->
+              <div
+                class="content__reception-address--text content__reception--text kanit-300"
+              >
+                628 Phạm Văn Thuận, phường Tam Hiệp, Thành phố Biên Hòa, Đồng
+                Nai
+              </div>
+            </div>
+          </div>
+
+          <!-- TODO -------------------------------- Event -------------------------------- -->
+          <div
+            id="contentEvent"
+            class="content__event d-flex flex-column align-items-center w-100"
+          >
+            <div class="content__event-title kanit-300 m-5">Events</div>
+            <div class="content__event-type d-flex justify-content-evenly w-75">
+              <img
+                src="./assets/img/event/wedding-arch.png"
+                alt=""
+                class="content__event-type-arch-img"
+              />
+              <img
+                src="./assets/img/event/champagne.png"
+                alt=""
+                class="content__event-type-champagne-img"
+              />
+
+              <img
+                src="./assets/img/event/dinner.png"
+                alt=""
+                class="content__event-type-dinner-img"
+              />
+            </div>
+            <div class="content__event-time d-flex justify-content-evenly w-75">
+              <div class="content__event-time-welcome kanit-300">17:00 PM</div>
+              <div class="content__event-time-ceremony kanit-300">19:00 PM</div>
+              <div class="content__event-time-dinner kanit-300">19:30 PM</div>
+            </div>
+            <div class="content__event-text d-flex justify-content-evenly w-75">
+              <div class="content__event-text-welcome distant-stroke">
+                Welcome
+              </div>
+              <div class="content__event-text-ceremony distant-stroke">
+                Ceremony
+              </div>
+              <div class="content__event-text-dinner distant-stroke">
+                Dinner
+              </div>
+            </div>
+          </div>
+
+          <!-- TODO -------------------------------- Registry -------------------------------- -->
+          <div class="content__registry break-section">
+            <div
+              class="content__registry-container container d-flex justify-content-center w-75"
+            >
+              <div class="content__registry-image">
+                <img
+                  src="./assets/img/registry/652A5129.JPG"
+                  alt=""
+                  class="content__registry-image-img"
+                />
+              </div>
+
+              <!-- img center -->
+              <div
+                class="content__registry-imageCenter d-flex align-items-center"
+              >
+                <img
+                  src="./assets/img/registry/652A5259.JPG"
+                  alt=""
+                  class="content__registry-imageCenter-img rounded-pill"
+                />
+              </div>
+
+              <div class="w-100"></div>
+              <div
+                class="content__registry-content-container d-flex flex-column justify-content-center"
+              >
+                <div class="content__registry-title mb-5">
+                  Mời bạn đến bữa tiệc rượu và cùng chung vui với vợ chồng mình
+                </div>
+                <div class="content__registry-content mb-5">
+                  We reserved seat/s for you. We have chosen to have a small and
+                  intimate wedding ceremony, and only those who are closest to
+                  us will be in attendance. The favor of your reply is
+                  requested. Kindly confirm by OCTOBER 20, 2024.
+                </div>
+                <div class="content__registry-confirm">
+                  <div class="content__registry-confirm-btn">
+                    <div class="btnConfirm__container">
+                      <a href="#" class="btnConfirm type--A">
+                        <div class="btnConfirm__line"></div>
+                        <div class="btnConfirm__line"></div>
+                        <span class="btnConfirm__text">Tham dự</span>
+                        <div class="btnConfirm__drow1"></div>
+                        <div class="btnConfirm__drow2"></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Photo -->
+          <div class="content__photo break-section">
+            <p>Wedding Photo</p>
+            <button>
+              <a
+                class="btn btn-primary"
+                href="https://drive.google.com/drive/folders/1HRsrwy77G3kUqFXHMwXr7g1Z_Fb4RJaE?usp=drive_link"
+                >View Album</a
+              >
+            </button>
+            <div class="content__photo-title"></div>
+            <div class="content__photo-image"></div>
+          </div>
         </div>
 
-        <!-- TODO ------------------------------ Reception ------------------------------ -->
-        <div class="content__reception mt-5  d-flex justify-content-center flex-column align-items-center w-100 ">
-          <div class="content__reception-title">
-            <div class="content__reception-title--text content__reception--text kanit-400">Trân trọng kính mời</div>
-          </div>
-          <div class="content__reception-time">
-            <div class="content__reception-time--text content__reception--text kanit-300">Vào lúc 11 giờ 00, Chủ Nhật</div>
-          </div>
-          <div class="content__reception-date">
-            <div class="content__reception-date--text content__reception--text kanit-500">20.10.2024</div>
-          </div>
-          <div class="content__reception-address">
-            <div class="content__reception-address--text content__reception--text kanit-300">
-              628 Phạm Văn Thuận, phường Tam Hiệp, Thành phố Biên Hòa, Đồng Nai
+        <!--? ------------------------------- footer -------------------------------- -->
+        <div class="footer">
+          <div class="footer__title"></div>
+          <div class="footer__content"></div>
+          <div class="footer__QRcode"></div>
+        </div>
+      </div>
+
+      <!--! -------------------------------- MODAL -------------------------------- -->
+
+      <!--TODO ---------------------- content__aisle-image-img ----------------------- -->
+      <!-- Modal content__aisle-image-img 01 -->
+      <div
+        class="modal fade"
+        id="viewAisleImage01"
+        tabindex="-1"
+        aria-labelledby="viewAisleImage01Label"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div
+                class="content__aisle-image-img--full-screen content__aisle-image-img--full-01"
+              >
+                <!-- btn close modal -->
+                <span
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></span>
+              </div>
             </div>
           </div>
         </div>
-
-        <!-- TODO -------------------------------- Event -------------------------------- -->
-        <div class="content__event d-flex flex-column align-items-center w-100">
-          <div class="content__event-title kanit-300 m-5">Events</div>
-          <div class="content__event-type d-flex justify-content-evenly w-75">
-            <img src="./assets/img/event/wedding-arch.png" alt="" class="content__event-type-arch-img">
-            <img src="./assets/img/event/champagne.png" alt="" class="content__event-type-champagne-img">
-
-            <img src="./assets/img/event/dinner.png" alt="" class="content__event-type-dinner-img">
-
-          </div>
-          <div class="content__event-time d-flex justify-content-evenly w-75">
-            <div class="content__event-time-welcome kanit-300">17:00 PM</div>
-            <div class="content__event-time-ceremony kanit-300">19:00 PM</div>
-            <div class="content__event-time-dinner kanit-300">19:30 PM</div>
-          </div>
-          <div class="content__event-text d-flex justify-content-evenly w-75">
-            <div class="content__event-text-welcome distant-stroke">Welcome</div>
-            <div class="content__event-text-ceremony distant-stroke">Ceremony</div>
-            <div class="content__event-text-dinner distant-stroke">Dinner</div>
-          </div>
-        </div>
-
-        <!-- Registry -->
-        <div class="content__registry">
-          <div class="content__registry-image"></div>
-          <div class="content__registry-title"></div>
-          <div class="content__registry-content"></div>
-          <div class="content__registry-confirm"></div>
-        </div>
-
-
-
-        <!-- Photo -->
-        <div class="content__photo break-section">
-          <p>Wedding Photo</p>
-          <button>
-            <a
-              class="btn btn-primary"
-              href="https://drive.google.com/drive/folders/1HRsrwy77G3kUqFXHMwXr7g1Z_Fb4RJaE?usp=drive_link"
-              >View Album</a
-            >
-          </button>
-          <div class="content__photo-title"></div>
-          <div class="content__photo-image"></div>
-        </div>
       </div>
 
-      <!--? ------------------------------- footer -------------------------------- -->
-      <div class="footer">
-        <div class="footer__title"></div>
-        <div class="footer__content"></div>
-        <div class="footer__QRcode"></div>
-      </div>
-    </div>
-
-    <!--! -------------------------------- MODAL -------------------------------- -->
-
-    <!--TODO ---------------------- content__aisle-image-img ----------------------- -->
-    <!-- Modal content__aisle-image-img 01 -->
-    <div
-      class="modal fade"
-      id="viewAisleImage01"
-      tabindex="-1"
-      aria-labelledby="viewAisleImage01Label"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-body">
-            <div
-              class="content__aisle-image-img--full-screen content__aisle-image-img--full-01"
-            >
-              <!-- btn close modal -->
-              <span
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></span>
+      <!-- Modal content__aisle-image-img 02 -->
+      <div
+        class="modal fade"
+        id="viewAisleImage02"
+        tabindex="-1"
+        aria-labelledby="viewAisleImage02Label"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div
+                class="content__aisle-image-img--full-screen content__aisle-image-img--full-02"
+              >
+                <!-- btn close modal -->
+                <span
+                  style="color: #fff !important"
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></span>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Modal content__aisle-image-img 02 -->
-    <div
-      class="modal fade"
-      id="viewAisleImage02"
-      tabindex="-1"
-      aria-labelledby="viewAisleImage02Label"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-body">
-            <div
-              class="content__aisle-image-img--full-screen content__aisle-image-img--full-02"
-            >
-              <!-- btn close modal -->
-              <span
-                style="color: #fff !important"
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal content__aisle-image-img 03 -->
-    <div
-      class="modal fade"
-      id="viewAisleImage03"
-      tabindex="-1"
-      aria-labelledby="viewAisleImage03Label"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-body">
-            <div
-              class="content__aisle-image-img--full-screen content__aisle-image-img--full-03"
-            >
-              <!-- btn close modal -->
-              <span
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></span>
+      <!-- Modal content__aisle-image-img 03 -->
+      <div
+        class="modal fade"
+        id="viewAisleImage03"
+        tabindex="-1"
+        aria-labelledby="viewAisleImage03Label"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div
+                class="content__aisle-image-img--full-screen content__aisle-image-img--full-03"
+              >
+                <!-- btn close modal -->
+                <span
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></span>
+              </div>
             </div>
           </div>
         </div>
