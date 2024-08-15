@@ -156,7 +156,7 @@
 
 .content__aisle-image-img:hover {
   cursor: pointer;
-  transform: scale(1.5);
+  transform: scale(1.2);
   box-shadow: 0px 0px 20px 5px var(--primary-color-5);
 }
 
@@ -355,7 +355,7 @@
 }
 
 .content__reception-title--text {
-  font-size: 1.8rem;
+  font-size: 2rem;
   position: relative;
 }
 
@@ -381,16 +381,17 @@
 }
 
 .content__reception-date--text {
-  font-size: 4rem;
+  font-size: 4.5rem;
   letter-spacing: 5px;
   margin: 20px;
 }
 
 .content__reception-address {
+  position: relative;
 }
 
 .content__reception-address-restaurant {
-  font-size: 1.8rem;
+  font-size: 2rem;
   padding: 15px 0;
 }
 
@@ -404,8 +405,25 @@
 }
 
 .content__reception-address--text {
-  font-size: 1.2rem;
-  text-transform: uppercase;
+  font-size: 1.35rem;
+}
+
+.content__reception-address--text::after {
+  content: "";
+  position: absolute;
+  color: var(--primary-color-3);
+  border-width: 0.5px 240px;
+  border-style: solid;
+  top: 190px;
+  right: 13%;
+}
+
+.content__reception-address--text2 {
+  font-size: 1.1rem;
+  display: flex;
+  text-align: center;
+  width: 50%;
+  margin-top: 90px;
 }
 
 /*TODO ---------------------------------- Event --------------------------------- */
@@ -589,6 +607,17 @@
   100% {
     scale: 0.8;
   }
+}
+
+/*TODO ---------------------------------- Footer --------------------------------- */
+.footer__registry {
+  background-color: var(--primary-color-1);
+}
+
+.footer__registry-confirm {
+}
+
+.footer__registry-confirm-btn {
 }
 
 /*! ---------------------------------- MODAL --------------------------------- */
