@@ -70,7 +70,7 @@
 
               <li class="header__nav-item">
                 <!-- <a class="header__nav-link" href="">Photo</a> -->
-                <a class="header__nav-link" href="">Photo</a>
+                <a class="header__nav-link" href="#contentPhoto">Photo</a>
               </li>
             </ul>
           </div>
@@ -107,8 +107,8 @@
             <!-- Aisle content  -->
             <div class="content__aisle-content">
               <div class="content__aisle-content-text mb-2">
-                Mời bạn đến tham dự ngày quan trọng nhất này, khi chúng tôi trao
-                đổi lời thề hôn nhân của chúng tôi tại lễ đường.
+                Mời bạn đến tham dự ngày quan trọng nhất này, khi chúng mình
+                trao đổi lời thề hôn nhân của chúng mình tại lễ đường.
               </div>
               <div class="content__aisle-content-church kanit-500 mb-1">
                 Giáo xứ Thánh Phaolo
@@ -125,6 +125,9 @@
             <!-- Aisle direction: view on map  -->
             <div class="content__aisle-direction">
               <iframe
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                data-bs-title="Click để xem vị trí"
                 class="content__aisle-direction-map border border-secondary-subtle"
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15679.074364865683!2d106.616141!3d10.7523098!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752c328d8c3647%3A0xe3dd0258051ed020!2zTmjDoCB0aOG7nSBUaMOhbmggUGhhb2zDtA!5e0!3m2!1svi!2s!4v1722768685365!5m2!1svi!2s"
                 width="600"
@@ -458,6 +461,9 @@
               >
                 <!-- ! target="_blank" -> Open link in new tab -->
                 <a
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="right"
+                  data-bs-title="Click để xem vị trí"
                   class="content__reception-address-restaurant--link"
                   href="https://maps.app.goo.gl/jf815R1up9YKgeK36"
                   target="_blank"
@@ -477,7 +483,7 @@
               <div
                 class="content__reception-address--text2 content__reception--text kanit-300"
               >
-                Sự hiện diện của bạn là niềm vinh hạnh của chúng tôi!
+                Sự hiện diện của bạn là niềm vinh hạnh của chúng mình!
               </div>
             </div>
           </div>
@@ -524,8 +530,9 @@
             </div>
           </div>
 
-          <!-- Photo -->
+          <!-- TODO -------------------------------- PHOTO -------------------------------- -->
           <div
+            id="contentPhoto"
             class="content__photo d-flex justify-content-center flex-column align-items-center break-section"
           >
             <!-- <p>Wedding Photo</p>
@@ -536,6 +543,7 @@
                 >View Album</a
               >
             </button> -->
+
             <div class="content__photo-title distant-stroke">Our</div>
             <span class="content__photo-title-photo-text kanit-300">Photo</span>
             <div class="content__photo-image-container">
@@ -641,20 +649,22 @@
       <!--? ------------------------------- footer -------------------------------- -->
 
       <!-- TODO -------------------------------- Registry -------------------------------- -->
-      <div
-        class="footer__registry p-5 d-flex justify-content-evenly break-section"
-      >
+      <div class="footer__registry d-flex justify-content-evenly break-section">
         <div class="footer__registry-content w-50">
-          <div class="footer__registry-title">See you there</div>
+          <div class="footer__registry-title great-vibes-regular mb-2">
+            Hẹn gặp bạn
+          </div>
           <div class="footer__registry-text">
-            Chúng tôi rất chờ đón sự kiện trọng đại này của cuộc đời, dù phải
-            trì hoãn rất nhiều lần. Đám cưới của chúng tôi sẽ trọn vẹn hơn khi
-            có thêm lời chúc phúc và sự hiện diện của các bạn.
+            chúng mình rất chờ đón sự kiện trọng đại này của cuộc đời. Đám cưới
+            của chúng mình sẽ trọn vẹn hơn khi có thêm lời chúc phúc và sự hiện
+            diện của các bạn.
+            <br />
+            Hẹn gặp bạn tại đám cưới của chúng mình.
           </div>
         </div>
 
         <div class="footer__registry-form">
-          <div class="footer__registry-form-name">
+          <div class="footer__registry-form-name mb-4">
             <!-- /* From Uiverse.io by alexruix */ -->
             <div class="input-group-maker">
               <input
@@ -664,12 +674,41 @@
                 autocomplete="off"
                 class="input-maker"
               />
-              <label class="user-label-maker">First Name</label>
+              <label class="user-label-maker">Tên của bạn</label>
             </div>
           </div>
-          <div class="footer__registry-form-phone"></div>
+          <div class="footer__registry-form-phone mb-4">
+            <!-- /* From Uiverse.io by alexruix */ -->
+            <div class="input-group-maker">
+              <input
+                required=""
+                type="tel"
+                name="phone"
+                autocomplete="off"
+                class="input-maker"
+              />
+              <label class="user-label-maker">Số điện thoại</label>
+            </div>
+          </div>
+          <!-- text area -->
+          <div class="mb-3">
+            <textarea
+              class="footer__registry-form-wish form-control"
+              rows="4"
+              placeholder="Gửi lời chúc đến chúng mình ... "
+            ></textarea>
+          </div>
           <!-- btn form -->
-          <div class="footer__registry-confirm">
+          <button class="footer__registry-form-btn color-confirm-1">
+            Tham dự
+          </button>
+
+          <!-- btn wish -->
+          <button class="footer__registry-form-btn color-confirm-1">
+            Gửi lời chúc
+          </button>
+          <!--!! btn form -->
+          <!-- <div class="footer__registry-confirm">
             <div class="footer__registry-confirm-btn">
               <div class="btnConfirm__container">
                 <a href="#" class="btnConfirm type--A">
@@ -681,7 +720,7 @@
                 </a>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
 

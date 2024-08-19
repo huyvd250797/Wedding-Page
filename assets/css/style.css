@@ -38,7 +38,7 @@
 }
 
 .header__img-slider {
-  background-color: var(--primary-color-4);
+  background-color: var(--primary-color-3);
   /* background-image: url(../img/header/slider-img.JPG); */
   /* background-size: contain; */
   /* background-repeat: no-repeat; */
@@ -76,7 +76,7 @@
 
 .header__nav-link:hover {
   cursor: pointer;
-  color: var(--primary-color-3);
+  color: #fff;
   transform: translateY(-2px);
 }
 
@@ -611,7 +611,35 @@
 
 /*TODO ---------------------------------- Footer --------------------------------- */
 .footer__registry {
-  background-color: var(--primary-color-1);
+  padding: 100px;
+  background-color: var(--primary-color-3);
+}
+
+.footer__registry-title {
+  font-size: 3.5rem;
+  color: #fff;
+}
+
+.footer__registry-text {
+  color: #fff;
+}
+
+.footer__registry-form-wish {
+  background: none !important;
+  color: #fff !important;
+  resize: none;
+  transition: all 0.3s;
+}
+
+.footer__registry-form-wish:focus {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+.footer__registry-form-wish::placeholder {
+  color: #fff;
+  font-style: italic;
+  opacity: 0.5;
 }
 
 .footer__registry-confirm {
