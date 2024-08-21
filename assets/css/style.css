@@ -34,7 +34,7 @@
 /*? --------------------------------- header --------------------------------- */
 
 .header {
-  height: 70vh;
+  height: 100vh;
 }
 
 .header__img-slider {
@@ -92,526 +92,151 @@
 
 /* SAVE THE DATE */
 .header-saveTheDate {
+  /* background-image: url("../img/header/652A4794.JPG"); */
+  background-color: var(--primary-color-1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
 }
 
-.header-title-ring-img {
+.header-title-and-img {
   height: 6vh;
+}
+
+.header-title-nameGroom,
+.header-title-nameBride,
+.header-title-and {
+  color: #fff;
+  padding: 70px 50px 30px 50px;
+  font-size: 3.2rem;
+}
+
+.header__title-date {
+  font-size: 2rem;
+  color: #fff;
 }
 
 .header-title {
 }
 
 .header-title-nameGroom {
-  font-size: 2.8rem;
 }
 
-.header-title-ring {
-  font-size: 2rem;
+.header-title-and {
 }
 
 .header-title-nameBride {
-  font-size: 2.8rem;
 }
 /*? --------------------------------- content --------------------------------- */
 
-/*TODO ---------------------------------- Aisle --------------------------------- */
-.content__aisle {
-  padding: 0 100px;
-}
-
-.content__aisle-info {
-  padding-right: 20px;
-}
-
-.content__aisle-content {
-}
-
-.content__aisle-content-text {
-}
-
-.content__aisle-content-church {
-  font-size: 1.4rem;
-}
-
-.content__aisle-content-date {
-  font-size: 1.2rem;
-}
-
-.content__aisle-content-address {
-  font-size: 1rem;
-  font-style: italic;
-}
-
-.content__aisle-direction {
-}
-
-.content__aisle-direction-map {
-  height: 100px;
-}
-
-.content__aisle-image {
-}
-
-.content__aisle-image-img {
-  width: 30%;
-  border-radius: 10px;
-  margin: 0 10px;
-  transition: all 0.7s;
-}
-
-.content__aisle-image-img:hover {
-  cursor: pointer;
-  transform: scale(1.2);
-  box-shadow: 0px 0px 20px 5px var(--primary-color-5);
-}
-
-.content__aisle-image-date {
-  font-size: 2.2rem;
-}
-
-/*TODO ---------------------------------- Introduce --------------------------------- */
-.content__introduce {
-  padding: 0 100px;
-}
-
-/* Bride */
-.content__introduce-bride {
-}
-
-.content__introduce-bride-image {
-}
-
-.content__introduce-bride-image-img {
-  height: 70vh;
-  border-radius: 10px;
-}
-
-.content__introduce-bride-info {
-  padding: 0 30px;
-  width: 40%;
-}
-
-.content__introduce-bride-info--title {
-  font-size: 1.2rem;
-  text-transform: uppercase;
-}
-
-.content__introduce-bride-info--name {
-  font-size: 2rem;
-}
-
-.content__introduce-bride-info--text {
-}
-
-/* Groom */
-.content__introduce-groom {
-}
-
-.content__introduce-groom-image {
-}
-
-.content__introduce-groom-image-img {
-  height: 70vh;
-  border-radius: 10px;
-}
-
-.content__introduce-groom-info {
-  padding: 0 30px;
-  width: 40%;
-}
-
-.content__introduce-groom-info--title {
-  font-size: 1.2rem;
-  text-transform: uppercase;
-}
-
-.content__introduce-groom-info--name {
-  font-size: 2rem;
-}
-
-.content__introduce-groom-info--text {
-}
-
-/*TODO ---------------------------------- Love story --------------------------------- */
-.content__loveStory {
-}
-
-.content__loveStory-container {
-  padding: 80px;
-  background-color: var(--primary-color-1);
-}
-
-.content__loveStory-image {
-  background-color: #fff;
-  padding: 10px;
-  box-shadow: 0px 0px 30px 5px var(--primary-color-2);
-}
-
-.content__loveStory-image-img {
-  height: 60vh;
-}
-
-.content__loveStory-info-container {
-  margin-left: 3rem;
-}
-
-.content__loveStory-title {
-  font-size: 1.8rem;
-  color: #fff;
-}
-
-.content__loveStory-content {
-  color: #fff;
-}
-
-/*TODO ---------------------------------- Our story --------------------------------- */
-.content__ourStory {
-}
-
-.content__ourStory-title--text01 {
-  font-size: 3rem;
-  letter-spacing: 5px;
-}
-
-.content__ourStory-title--text02 {
-}
-
-.content__ourStory-content {
-}
-
-/* first */
-.content__ourStory-content-first {
-}
-
-.content__ourStory-content-first-info {
-  width: 40%;
-  padding: 20px 50px;
-  background-color: var(--primary-color-4-op);
-}
-
-.content__ourStory-content-first-info--title {
-  font-size: 5rem;
-}
-
-.content__ourStory-content-first-image {
-}
-
-.content__ourStory-content-first-image-img {
-  height: 70vh;
-}
-
-/* second */
-.content__ourStory-content-second {
-}
-
-.content__ourStory-content-second-image {
-}
-
-.content__ourStory-content-second-image-img {
-  height: 70vh;
-}
-
-.content__ourStory-content-second-info {
-  width: 40%;
-  padding: 20px 50px;
-  background-color: var(--primary-color-4-op);
-}
-
-.content__ourStory-content-second-info--title {
-  font-size: 5rem;
-}
-
-/* final */
-.content__ourStory-content-final {
-}
-
-.content__ourStory-content-final-info {
-  width: 40%;
-  padding: 20px 50px;
-  background-color: var(--primary-color-4-op);
-}
-
-.content__ourStory-content-final-info--title {
-  font-size: 5rem;
-}
-
-.content__ourStory-content-final-image {
-}
-
-.content__ourStory-content-final-image-img {
-  height: 70vh;
-}
-
-/*TODO ---------------------------------- Reception --------------------------------- */
-
-.content__reception {
+/*TODO ---------------------------------- Wedding --------------------------------- */
+.content__wedding {
   background-color: var(--primary-color-4);
-  padding: 110px;
-  /* padding-bottom: 20px; */
-  position: relative;
+  height: 100vh;
 }
 
-.content__reception--text {
-  color: var(--primary-color-3);
+.content__wedding-day {
+  font-size: 3rem;
 }
 
-.content__reception-title {
-  margin-bottom: 70px;
+.content__wedding-date {
+  font-size: 3.5rem;
+  letter-spacing: 10px;
 }
 
-.content__reception-title--text {
+.content__wedding-restaurant {
   font-size: 2rem;
-  position: relative;
 }
 
-.content__reception-title--text::after {
-  content: "";
-  position: absolute;
-  color: var(--primary-color-3);
-  border-width: 0.5px 240px;
-  border-style: solid;
-  top: 85px;
-  right: -111px;
-}
-
-.content__reception-time {
-}
-
-.content__reception-time--text {
-  font-size: 1.5rem;
-  text-transform: uppercase;
-}
-
-.content__reception-date {
-}
-
-.content__reception-date--text {
-  font-size: 4.5rem;
-  letter-spacing: 5px;
-  margin: 20px;
-}
-
-.content__reception-address {
-  position: relative;
-}
-
-.content__reception-address-restaurant {
-  font-size: 2rem;
-  padding: 15px 0;
-}
-
-.content__reception-address-restaurant--link {
-  text-decoration: none;
-  color: var(--primary-color-2);
-}
-
-.content__reception-address-restaurant--link:hover {
+.content__wedding-restaurant:hover {
+  cursor: pointer;
   color: var(--primary-color-1);
 }
 
-.content__reception-address--text {
-  font-size: 1.35rem;
-}
-
-.content__reception-address--text::after {
-  content: "";
-  position: absolute;
+.content__wedding-restaurant--link {
+  text-decoration: none;
   color: var(--primary-color-3);
-  border-width: 0.5px 240px;
-  border-style: solid;
-  top: 190px;
-  right: 13%;
 }
 
-.content__reception-address--text2 {
-  font-size: 1.1rem;
-  display: flex;
-  text-align: center;
-  width: 50%;
-  margin-top: 90px;
+.content__wedding-restaurant--link:hover {
+  color: var(--primary-color-1);
 }
 
-/*TODO ---------------------------------- Event --------------------------------- */
-.content__event {
-  background-color: var(--primary-color-4-op);
-  position: relative;
-  padding-bottom: 50px;
+.content__wedding-address {
+  font-size: 1.5rem;
 }
 
-.content__event-title {
-  font-size: 2.3rem;
-}
-
-.content__event-type {
-}
-
-.content__event-type-arch-img,
-.content__event-type-champagne-img,
-.content__event-type-dinner-img {
+.content__timeline-img {
   height: 9vh;
 }
 
-/* line horizontal line */
-.content__event-time::before {
-  content: "";
-  position: absolute;
-  width: 50%;
-  height: 1.5px;
-  background-color: var(--primary-color-1);
-  top: 51%;
-}
-
-.content__event-time {
-  font-size: 1.2rem;
-  margin-top: 90px;
-}
-
-/* vertical line 1 */
-.content__event-time-welcome::before {
-  content: "";
-  position: absolute;
-  width: 2px;
-  height: 9%;
-  background-color: var(--primary-color-1);
-  top: 51%;
-  left: 30%;
-}
-
-.content__event-time-welcome {
-}
-
-/* vertical line 2 */
-.content__event-time-ceremony::before {
-  content: "";
-  position: absolute;
-  width: 2px;
-  height: 9%;
-  background-color: var(--primary-color-1);
-  top: 51%;
-  left: 50%;
-}
-
-.content__event-time-ceremony {
-}
-
-/* vertical line 3 */
-.content__event-time-dinner::before {
-  content: "";
-  position: absolute;
-  width: 2px;
-  height: 9%;
-  background-color: var(--primary-color-1);
-  top: 51%;
-  left: 70%;
-}
-
-.content__event-time-dinner {
-}
-
-.content__event-text {
-  font-size: 3.2rem;
-  padding: 15px 0;
-}
-
-/*TODO ---------------------------------- Registry --------------------------------- */
-
-.content__registry-image {
-}
-
-.content__registry-image-img {
+/*TODO ---------------------------------- Timeline --------------------------------- */
+.content__timeline {
   height: 80vh;
-  opacity: 0.8;
-  border-radius: 10px;
-  transition: all 0.5s;
 }
 
-/* .content__registry-image-img:hover {
-  box-shadow: 0px 0px 20px 5px var(--primary-color-5);
-  opacity: 1;
-} */
-
-.content__registry-imageCenter {
-  position: relative;
+.content__timeline-title {
+  font-size: 3rem;
 }
 
-.content__registry-imageCenter-img {
-  height: 58vh;
-  padding: 8px;
-  /* position: absolute; */
-  top: 14%;
-  right: -215px;
-  background-color: #fff;
-  box-shadow: 0px 0px 20px 5px var(--primary-color-5);
-  transition: all 0.8s;
+.content__timeline-container {
 }
 
-.content__registry-imageCenter-img:hover {
+/* welcome */
+.content__timeline-welcome {
 }
 
-.content__registry-content-container {
-  width: 50%;
-  text-align: center;
+.content__timeline-welcome-image {
 }
 
-.content__registry-title {
+.content__timeline-welcome-img {
 }
 
-.content__registry-content {
+.content__timeline-welcome-text {
 }
 
-.content__registry-confirm {
-  position: relative;
+/* ceremony */
+.content__timeline-ceremony {
 }
 
-/*TODO ---------------------------------- Photo --------------------------------- */
-
-.content__photo {
-  position: relative;
+.content__timeline-ceremony-image {
 }
 
-.content__photo-title {
-  font-size: 4rem;
+.content__timeline-ceremony-img {
 }
 
-.content__photo-title-photo-text {
-  content: "";
-  position: absolute;
-  font-size: 1.8rem;
-  top: 50px;
-  right: 390px;
+.content__timeline-ceremony-text {
 }
 
-.content__photo-image-container {
+/* dinner */
+.content__timeline-dinner {
 }
 
-.content__photo-image-img {
-  height: 50vh;
-  padding: 5px;
+.content__timeline-dinner-image {
 }
 
-.content__photo-image-img-center {
-  height: 5vh;
-  /* animation hearbeat viết rõ */
-  /* animation-name: heartBeat;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-  animation-iteration-count: infinite; */
-
-  /* viết tắt */
-  animation: heartBeat 1s ease-in-out infinite;
+.content__timeline-dinner-img {
 }
 
-/* animation img center */
-@keyframes heartBeat {
-  0% {
-    scale: 0.8;
-  }
-  50% {
-    scale: 1;
-  }
-  100% {
-    scale: 0.8;
-  }
+.content__timeline-dinner-text {
+}
+
+/* afterParty */
+.content__timeline-afterParty {
+}
+
+.content__timeline-afterParty-image {
+}
+
+.content__timeline-afterParty-img {
+}
+
+.content__timeline-afterParty-text {
+}
+
+/* content__timeline--text  */
+.content__timeline--text {
+  font-size: 2.8rem;
 }
 
 /*TODO ---------------------------------- Footer --------------------------------- */
@@ -651,38 +276,4 @@
 }
 
 .footer__registry-confirm-btn {
-}
-
-/*! ---------------------------------- MODAL --------------------------------- */
-.content__aisle-image-img--full-screen {
-  height: 90vh;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.content__aisle-image-img--full-screen:hover > .btn-close {
-  display: block;
-  opacity: 0.3;
-}
-
-.content__aisle-image-img--full-01 {
-  background-image: url(../img/aisle/652A4919.JPG);
-}
-
-.content__aisle-image-img--full-02 {
-  background-image: url(../img/aisle/652A5751.JPG);
-}
-
-.content__aisle-image-img--full-03 {
-  background-image: url(../img/aisle/652A5684.JPG);
-}
-
-.btn-close {
-  opacity: 0;
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  background-color: #fff;
-  transition: all 0.3s;
 }

@@ -44,7 +44,7 @@
     <div class="wedding-page">
       <!--? ------------------------------- header -------------------------------- -->
       <div class="header">
-        <div class="header__img-slider d-flex justify-content-evenly">
+        <div class="header__img-slider d-flex justify-content-evenly d-none">
           <!-- header logo -->
           <div class="header__logo-container"></div>
 
@@ -80,565 +80,123 @@
         </div>
 
         <!-- header save the date -->
-        <div class="header-saveTheDate d-flex">
-          <div class="header-title-nameGroom great-vibes-regular">Huy Vo</div>
-          <div class="header-title-ring great-vibes-regular">
-            <img
+        <div class="header-saveTheDate d-flex flex-column align-items-center">
+          <div class="header__title-name d-flex">
+            <div class="header-title-nameGroom great-vibes-regular">Huy Vo</div>
+            <div class="header-title-and great-vibes-regular">
+              &
+              <!-- <img
               src="./assets/img/aisle/love.png"
               alt=""
-              class="header-title-ring-img"
-            />
+              class="header-title-and-img"
+            /> -->
+            </div>
+            <div class="header-title-nameBride great-vibes-regular">
+              Sao Dao
+            </div>
           </div>
-          <div class="header-title-nameBride great-vibes-regular">Sao Dao</div>
+          <div class="header__title-date kanit-300">20 . 10 . 2024</div>
         </div>
       </div>
 
       <!--? ------------------------------- content -------------------------------- -->
-      <div id="content-section" class="content break-section">
-        <!--TODO -------------------------------- Aisle -------------------------------- -->
-        <div class="content__aisle d-flex justify-content-evenly">
-          <div class="content__aisle-info d-flex flex-column">
-            <!-- Aisle title  -->
-            <div
-              class="content__aisle-title d-flex justify-content-evenly align-items-center mb-2"
-            ></div>
-
-            <!-- Aisle content  -->
-            <div class="content__aisle-content">
-              <div class="content__aisle-content-text mb-2">
-                Mời bạn đến tham dự ngày quan trọng nhất này, khi chúng mình
-                trao đổi lời thề hôn nhân của chúng mình tại lễ đường.
-              </div>
-              <div class="content__aisle-content-church kanit-500 mb-1">
-                Giáo xứ Thánh Phaolo
-              </div>
-              <div class="content__aisle-content-date kanit-400 kanit-500 mb-2">
-                Ngày 12 tháng 10 năm 2024
-              </div>
-              <div class="content__aisle-content-address kanit-400 mb-2">
-                Số 280, đường Vành Đai Trong, phường Bình Trị Đông B, quận Bình
-                Tân, thành phố Hồ Chí Minh
-              </div>
-            </div>
-
-            <!-- Aisle direction: view on map  -->
-            <div class="content__aisle-direction">
-              <iframe
-                data-bs-toggle="tooltip"
-                data-bs-placement="bottom"
-                data-bs-title="Click để xem vị trí"
-                class="content__aisle-direction-map border border-secondary-subtle"
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15679.074364865683!2d106.616141!3d10.7523098!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752c328d8c3647%3A0xe3dd0258051ed020!2zTmjDoCB0aOG7nSBUaMOhbmggUGhhb2zDtA!5e0!3m2!1svi!2s!4v1722768685365!5m2!1svi!2s"
-                width="600"
-                height="450"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
-          </div>
-
-          <!-- Aisle image -->
-          <div class="content__aisle-image justify-content-evenly">
-            <div class="content__aisle-image-container">
-              <img
-                data-bs-toggle="modal"
-                data-bs-target="#viewAisleImage01"
-                src="./assets/img/aisle/652A4919.JPG"
-                alt="652A4919"
-                class="content__aisle-image-img"
-              />
-              <img
-                data-bs-toggle="modal"
-                data-bs-target="#viewAisleImage02"
-                src="./assets/img/aisle/652A5751.JPG"
-                alt="652A5751"
-                class="content__aisle-image-img"
-              />
-              <img
-                data-bs-toggle="modal"
-                data-bs-target="#viewAisleImage03"
-                src="./assets/img/aisle/652A5684.JPG"
-                alt="652A5684"
-                class="content__aisle-image-img"
-              />
-            </div>
-
-            <div
-              class="content__aisle-image-date d-flex justify-content-evenly great-vibes-regular"
-            >
-              <div
-                class="content__aisle-image-date-text content__aisle-image-day"
-              >
-                12
-              </div>
-              <div
-                class="content__aisle-image-date-text content__aisle-image-month great-vibes-regular"
-              >
-                10
-              </div>
-              <div
-                class="content__aisle-image-date-text content__aisle-image-year great-vibes-regular"
-              >
-                2024
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!--TODO -------------------------------- Introduce -------------------------------- -->
+      <div id="content-section" class="content">
+        <!-- wedding -->
         <div
-          class="content__introduce d-flex justify-content-center align-items-center flex-column break-section"
+          class="content__wedding d-flex flex-column align-items-center justify-content-center"
         >
-          <!-- Groom -->
+          <div class="content__wedding-day distant-stroke mb-4">SUNDAY</div>
+          <div class="content__wedding-date kanit-500 mb-4">20.10.2024</div>
           <div
-            class="content__introduce-groom d-flex justify-content-center mb-5"
+            class="content__wedding-restaurant kanit-500 mb-2"
+            data-bs-toggle="tooltip"
+            data-bs-placement="right"
+            data-bs-title="Click to view map"
           >
-            <div class="content__introduce-groom-image">
-              <img
-                src="./assets/img/introduce/652A5451.JPG"
-                alt=""
-                class="content__introduce-groom-image-img"
-              />
-            </div>
-            <div class="content__introduce-groom-info">
-              <div class="content__introduce-groom-info--title kanit-400">
-                Groom
-              </div>
-              <div class="content__introduce-groom-info--name kanit-500">
-                Huy Vo
-              </div>
-              <div class="content__introduce-groom-info--text">
-                <p>
-                  Yup, the guy on the photo is me and I know some of you may
-                  wonder "was he really using a beauty app and he looks a bit
-                  different today!?" So I can tell you, I was really not and the
-                  photo had been taken before I gained 5 kgs during the
-                  Pandemic. Come onnnn, don't you laugh at me..... 😂 Ok back to
-                  the business, and of course my name is Hien. My colleagues
-                  usually call me Vinh due to easy pronunciation and Vinh always
-                  comes first in my full name. I have no issue with it and
-                  instead, I love the way everyone calls me like that. I am
-                  currently working as a project engineer at Downer Group. I
-                  love my job and appreciate the people working with me. I have
-                  been fortunate enough to meet a lot of good friends in
-                  Australia, and yes one of them must be you 💕 Peace 💕
-                </p>
-              </div>
-            </div>
+            <a
+              class="content__wedding-restaurant--link"
+              href="https://maps.app.goo.gl/ACBsUu6mnEDdrUQRA"
+              target="_blank"
+            >
+              KIM CENTER
+            </a>
           </div>
-
-          <!-- Bride -->
-          <div class="content__introduce-bride d-flex justify-content-center">
-            <div class="content__introduce-bride-info">
-              <div class="content__introduce-bride-info--title kanit-400">
-                Bride
-              </div>
-              <div class="content__introduce-bride-info--name kanit-500">
-                Sao Dao
-              </div>
-              <div class="content__introduce-bride-info--text">
-                <p>
-                  Hi everyone, I will try to keep my intro simple and not be
-                  like the one's above 😉 My name is Hai, my current job is a
-                  business owner. I am running two small and lovely beauty
-                  stores located in Kingston and Hobart. Though managing two
-                  stores at the same time is not very easy, I am so lucky have
-                  excellent team members and staff who are always there to
-                  support me. I love animals, especially dogs. Hien and I are
-                  having a little Labrador puppy and a four year old bulldog at
-                  home. Their name are Cooper and Charlie, and we just love them
-                  so much ♥ I also love cooking in my freetime. I usually have a
-                  lot of compliments from my friends and especially Hien,
-                  whenever they try my food. I feel happy and motivated to cook
-                  my different types of food for my beloved ones.
-                </p>
-              </div>
-            </div>
-            <div class="content__introduce-bride-image">
-              <img
-                src="./assets/img/introduce/652A5473.JPG"
-                alt=""
-                class="content__introduce-bride-image-img"
-              />
-            </div>
+          <div class="content__wedding-address kanit-300">
+            628 Pham Van Thuan Street, Tam Hiep ward, Bien Hoa city, Dong Nai
           </div>
         </div>
 
-        <!--TODO -------------------------------- Love story -------------------------------- -->
-        <!-- Love story -->
-        <div id="contentStory" class="content__loveStory break-section">
-          <!-- container info -->
-          <div
-            class="content__loveStory-container w-50 container-fluid d-flex justify-content-center"
-          >
-            <!-- img container -->
-            <div class="content__loveStory-image">
-              <img
-                src="./assets/img/love-story/652A4866.JPG"
-                alt="652A4866"
-                class="content__loveStory-image-img"
-              />
-            </div>
-
-            <!-- info container -->
-            <div class="content__loveStory-info-container">
-              <div class="content__loveStory-title kanit-400 mb-2">
-                LOVE STORY
-              </div>
-              <div class="content__loveStory-content">
-                Mọi người có thể sử dụng đoạn này để kể lại đôi nét về câu
-                chuyện tình yêu của các bạn nha. Hai bạn yêu nhau ra sao, quen
-                nhau thế nào, có những kỷ niệm nào đáng nhớ, ... mọi thứ đều có
-                thể kể lại thông qua widget này đó. ♥ Kể dài một chút thì text
-                sẽ vừa với ảnh hơn, sẽ đẹp hơn nên mọi người ráng viết dài dài
-                xíu trông cho đẹp nhá heheee ♥
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--TODO -------------------------------- Our story -------------------------------- -->
-        <!-- container our story -->
+        <!-- timeline -->
         <div
-          class="content__ourStory d-flex justify-content-center align-items-center flex-column break-section"
+          class="content__timeline d-flex flex-column align-items-center justify-content-evenly"
         >
-          <!-- our story title -->
-          <div
-            class="content__ourStory-title d-flex flex-column align-items-center mb-5"
-          >
-            <div class="content__ourStory-title--text01 great-vibes-regular">
-              HuyVo & SaoDao
-            </div>
-            <div class="content__ourStory-title--text02">OUR STORY</div>
+          <div class="content__timeline-title justify-content-start">
+            Timeline
           </div>
-
-          <!-- our story content -->
-          <div class="content__ourStory-content">
-            <!-- our story 01 -->
-            <div
-              class="content__ourStory-content-first d-flex justify-content-center mb-5"
-            >
-              <div
-                class="content__ourStory-content-first-info border rounded-start"
-              >
-                <div
-                  class="content__ourStory-content-first-info--title distant-stroke"
-                >
-                  First day
-                </div>
-                <div class="content__ourStory-content-first-info--content">
-                  first knew each back in early November 12 after knowing each
-                  other through Facebook. After a couple of weeks of messaging
-                  and talking on the phone, they decided to have a date. Hai was
-                  struck by Hien's sense of humour while Hien instantly fell in
-                  love with Hai's tenderness. 27th of November 12 was the day
-                  that they began to start their love journey.
-                </div>
-
-                <div class="content__ourStory-content-first-info--ps">
-                  She came like a beautiful angel that I could not get my eyes
-                  out of her and also like a devil who instantly kill me with
-                  love
-                </div>
-              </div>
-              <div class="content__ourStory-content-first-image">
+          <div
+            class="content__timeline-container w-100 d-flex justify-content-evenly"
+          >
+            <!-- welcome -->
+            <div class="content__timeline-welcome">
+              <div class="content__timeline-welcome-image">
                 <img
-                  src="./assets/img/our-story/picture-first.JPG"
+                  src="./assets/img/event/wedding-arch.png"
                   alt=""
-                  class="content__ourStory-content-first-image-img"
-                />
-              </div>
-            </div>
-
-            <!-- our story 02 -->
-            <div
-              class="content__ourStory-content-second d-flex justify-content-center mb-5"
-            >
-              <div class="content__ourStory-content-second-image">
-                <img
-                  src="./assets/img/our-story/picture-second.JPG"
-                  alt="img"
-                  class="content__ourStory-content-second-image-img"
+                  class="content__timeline-img content__timeline-welcome-img"
                 />
               </div>
               <div
-                class="content__ourStory-content-second-info border rounded-end"
+                class="content__timeline--text content__timeline-welcome-text distant-stroke"
               >
-                <div
-                  class="content__ourStory-content-second-info--title distant-stroke"
-                >
-                  Three years later
-                </div>
-                <div class="content__ourStory-content-second-info--content">
-                  A year after, they were continuing their love journey by
-                  creating and sharing beautiful memories with each other.
-                </div>
-
-                <div class="content__ourStory-content-first-info--ps">
-                  Even if we've had so many smiles and frowns, twists and turns,
-                  and ups and downs in the first year of relationship, I can say
-                  we were strongly bonded and getting to understand each other
-                  more
-                </div>
-              </div>
-            </div>
-
-            <!-- our story 03 -->
-            <div
-              class="content__ourStory-content-final d-flex justify-content-center mb-5"
-            >
-              <div
-                class="content__ourStory-content-final-info border rounded-start"
-              >
-                <div
-                  class="content__ourStory-content-final-info--title distant-stroke"
-                >
-                  Finally
-                </div>
-                <div class="content__ourStory-content-final-info--content">
-                  20th of October, 2024 was their 4-year anniversary and also a
-                  'happy ending' day for both of them. Hien had decided to
-                  surprise Hai with a secret proposal. Of course, Hai said 'Yes'
-                  to Hien, and the proposal was really successful with precious
-                  help from their close friends and family members. ♥
-                </div>
-
-                <div class="content__ourStory-content-final-info--ps">
-                  She came like a beautiful angel that I could not get my eyes
-                  out of her and also like a devil who instantly kill me with
-                  love
-                </div>
-              </div>
-              <div class="content__ourStory-content-final-image">
-                <img
-                  src="./assets/img/our-story/652A4919.JPG"
-                  alt=""
-                  class="content__ourStory-content-final-image-img"
-                />
-              </div>
-            </div>
-          </div>
-
-          <!-- TODO ------------------------------ Reception ------------------------------ -->
-          <div
-            id="contentReception"
-            class="content__reception mt-5 d-flex justify-content-center flex-column align-items-center w-100"
-          >
-            <div class="content__reception-title">
-              <!-- Welcome -->
-              <div
-                class="content__reception-title--text content__reception--text kanit-500"
-              >
-                Trân trọng kính mời
-              </div>
-            </div>
-            <div class="content__reception-time">
-              <!-- Time -->
-              <div
-                class="content__reception-time--text content__reception--text kanit-300"
-              >
-                Vào hồi 11 giờ 00, Chủ Nhật
-              </div>
-            </div>
-            <div class="content__reception-date">
-              <!-- Date -->
-              <div
-                class="content__reception-date--text content__reception--text kanit-500"
-              >
-                20.10.2024
-              </div>
-            </div>
-            <!-- Place -->
-            <div
-              class="content__reception-address d-flex flex-column align-items-center"
-            >
-              Tại nhà hàng tiệc cưới
-              <!-- Restaurant -->
-              <div
-                class="content__reception-address-restaurant content__reception--text kanit-500"
-              >
-                <!-- ! target="_blank" -> Open link in new tab -->
-                <a
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="right"
-                  data-bs-title="Click để xem vị trí"
-                  class="content__reception-address-restaurant--link"
-                  href="https://maps.app.goo.gl/jf815R1up9YKgeK36"
-                  target="_blank"
-                >
-                  KIM CENTER
-                </a>
-              </div>
-              <!-- Address -->
-              <div
-                class="content__reception-address--text content__reception--text kanit-300"
-              >
-                628 Phạm Văn Thuận, phường Tam Hiệp, Thành phố Biên Hòa, Tỉnh
-                Đồng Nai
-              </div>
-
-              <!-- Address -->
-              <div
-                class="content__reception-address--text2 content__reception--text kanit-300"
-              >
-                Sự hiện diện của bạn là niềm vinh hạnh của chúng mình!
-              </div>
-            </div>
-          </div>
-
-          <!-- TODO -------------------------------- Event -------------------------------- -->
-          <div
-            id="contentEvent"
-            class="content__event d-flex flex-column align-items-center w-100"
-          >
-            <div class="content__event-title kanit-300 m-5">Events</div>
-            <div class="content__event-type d-flex justify-content-evenly w-75">
-              <img
-                src="./assets/img/event/wedding-arch.png"
-                alt=""
-                class="content__event-type-arch-img"
-              />
-              <img
-                src="./assets/img/event/champagne.png"
-                alt=""
-                class="content__event-type-champagne-img"
-              />
-
-              <img
-                src="./assets/img/event/dinner.png"
-                alt=""
-                class="content__event-type-dinner-img"
-              />
-            </div>
-            <div class="content__event-time d-flex justify-content-evenly w-75">
-              <div class="content__event-time-welcome kanit-300">17:00 PM</div>
-              <div class="content__event-time-ceremony kanit-300">19:00 PM</div>
-              <div class="content__event-time-dinner kanit-300">19:30 PM</div>
-            </div>
-            <div class="content__event-text d-flex justify-content-evenly w-75">
-              <div class="content__event-text-welcome distant-stroke">
                 Welcome
               </div>
-              <div class="content__event-text-ceremony distant-stroke">
+            </div>
+
+            <!-- ceremony -->
+            <div class="content__timeline-ceremony">
+              <div class="content__timeline-ceremony-image">
+                <img
+                  src="./assets/img/event/champagne.png"
+                  alt=""
+                  class="content__timeline-img content__timeline-ceremony-img"
+                />
+              </div>
+              <div
+                class="content__timeline--text content__timeline-ceremony-text distant-stroke"
+              >
                 Ceremony
               </div>
-              <div class="content__event-text-dinner distant-stroke">
+            </div>
+
+            <!-- dinner -->
+            <div class="content__timeline-dinner">
+              <div class="content__timeline-dinner-image">
+                <img
+                  src="./assets/img/event/dinner.png"
+                  alt=""
+                  class="content__timeline-img content__timeline-dinner-img"
+                />
+              </div>
+              <div
+                class="content__timeline--text content__timeline-dinner-text distant-stroke"
+              >
                 Dinner
               </div>
             </div>
-          </div>
 
-          <!-- TODO -------------------------------- PHOTO -------------------------------- -->
-          <div
-            id="contentPhoto"
-            class="content__photo d-flex justify-content-center flex-column align-items-center break-section"
-          >
-            <!-- <p>Wedding Photo</p>
-            <button>
-              <a
-                class="btn btn-primary"
-                href="https://drive.google.com/drive/folders/1HRsrwy77G3kUqFXHMwXr7g1Z_Fb4RJaE?usp=drive_link"
-                >View Album</a
-              >
-            </button> -->
-
-            <div class="content__photo-title distant-stroke">Our</div>
-            <span class="content__photo-title-photo-text kanit-300">Photo</span>
-            <div class="content__photo-image-container">
-              <!-- img container 01 -->
-              <div
-                class="content__photo-image-container-01 d-flex justify-content-between"
-              >
-                <!-- img 1.1 -->
+            <!-- after party -->
+            <div class="content__timeline-afterParty">
+              <div class="content__timeline-dinner-image">
                 <img
-                  src="./assets/img/photo/652A5001.JPG"
+                  src="./assets/img/event/wedding-arch.png"
                   alt=""
-                  class="content__photo-image-img"
-                />
-                <!-- img 1.2 -->
-                <img
-                  src="./assets/img/photo/652A4880.JPG"
-                  alt=""
-                  class="content__photo-image-img"
-                />
-
-                <!-- img 1.3 -->
-                <img
-                  src="./assets/img/photo/652A4830.JPG"
-                  alt=""
-                  class="content__photo-image-img"
+                  class="content__timeline-img content__timeline-afterParty-img"
                 />
               </div>
-
-              <!-- img container 02 -->
               <div
-                class="content__photo-image-container-02 d-flex justify-content-between"
+                class="content__timeline--text content__timeline-afterParty-text distant-stroke"
               >
-                <!-- img 2.1 -->
-                <img
-                  src="./assets/img/photo/652A5066.JPG"
-                  alt=""
-                  class="content__photo-image-img"
-                />
-
-                <!-- img 2.2 -->
-                <img
-                  src="./assets/img/photo/652A5127.JPG"
-                  alt=""
-                  class="content__photo-image-img"
-                />
-
-                <!-- img center animation -->
-                <div
-                  class="d-flex justify-content-center align-items-center w-100"
-                >
-                  <img
-                    id="contentPhotoImgCenter"
-                    src="./assets/img/photo/green-heart.png"
-                    alt="img center"
-                    class="content__photo-image-img-center"
-                  />
-                </div>
-
-                <!-- img 2.3 -->
-                <img
-                  src="./assets/img/photo/652A5725.JPG"
-                  alt=""
-                  class="content__photo-image-img"
-                />
-
-                <!-- img 2.4 -->
-                <img
-                  src="./assets/img/photo/652A5732.JPG"
-                  alt=""
-                  class="content__photo-image-img"
-                />
-              </div>
-
-              <!-- img container 03 -->
-              <div
-                class="content__photo-image-container-02 d-flex justify-content-between"
-              >
-                <!-- img 3.1 -->
-                <img
-                  src="./assets/img/photo/652A5599.JPG"
-                  alt=""
-                  class="content__photo-image-img"
-                />
-
-                <!-- img 3.2 -->
-                <img
-                  src="./assets/img/photo/652A5590.JPG"
-                  alt=""
-                  class="content__photo-image-img"
-                />
-                <!-- img 3.3 -->
-                <img
-                  src="./assets/img/photo/652A5525.JPG"
-                  alt=""
-                  class="content__photo-image-img"
-                />
+                After party
               </div>
             </div>
           </div>
@@ -720,91 +278,6 @@
               </div>
             </div>
           </div> -->
-        </div>
-      </div>
-
-      <!--! -------------------------------- MODAL -------------------------------- -->
-
-      <!--TODO ---------------------- content__aisle-image-img ----------------------- -->
-      <!-- Modal content__aisle-image-img 01 -->
-      <div
-        class="modal fade"
-        id="viewAisleImage01"
-        tabindex="-1"
-        aria-labelledby="viewAisleImage01Label"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-body">
-              <div
-                class="content__aisle-image-img--full-screen content__aisle-image-img--full-01"
-              >
-                <!-- btn close modal -->
-                <span
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Modal content__aisle-image-img 02 -->
-      <div
-        class="modal fade"
-        id="viewAisleImage02"
-        tabindex="-1"
-        aria-labelledby="viewAisleImage02Label"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-body">
-              <div
-                class="content__aisle-image-img--full-screen content__aisle-image-img--full-02"
-              >
-                <!-- btn close modal -->
-                <span
-                  style="color: #fff !important"
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Modal content__aisle-image-img 03 -->
-      <div
-        class="modal fade"
-        id="viewAisleImage03"
-        tabindex="-1"
-        aria-labelledby="viewAisleImage03Label"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-body">
-              <div
-                class="content__aisle-image-img--full-screen content__aisle-image-img--full-03"
-              >
-                <!-- btn close modal -->
-                <span
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></span>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
