@@ -26,6 +26,12 @@
   font-family: "Distant Stroke", sans-serif;
 }
 
+.italianno-regular {
+  font-family: "Italianno", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 /*? --------------------------------- COMMON --------------------------------- */
 .break-section {
   margin-top: 5rem !important;
@@ -166,77 +172,138 @@
   font-size: 1.5rem;
 }
 
-.content__timeline-img {
-  height: 9vh;
-}
-
-/*TODO ---------------------------------- Timeline --------------------------------- */
-.content__timeline {
+/*TODO ---------------------------------- Event --------------------------------- */
+.content__event {
   height: 80vh;
 }
 
-.content__timeline-title {
-  font-size: 3rem;
+.content__event-title {
+  font-size: 5rem;
 }
 
-.content__timeline-container {
+.content__event-container {
+  position: relative;
+}
+
+/* event icon img */
+.content__event-img {
+  height: 10vh;
+  text-align: center;
+}
+
+/* event time */
+.content__event-time {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 100px;
+}
+
+/* event text */
+.content__event--text {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.content__event-container::after {
+  content: "";
+  position: absolute;
+  width: 75%;
+  height: 1.5px;
+  background-color: var(--primary-color-1);
+  top: 45%;
 }
 
 /* welcome */
-.content__timeline-welcome {
+.content__event-welcome {
 }
 
-.content__timeline-welcome-image {
+.content__event-welcome-image {
 }
 
-.content__timeline-welcome-img {
+.content__event-welcome-image::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 12%;
+  background-color: var(--primary-color-1);
+  top: 45%;
+  left: 18%;
 }
 
-.content__timeline-welcome-text {
+.content__event-welcome-img {
+}
+
+.content__event-welcome-text {
 }
 
 /* ceremony */
-.content__timeline-ceremony {
+.content__event-ceremony {
 }
 
-.content__timeline-ceremony-image {
+.content__event-ceremony-image {
 }
 
-.content__timeline-ceremony-img {
+.content__event-ceremony-image::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 12%;
+  background-color: var(--primary-color-1);
+  top: 45%;
+  left: 40%;
 }
 
-.content__timeline-ceremony-text {
+.content__event-ceremony-img {
+}
+
+.content__event-ceremony-text {
 }
 
 /* dinner */
-.content__timeline-dinner {
+.content__event-dinner {
 }
 
-.content__timeline-dinner-image {
+.content__event-dinner-image {
 }
 
-.content__timeline-dinner-img {
+.content__event-dinner-image::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 12%;
+  background-color: var(--primary-color-1);
+  top: 45%;
+  left: 61.5%;
 }
 
-.content__timeline-dinner-text {
+.content__event-dinner-img {
 }
 
-/* afterParty */
-.content__timeline-afterParty {
+.content__event-dinner-text {
 }
 
-.content__timeline-afterParty-image {
+/* party */
+.content__event-party {
 }
 
-.content__timeline-afterParty-img {
+.content__event-party-image {
 }
 
-.content__timeline-afterParty-text {
+.content__event-party-image::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 12%;
+  background-color: var(--primary-color-1);
+  top: 45%;
+  left: 81.67%;
 }
 
-/* content__timeline--text  */
-.content__timeline--text {
-  font-size: 2.8rem;
+.content__event-party-img {
+}
+
+.content__event-party-text {
 }
 
 /*TODO ---------------------------------- Footer --------------------------------- */

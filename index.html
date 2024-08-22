@@ -25,6 +25,13 @@
       rel="stylesheet"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Italianno&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- TailWind -->
     <!-- <link rel="stylesheet" href="./assets/tailwindcss/src/output.css" /> -->
 
@@ -126,81 +133,110 @@
           </div>
         </div>
 
-        <!-- timeline -->
+        <!-- event -->
         <div
-          class="content__timeline d-flex flex-column align-items-center justify-content-evenly"
+          class="content__event d-flex flex-column align-items-center justify-content-evenly"
         >
-          <div class="content__timeline-title justify-content-start">
-            Timeline
+          <div
+            class="content__event-title justify-content-start italianno-regular"
+          >
+            Events
           </div>
           <div
-            class="content__timeline-container w-100 d-flex justify-content-evenly"
+            class="content__event-container w-100 d-flex justify-content-evenly"
           >
             <!-- welcome -->
-            <div class="content__timeline-welcome">
-              <div class="content__timeline-welcome-image">
+            <div class="content__event-welcome">
+              <div class="content__event-welcome-image">
                 <img
                   src="./assets/img/event/wedding-arch.png"
                   alt=""
-                  class="content__timeline-img content__timeline-welcome-img"
+                  class="content__event-img content__event-welcome-img"
                 />
               </div>
+              <div class="content__event-time kanit-300">11:00</div>
+
               <div
-                class="content__timeline--text content__timeline-welcome-text distant-stroke"
+                class="content__event--text content__event-welcome-text distant-stroke"
               >
                 Welcome
               </div>
             </div>
 
             <!-- ceremony -->
-            <div class="content__timeline-ceremony">
-              <div class="content__timeline-ceremony-image">
+            <div class="content__event-ceremony">
+              <div class="content__event-ceremony-image">
                 <img
                   src="./assets/img/event/champagne.png"
                   alt=""
-                  class="content__timeline-img content__timeline-ceremony-img"
+                  class="content__event-img content__event-ceremony-img"
                 />
               </div>
+              <div class="content__event-time kanit-300">12:00</div>
               <div
-                class="content__timeline--text content__timeline-ceremony-text distant-stroke"
+                class="content__event--text content__event-ceremony-text distant-stroke"
               >
                 Ceremony
               </div>
             </div>
 
             <!-- dinner -->
-            <div class="content__timeline-dinner">
-              <div class="content__timeline-dinner-image">
+            <div class="content__event-dinner">
+              <div class="content__event-dinner-image">
                 <img
                   src="./assets/img/event/dinner.png"
                   alt=""
-                  class="content__timeline-img content__timeline-dinner-img"
+                  class="content__event-img content__event-dinner-img"
                 />
               </div>
+              <div class="content__event-time kanit-300">12:15</div>
+
               <div
-                class="content__timeline--text content__timeline-dinner-text distant-stroke"
+                class="content__event--text content__event-dinner-text distant-stroke"
               >
                 Dinner
               </div>
             </div>
 
             <!-- after party -->
-            <div class="content__timeline-afterParty">
-              <div class="content__timeline-dinner-image">
+            <div class="content__event-party">
+              <div class="content__event-party-image">
                 <img
-                  src="./assets/img/event/wedding-arch.png"
+                  src="./assets/img/event/disco-ball.png"
                   alt=""
-                  class="content__timeline-img content__timeline-afterParty-img"
+                  class="content__event-img content__event-party-img"
                 />
               </div>
+              <div class="content__event-time kanit-300">14:00</div>
+
               <div
-                class="content__timeline--text content__timeline-afterParty-text distant-stroke"
+                class="content__event--text content__event-party-text distant-stroke"
               >
-                After party
+                Party
               </div>
             </div>
           </div>
         </div>
+
+        <!-- TODO -------------------------------- Story -------------------------------- -->
+
+        <div class="content__story">
+          <div class="content__story-container">
+            <div class="content__story-image">
+              <img src="" alt="" class="content__story-img" />
+            </div>
+            <div class="content__story-text">
+              <div class="content__story-text--title"></div>
+              <div class="content__story-text--content"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TODO -------------------------------- Introduce -------------------------------- -->
+        <div class="content__introduce"></div>
+
+        <!-- TODO -------------------------------- PHOTO -------------------------------- -->
+        <div class="photo"></div>
       </div>
 
       <!--? ------------------------------- footer -------------------------------- -->
