@@ -174,6 +174,7 @@
 
 /*TODO ---------------------------------- Event --------------------------------- */
 .content__event {
+  background-color: var(--primary-color-4-op);
   height: 80vh;
 }
 
@@ -304,6 +305,47 @@
 }
 
 .content__event-party-text {
+}
+
+/*TODO ---------------------------------- Story --------------------------------- */
+.content__story {
+  height: 100vh;
+  background-color: var(--primary-color-4);
+}
+
+.content__story-container {
+  height: 100%;
+}
+
+.content__story-image {
+  position: relative;
+}
+
+.content__story-img {
+  height: 55vh;
+  box-shadow: 0px 0px 20px 5px var(--primary-color-4) !important;
+}
+
+.content__story-img-01 {
+}
+
+.content__story-img-02 {
+}
+
+.content__story-img-03 {
+}
+
+.content__story-text {
+  width: 30%;
+}
+
+.content__story-text--title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 3.5rem;
+}
+
+.content__story-text--content {
 }
 
 /*TODO ---------------------------------- Footer --------------------------------- */
