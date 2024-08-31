@@ -348,6 +348,73 @@
 .content__story-text--content {
 }
 
+/*TODO ---------------------------------- Introduce --------------------------------- */
+.content__introduce {
+  padding: 20vh 0;
+}
+
+/** common */
+
+.content__introduce-name {
+  font-size: 4rem;
+  word-spacing: 10px;
+  letter-spacing: 5px;
+}
+
+.content__introduce-img {
+  height: 60vh;
+}
+
+.content__introduce-signature {
+  height: 12vh;
+}
+
+/** common */
+
+/* groom */
+.content__introduce-groom {
+}
+
+.content__introduce-groom-container {
+}
+
+.content__introduce-groom-content {
+}
+
+.content__introduce-groom-name {
+}
+
+.content__introduce-groom-text {
+}
+
+.content__introduce-groom-image {
+}
+
+.content__introduce-groom-img {
+}
+
+/* bride */
+.content__introduce-bride {
+}
+
+.content__introduce-bride-container {
+}
+
+.content__introduce-bride-content {
+}
+
+.content__introduce-bride-name {
+}
+
+.content__introduce-bride-text {
+}
+
+.content__introduce-bride-image {
+}
+
+.content__introduce-bride-img {
+}
+
 /*TODO ---------------------------------- Footer --------------------------------- */
 .footer__registry {
   padding: 100px;
