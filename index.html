@@ -6,17 +6,29 @@
     <title>Wedding Page</title>
     <link rel="icon" type="image/png" href="./assets/img/green-heart.png" />
 
-    <!-- -------------------------- font  --------------------------- -->
+    <!--? -------------------------- font  --------------------------- -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <!-- -------------------------- font  --------------------------- -->
+    <link
+      href="https://fonts.cdnfonts.com/css/distant-stroke"
+      rel="stylesheet"
+    />
+
+    <!--? -------------------------- font  --------------------------- -->
 
     <link
       href="./assets/fonts/node_modules/@flaticon/flaticon-uicons/css/all/all.css"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Italianno&display=swap"
       rel="stylesheet"
     />
 
@@ -32,12 +44,14 @@
     <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <link rel="stylesheet" href="./assets/css/template-component.css" />
   </head>
+
   <body>
     <div class="wedding-page">
       <!--? ------------------------------- header -------------------------------- -->
       <div class="header">
-        <div class="header__img-slider d-flex justify-content-evenly">
+        <div class="header__img-slider d-flex justify-content-evenly d-none">
           <!-- header logo -->
           <div class="header__logo-container"></div>
 
@@ -58,19 +72,12 @@
               </li>
               <li class="header__nav-item">
                 <!-- <a class="header__nav-link" href="">Reception</a> -->
-                <a class="header__nav-link" href="">Lễ cưới</a>
+                <a class="header__nav-link" href="#contentReception">Lễ cưới</a>
               </li>
-              <li class="header__nav-item">
-                <!-- <a class="header__nav-link" href="">Registry</a> -->
-                <a class="header__nav-link" href="">Tham dự</a>
-              </li>
-              <li class="header__nav-item">
-                <!-- <a class="header__nav-link" href="">Schedule</a> -->
-                <a class="header__nav-link" href="">Lịch trình</a>
-              </li>
+
               <li class="header__nav-item">
                 <!-- <a class="header__nav-link" href="">Photo</a> -->
-                <a class="header__nav-link" href="">Photo</a>
+                <a class="header__nav-link" href="#contentPhoto">Photo</a>
               </li>
             </ul>
           </div>
@@ -78,388 +85,452 @@
           <!-- header something -->
           <div class="header__something"></div>
         </div>
+
+        <!-- header save the date -->
+        <div class="header-saveTheDate d-flex flex-column align-items-center">
+          <div class="header__title-name d-flex">
+            <div class="header-title-nameGroom great-vibes-regular">Huy Vo</div>
+            <div class="header-title-and great-vibes-regular">
+              &
+              <!-- <img
+              src="./assets/img/aisle/love.png"
+              alt=""
+              class="header-title-and-img"
+            /> -->
+            </div>
+            <div class="header-title-nameBride great-vibes-regular">
+              Sao Dao
+            </div>
+          </div>
+          <div class="header__title-date kanit-300">20 . 10 . 2024</div>
+        </div>
       </div>
 
       <!--? ------------------------------- content -------------------------------- -->
-      <div id="content-section" class="content break-section">
-        <!--TODO -------------------------------- Aisle -------------------------------- -->
-        <div class="content__aisle d-flex justify-content-evenly">
-          <div class="content__aisle-info d-flex flex-column">
-            <!-- Aisle title  -->
-            <div
-              class="content__aisle-title d-flex justify-content-evenly align-items-center mb-2"
-            >
-              <div class="content__aisle-title-nameGroom great-vibes-regular">
-                Huy Vo
-              </div>
-              <div class="content__aisle-title-ring great-vibes-regular">
-                <i class="fi fi-ts-rings-wedding"></i>
-              </div>
-              <div class="content__aisle-title-nameBride great-vibes-regular">
-                Sao Dao
-              </div>
-            </div>
-
-            <!-- Aisle content  -->
-            <div class="content__aisle-content">
-              <div class="content__aisle-content-text mb-2">
-                Mời bạn đến tham dự ngày quan trọng nhất này, khi chúng tôi trao
-                đổi lời thề hôn nhân của chúng tôi tại lễ đường.
-              </div>
-              <div class="content__aisle-content-church kanit-500 mb-1">
-                Giáo xứ Thánh Phaolo
-              </div>
-              <div class="content__aisle-content-date kanit-400 kanit-500 mb-2">
-                Ngày 12 tháng 10 năm 2024
-              </div>
-              <div class="content__aisle-content-address kanit-400 mb-2">
-                Số 280, đường Vành Đai Trong, phường Bình Trị Đông B, quận Bình
-                Tân, thành phố Hồ Chí Minh
-              </div>
-            </div>
-
-            <!-- Aisle direction: view on map  -->
-            <div class="content__aisle-direction">
-              <iframe
-                class="content__aisle-direction-map border border-secondary-subtle"
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15679.074364865683!2d106.616141!3d10.7523098!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752c328d8c3647%3A0xe3dd0258051ed020!2zTmjDoCB0aOG7nSBUaMOhbmggUGhhb2zDtA!5e0!3m2!1svi!2s!4v1722768685365!5m2!1svi!2s"
-                width="600"
-                height="450"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
-          </div>
-
-          <!-- Aisle image -->
-          <div class="content__aisle-image justify-content-evenly">
-            <div class="content__aisle-image-container">
-              <img
-                data-bs-toggle="modal"
-                data-bs-target="#viewAisleImage01"
-                src="./assets/img/aisle/652A4919.JPG"
-                alt="652A4919"
-                class="content__aisle-image-img"
-              />
-              <img
-                data-bs-toggle="modal"
-                data-bs-target="#viewAisleImage02"
-                src="./assets/img/aisle/652A5751.JPG"
-                alt="652A5751"
-                class="content__aisle-image-img"
-              />
-              <img
-                data-bs-toggle="modal"
-                data-bs-target="#viewAisleImage03"
-                src="./assets/img/aisle/652A5684.JPG"
-                alt="652A5684"
-                class="content__aisle-image-img"
-              />
-            </div>
-
-            <div
-              class="content__aisle-image-date d-flex justify-content-evenly great-vibes-regular"
-            >
-              <div
-                class="content__aisle-image-date-text content__aisle-image-day"
-              >
-                12
-              </div>
-              <div
-                class="content__aisle-image-date-text content__aisle-image-month great-vibes-regular"
-              >
-                10
-              </div>
-              <div
-                class="content__aisle-image-date-text content__aisle-image-year great-vibes-regular"
-              >
-                2024
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!--TODO -------------------------------- Introduce -------------------------------- -->
+      <div id="content-section" class="content">
+        <!-- wedding -->
         <div
-          class="content__introduce d-flex justify-content-center align-items-center flex-column break-section"
+          class="content__wedding d-flex flex-column align-items-center justify-content-center"
         >
-          <!-- Groom -->
+          <div class="content__wedding-day distant-stroke mb-4">SUNDAY</div>
+          <div class="content__wedding-date kanit-500 mb-4">20.10.2024</div>
           <div
-            class="content__introduce-groom d-flex justify-content-center mb-5"
+            class="content__wedding-restaurant kanit-500 mb-2"
+            data-bs-toggle="tooltip"
+            data-bs-placement="right"
+            data-bs-title="Click to view map"
           >
-            <div class="content__introduce-groom-image">
-              <img
-                src="./assets/img/introduce/652A5461.JPG"
-                alt=""
-                class="content__introduce-groom-image-img"
-              />
-            </div>
-            <div class="content__introduce-groom-info">
-              <div class="content__introduce-groom-info--title kanit-400">
-                Groom
-              </div>
-              <div class="content__introduce-groom-info--name kanit-500">
-                Huy Vo
-              </div>
-              <div class="content__introduce-groom-info--text">
-                <p>
-                  Yup, the guy on the photo is me and I know some of you may
-                  wonder "was he really using a beauty app and he looks a bit
-                  different today!?" So I can tell you, I was really not and the
-                  photo had been taken before I gained 5 kgs during the
-                  Pandemic. Come onnnn, don't you laugh at me..... 😂 Ok back to
-                  the business, and of course my name is Hien. My colleagues
-                  usually call me Vinh due to easy pronunciation and Vinh always
-                  comes first in my full name. I have no issue with it and
-                  instead, I love the way everyone calls me like that. I am
-                  currently working as a project engineer at Downer Group. I
-                  love my job and appreciate the people working with me. I have
-                  been fortunate enough to meet a lot of good friends in
-                  Australia, and yes one of them must be you 💕 Peace 💕
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Bride -->
-          <div class="content__introduce-bride d-flex justify-content-center">
-            <div class="content__introduce-bride-info">
-              <div class="content__introduce-bride-info--title kanit-400">
-                Bride
-              </div>
-              <div class="content__introduce-bride-info--name kanit-500">
-                Sao Dao
-              </div>
-              <div class="content__introduce-bride-info--text">
-                <p>
-                  Hi everyone, I will try to keep my intro simple and not be
-                  like the one's above 😉 My name is Hai, my current job is a
-                  business owner. I am running two small and lovely beauty
-                  stores located in Kingston and Hobart. Though managing two
-                  stores at the same time is not very easy, I am so lucky have
-                  excellent team members and staff who are always there to
-                  support me. I love animals, especially dogs. Hien and I are
-                  having a little Labrador puppy and a four year old bulldog at
-                  home. Their name are Cooper and Charlie, and we just love them
-                  so much ♥ I also love cooking in my freetime. I usually have a
-                  lot of compliments from my friends and especially Hien,
-                  whenever they try my food. I feel happy and motivated to cook
-                  my different types of food for my beloved ones.
-                </p>
-              </div>
-            </div>
-            <div class="content__introduce-bride-image">
-              <img
-                src="./assets/img/introduce/652A5473.JPG"
-                alt=""
-                class="content__introduce-bride-image-img"
-              />
-            </div>
-          </div>
-        </div>
-
-        <!--TODO -------------------------------- Love story -------------------------------- -->
-        <!-- Love story -->
-        <div id="contentStory" class="content__loveStory break-section">
-          <!-- container info -->
-          <div
-            class="content__loveStory-container w-50 container-fluid d-flex justify-content-center"
-          >
-            <!-- img container -->
-            <div class="content__loveStory-image">
-              <img
-                src="./assets/img/love-story/652A4866.JPG"
-                alt="652A4866"
-                class="content__loveStory-image-img"
-              />
-            </div>
-
-            <!-- info container -->
-            <div class="content__loveStory-info-container">
-              <div class="content__loveStory-title kanit-400 mb-2">
-                LOVE STORY
-              </div>
-              <div class="content__loveStory-content">
-                Mọi người có thể sử dụng đoạn này để kể lại đôi nét về câu
-                chuyện tình yêu của các bạn nha. Hai bạn yêu nhau ra sao, quen
-                nhau thế nào, có những kỷ niệm nào đáng nhớ, ... mọi thứ đều có
-                thể kể lại thông qua widget này đó. ♥ Kể dài một chút thì text
-                sẽ vừa với ảnh hơn, sẽ đẹp hơn nên mọi người ráng viết dài dài
-                xíu trông cho đẹp nhá heheee ♥
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--TODO -------------------------------- Our story -------------------------------- -->
-        <!-- container our story -->
-        <div
-          class="content__ourStory d-flex justify-content-center break-section"
-        >
-          <!-- our story title -->
-          <div
-            class="content__ourStory-title d-flex flex-column align-items-center"
-          >
-            <div class="content__ourStory-title--text01 great-vibes-regular">
-              Huy & Sao
-            </div>
-            <div class="content__ourStory-title--text02">OUR STORY</div>
-          </div>
-
-          <!-- our story content -->
-          <div class="content__ourStory-content">
-            <!-- our story 01 -->
-            <div class="content__ourStory-content-first">
-              <div class="content__ourStory-content-first-info"></div>
-              <div class="content__ourStory-content-first-image"></div>
-            </div>
-
-            <!-- our story 02 -->
-            <div class="content__ourStory-content-second">
-              <div class="content__ourStory-content-second-image"></div>
-              <div class="content__ourStory-content-second-info"></div>
-            </div>
-
-            <!-- our story 03 -->
-            <div class="content__ourStory-content-final">
-              <div class="content__ourStory-content-final-info"></div>
-              <div class="content__ourStory-content-final-image"></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Reception -->
-        <div class="content__reception">
-          <div class="content__reception-title"></div>
-          <div class="content__reception-content"></div>
-          <div class="content__reception-direction"></div>
-          <div class="content__reception-image"></div>
-        </div>
-
-        <!-- Registry -->
-        <div class="content__registry">
-          <div class="content__registry-image"></div>
-          <div class="content__registry-title"></div>
-          <div class="content__registry-content"></div>
-          <div class="content__registry-confirm"></div>
-        </div>
-
-        <!-- Schedule -->
-        <div class="content__schedule">
-          <div class="content__schedule-title"></div>
-          <div class="content__schedule-content"></div>
-        </div>
-
-        <!-- Photo -->
-        <div class="content__photo break-section">
-          <p>Wedding Photo</p>
-          <button>
             <a
-              class="btn btn-primary"
-              href="https://drive.google.com/drive/folders/1HRsrwy77G3kUqFXHMwXr7g1Z_Fb4RJaE?usp=drive_link"
-              >View Album</a
+              class="content__wedding-restaurant--link"
+              href="https://maps.app.goo.gl/ACBsUu6mnEDdrUQRA"
+              target="_blank"
             >
-          </button>
-          <div class="content__photo-title"></div>
-          <div class="content__photo-image"></div>
+              KIM CENTER
+            </a>
+          </div>
+          <div class="content__wedding-address kanit-300">
+            628 Pham Van Thuan Street, Tam Hiep ward, Bien Hoa city, Dong Nai
+          </div>
+        </div>
+
+        <!-- event -->
+        <div
+          class="content__event d-flex flex-column align-items-center justify-content-evenly"
+        >
+          <div
+            class="content__event-title justify-content-start italianno-regular"
+          >
+            Events
+          </div>
+          <div
+            class="content__event-container w-100 d-flex justify-content-evenly"
+          >
+            <!-- welcome -->
+            <div class="content__event-welcome">
+              <div class="content__event-welcome-image">
+                <img
+                  src="./assets/img/event/wedding-arch.png"
+                  alt=""
+                  class="content__event-img content__event-welcome-img"
+                />
+              </div>
+              <div class="content__event-time kanit-300">11:00</div>
+
+              <div
+                class="content__event--text content__event-welcome-text distant-stroke"
+              >
+                Welcome
+              </div>
+            </div>
+
+            <!-- ceremony -->
+            <div class="content__event-ceremony">
+              <div class="content__event-ceremony-image">
+                <img
+                  src="./assets/img/event/champagne.png"
+                  alt=""
+                  class="content__event-img content__event-ceremony-img"
+                />
+              </div>
+              <div class="content__event-time kanit-300">12:00</div>
+              <div
+                class="content__event--text content__event-ceremony-text distant-stroke"
+              >
+                Ceremony
+              </div>
+            </div>
+
+            <!-- dinner -->
+            <div class="content__event-dinner">
+              <div class="content__event-dinner-image">
+                <img
+                  src="./assets/img/event/dinner.png"
+                  alt=""
+                  class="content__event-img content__event-dinner-img"
+                />
+              </div>
+              <div class="content__event-time kanit-300">12:15</div>
+
+              <div
+                class="content__event--text content__event-dinner-text distant-stroke"
+              >
+                Dinner
+              </div>
+            </div>
+
+            <!-- after party -->
+            <div class="content__event-party">
+              <div class="content__event-party-image">
+                <img
+                  src="./assets/img/event/disco-ball.png"
+                  alt=""
+                  class="content__event-img content__event-party-img"
+                />
+              </div>
+              <div class="content__event-time kanit-300">14:00</div>
+
+              <div
+                class="content__event--text content__event-party-text distant-stroke"
+              >
+                Party
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TODO -------------------------------- Story -------------------------------- -->
+
+        <div class="content__story d-flex">
+          <div
+            class="content__story-container d-flex justify-content-evenly align-items-center"
+          >
+            <div class="content__story-image d-flex justify-content-between">
+              <!-- /* From Uiverse.io by codebykay101 */ -->
+              <div class="container">
+                <img
+                  src="/assets/img/our-story/652A5002.JPG"
+                  alt=""
+                  style="--r: -15"
+                  class="content__story-img content__story-img-01 glass"
+                />
+                <img
+                  src="./assets/img/our-story/652A5129.JPG"
+                  alt=""
+                  style="--r: 5"
+                  class="content__story-img content__story-img-02 glass"
+                />
+                <img
+                  src="./assets/img/our-story/652A5734.JPG"
+                  alt=""
+                  style="--r: 25"
+                  class="content__story-img content__story-img-03 glass"
+                />
+              </div>
+              <!-- <div style="--r: -15" class="glass">
+                <div style="--r: 5" class="glass"></div>
+                <div style="--r: 25" class="glass"></div>
+              </div> -->
+              <!-- <img
+                src="/assets/img/our-story/652A5002.JPG"
+                alt=""
+                class="content__story-img content__story-img-01"
+              />
+              <img
+                src="./assets/img/our-story/652A5129.JPG"
+                alt=""
+                class="content__story-img content__story-img-02"
+              />
+              <img
+                src="./assets/img/our-story/652A5734.JPG"
+                alt=""
+                class="content__story-img content__story-img-03"
+              /> -->
+            </div>
+            <div class="content__story-text d-flex flex-column">
+              <div class="content__story-text--title great-vibes-regular">
+                Our story
+                <span
+                  class="kanit-300"
+                  style="display: block; text-align: center; font-size: 1rem"
+                >
+                  Chúng mình rất vui được chia sẻ câu chuyện tình yêu của mình
+                  <br />với tất cả các bạn. <br />
+                </span>
+              </div>
+
+              <!-- heart -->
+              <div
+                class="content__story-text--heart d-flex justify-content-center"
+              >
+                <img
+                  id="contentStoryHeart"
+                  src="./assets/img/photo/green-heart.png"
+                  alt="img center"
+                  class="content__story-text-image"
+                />
+              </div>
+
+              <div class="content__story-text--content kanit-300">
+                Chúng mình đã bắt đầu câu chuyện từ một khoảng thời gian làm
+                việc tại một môi trường công sở. <br />
+                Từ những ngày đầu, chúng mình đã cùng nhau chia sẻ những khoảnh
+                khắc vui vẻ và khó khăn.
+                <span class="fw-medium">HuyVo</span> luôn ấn tượng với sự tốt
+                bụng, đáng iu của <span class="fw-medium">SaoDao</span> 🥹, trong
+                khi <span class="fw-medium">SaoDao</span> đánh giá cao sự hỗ trợ
+                trong công việc mà <span class="fw-medium">HuyVo</span> mang đến
+                🔥.
+                <br />
+                <br />
+                Chúng mình đã cùng nhau vượt qua nhiều thử thách và cùng nhau
+                trưởng thành. Mỗi bước đi trên hành trình này đều làm cho tình
+                yêu của chúng mình thêm vững chắc và sâu đậm hơn. Những kỷ niệm
+                chúng mình tạo ra, từ những chuyến đi nhỏ đến những buổi tối đơn
+                giản bên nhau, đều trở thành những viên gạch xây dựng nên một
+                mối quan hệ bền chặt và đáng trân trọng.
+                <br />
+                Chúng mình cảm thấy hạnh phúc và biết ơn vì đã tìm thấy nhau.
+                Tình yêu của chúng mình không chỉ là một câu chuyện đẹp, mà còn
+                là kết quả của sự cố gắng, sự tôn trọng và yêu thương lẫn nhau
+                💕.
+                <br />
+                Chúng mình rất mong được chia sẻ khoảnh khắc đặc biệt này với
+                các bạn và tiếp tục xây dựng những kỷ niệm đẹp trong hành trình
+                sắp tới của chúng mình.
+                <br />
+                <br />
+                Cảm ơn các bạn đã luôn ở bên và ủng hộ chúng mình
+                <span class="btn-like" type="button">💕</span>.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TODO -------------------------------- Introduce -------------------------------- -->
+        <div
+          class="content__introduce d-flex flex-column align-items-center justify-content-evenly"
+        >
+          <!-- groom -->
+          <div class="content__introduce-groom d-flex justify-content-center">
+            <div
+              class="content__introduce-groom-container d-flex justify-content-evenly w-75"
+            >
+              <!-- groom img -->
+              <div class="content__introduce-groom-image">
+                <img
+                  src="./assets/img/introduce/652A5044.JPG"
+                  alt=""
+                  class="content__introduce-img content__introduce-groom-img"
+                />
+              </div>
+              <!-- groom content -->
+              <div
+                class="content__introduce--content content__introduce-groom-content"
+              >
+                <div
+                  class="content__introduce-name content__introduce-groom-name distant-stroke"
+                >
+                  Huy Vo
+                </div>
+                <div class="content__introduce-groom-text">
+                  Xin chào mọi người, mình là Sư tử.
+                  <br />
+                  <br />
+                  Mình thích bắt đầu mỗi ngày với một tách cà phê thơm phức và
+                  một tinh thần thoải mái để đón nhận những điều mới mẻ. Mình
+                  thường được biết đến là một người khá khô khan, ít nói và có
+                  xu hướng tập trung vào công việc hơn là trò chuyện xã giao.
+                  Mình thích sự rõ ràng, logic và luôn có xu hướng suy nghĩ kỹ
+                  lưỡng trước khi đưa ra quyết định.
+                  <br />
+                  <br />
+                  Là một người yêu thích những điều đơn giản và luôn mong muốn
+                  tìm kiếm được niềm vui trong cuộc sống. Sau khoảng thời gian
+                  miệt mài tìm kiếm, thì mình cũng đã tìm thấy được nửa kia của
+                  mình, một cô nàng ngoan hiền, tốt bụng, xinh xắn, "sáng nắng
+                  chiều mưa", nhưng sau cơn mưa trời lại tối và khi ấy ánh sáng
+                  duy nhất của cuộc đời mình chính là ánh "Sao ✨"
+                  <br />
+                  <br />
+
+                  Cuộc sống sẽ tuyệt vời hơn khi chúng ta có thể <br />cùng nhau
+                  cười và tận hưởng từng khoảnh khắc!
+                </div>
+                <!-- signature -->
+                <img
+                  src="./assets/img/signature/signature-HV.png"
+                  alt=""
+                  class="content__introduce-signature content__introduce-groom-signature"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- bride -->
+          <div class="content__introduce-bride d-flex justify-content-center">
+            <div
+              class="content__introduce-bride-container d-flex justify-content-evenly w-75"
+            >
+              <!-- bride content -->
+              <div
+                class="content__introduce--content content__introduce-bride-content"
+              >
+                <div
+                  class="content__introduce-name content__introduce-bride-name distant-stroke"
+                >
+                  Sao Dao
+                </div>
+                <div class="content__introduce-bride-text">
+                  Say hii mọi người, mình là Sư Tử lai Thiên Bình đây. <br />
+                  Mình luôn tìm kiếm một tình yêu lãng mạn vì tính mình thì hay
+                  bay bổng, ham vui mà, nên là sau hơn 26 năm gửi tín hiệu lên
+                  vũ trụ thì người ấy cũng xuất hiện để yêu thương và chăm sóc
+                  tui rồi he he. <br />
+                  Mình là người cực kì yêu âm nhạc & mong muốn trong tương lai
+                  sẽ học một loại nhạc cụ nào đấy ví dụ như guitar chẳng hạn
+                  (cái này thì anh chồng nhà mình có thể làm gia sư rồi 😂).
+                  Mình thích được giao tiếp với mọi người xung quanh, tự thấy
+                  bản thân khá là thân thiện và cởi mở nhen nhưng ko vì thế lại
+                  bỏ qua cái tính “sáng nắng chiều mưa” hơi mệt này của mình.
+                  <br />
+                  <br />Vậy nên là xin hẹn một buổi tà tưa để cùng tâm sự
+                  <br />về những điều mới của người sắp lập gia đình nhé!
+                </div>
+                <!-- signature -->
+                <img
+                  src="./assets/img/signature/signature-SD.png"
+                  alt=""
+                  class="content__introduce-bride-signature"
+                />
+              </div>
+              <!-- bride img -->
+              <div class="content__introduce-bride-image">
+                <img
+                  src="./assets/img/introduce/652A4982.JPG"
+                  alt=""
+                  class="content__introduce-img content__introduce-bride-img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TODO -------------------------------- PHOTO -------------------------------- -->
+        <div class="photo">
+          <div class="photo-container d-flex flex-column align-items-center">
+            <div class="photo-title great-vibes-regular">Album</div>
+            <div class="photo-album">
+              <img src="" alt="" class="photo-album-img photo-album-img-01" />
+              <img src="" alt="" class="photo-album-img photo-album-img-02" />
+              <img src="" alt="" class="photo-album-img photo-album-img-03" />
+              <img src="" alt="" class="photo-album-img photo-album-img-04" />
+              <img src="" alt="" class="photo-album-img photo-album-img-05" />
+            </div>
+          </div>
         </div>
       </div>
 
       <!--? ------------------------------- footer -------------------------------- -->
-      <div class="footer">
-        <div class="footer__title"></div>
-        <div class="footer__content"></div>
-        <div class="footer__QRcode"></div>
-      </div>
-    </div>
 
-    <!--! -------------------------------- MODAL -------------------------------- -->
-
-    <!--TODO ---------------------- content__aisle-image-img ----------------------- -->
-    <!-- Modal content__aisle-image-img 01 -->
-    <div
-      class="modal fade"
-      id="viewAisleImage01"
-      tabindex="-1"
-      aria-labelledby="viewAisleImage01Label"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-body">
-            <div
-              class="content__aisle-image-img--full-screen content__aisle-image-img--full-01"
-            >
-              <!-- btn close modal -->
-              <span
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></span>
-            </div>
+      <!-- TODO -------------------------------- Registry -------------------------------- -->
+      <div class="footer__registry d-flex justify-content-evenly">
+        <div class="footer__registry-content w-50">
+          <div class="footer__registry-title great-vibes-regular mb-2">
+            Hẹn gặp bạn
+          </div>
+          <div class="footer__registry-text">
+            chúng mình rất chờ đón sự kiện trọng đại này của cuộc đời. Đám cưới
+            của chúng mình sẽ trọn vẹn hơn khi có thêm lời chúc phúc và sự hiện
+            diện của các bạn.
+            <br />
+            Hẹn gặp bạn tại đám cưới của chúng mình.
           </div>
         </div>
-      </div>
-    </div>
 
-    <!-- Modal content__aisle-image-img 02 -->
-    <div
-      class="modal fade"
-      id="viewAisleImage02"
-      tabindex="-1"
-      aria-labelledby="viewAisleImage02Label"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-body">
-            <div
-              class="content__aisle-image-img--full-screen content__aisle-image-img--full-02"
-            >
-              <!-- btn close modal -->
-              <span
-                style="color: #fff !important"
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></span>
+        <div class="footer__registry-form">
+          <div class="footer__registry-form-name mb-4">
+            <!-- /* From Uiverse.io by alexruix */ -->
+            <div class="input-group-maker">
+              <input
+                required=""
+                type="text"
+                name="text"
+                autocomplete="off"
+                class="input-maker"
+              />
+              <label class="user-label-maker">Tên của bạn</label>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal content__aisle-image-img 03 -->
-    <div
-      class="modal fade"
-      id="viewAisleImage03"
-      tabindex="-1"
-      aria-labelledby="viewAisleImage03Label"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-body">
-            <div
-              class="content__aisle-image-img--full-screen content__aisle-image-img--full-03"
-            >
-              <!-- btn close modal -->
-              <span
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></span>
+          <div class="footer__registry-form-phone mb-4">
+            <!-- /* From Uiverse.io by alexruix */ -->
+            <div class="input-group-maker">
+              <input
+                required=""
+                type="tel"
+                name="phone"
+                autocomplete="off"
+                class="input-maker"
+              />
+              <label class="user-label-maker">Số điện thoại</label>
             </div>
           </div>
+          <!-- text area -->
+          <div class="mb-3">
+            <textarea
+              class="footer__registry-form-wish form-control"
+              rows="4"
+              placeholder="Gửi lời chúc đến chúng mình ... "
+            ></textarea>
+          </div>
+          <!-- btn form -->
+          <button class="footer__registry-form-btn color-confirm-1">
+            Tham dự
+          </button>
+
+          <!-- btn wish -->
+          <button class="footer__registry-form-btn color-confirm-1">
+            Gửi lời chúc
+          </button>
+          <!--!! btn form -->
+          <!-- <div class="footer__registry-confirm">
+            <div class="footer__registry-confirm-btn">
+              <div class="btnConfirm__container">
+                <a href="#" class="btnConfirm type--A">
+                  <div class="btnConfirm__line"></div>
+                  <div class="btnConfirm__line"></div>
+                  <span class="btnConfirm__text">Tham dự</span>
+                  <div class="btnConfirm__drow1"></div>
+                  <div class="btnConfirm__drow2"></div>
+                </a>
+              </div>
+            </div>
+          </div> -->
         </div>
       </div>
     </div>
 
     <!--! ------------------------------- SCRIPT -------------------------------- -->
     <script src="./assets/boostrap/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./javascript.js"></script>
   </body>
 </html>

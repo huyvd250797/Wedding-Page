@@ -1,3 +1,19 @@
+/* PC  large*/
+@media (min-width: 1900px) {
+  .content__registry-blank {
+    margin: 0 38px;
+  }
+  .content__registry-imageCenter-img {
+    height: 52vh;
+    padding: 8px;
+    position: absolute;
+    top: 15%;
+    right: -215px;
+    background-color: #fff;
+    transition: all 0.8s;
+  }
+}
+
 /* PC */
 @media (min-width: 1024px) {
 }

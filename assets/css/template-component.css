@@ -1,0 +1,548 @@
+/*? ------------------------- START: Btn confirm draw ------------------------ */
+/* Fr/* From Uiverse.io by himanshu9682 */
+.type--A {
+  --line_color: #666666;
+  --back_color: #ffc7e5;
+}
+.type--B {
+  --line_color: #1b1919;
+  --back_color: #e9ecff;
+}
+.type--C {
+  --line_color: #00135c;
+  --back_color: #defffa;
+}
+.type--D {
+  --line_color: var(--primary-color-2);
+  --back_color: var(--primary-color-5);
+}
+.btnConfirm {
+  position: relative;
+  z-index: 0;
+  width: 240px;
+  height: 56px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--line_color);
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+}
+.btnConfirm__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.btnConfirm::before,
+.btnConfirm::after,
+.btnConfirm__text::before,
+.btnConfirm__text::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--line_color);
+  transition: all 0.5s ease;
+}
+.btnConfirm::before {
+  top: 0;
+  left: 54px;
+  width: calc(100% - 56px * 2 - 16px);
+}
+.btnConfirm::after {
+  top: 0;
+  right: 54px;
+  width: 8px;
+}
+.btnConfirm__text::before {
+  bottom: 0;
+  right: 54px;
+  width: calc(100% - 56px * 2 - 16px);
+}
+.btnConfirm__text::after {
+  bottom: 0;
+  left: 54px;
+  width: 8px;
+}
+.btnConfirm__line {
+  position: absolute;
+  top: 0;
+  width: 56px;
+  height: 100%;
+  overflow: hidden;
+}
+.btnConfirm__line::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 150%;
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 300px;
+  border: solid 3px var(--line_color);
+}
+.btnConfirm__line:nth-child(1),
+.btnConfirm__line:nth-child(1)::before {
+  left: 0;
+}
+.btnConfirm__line:nth-child(2),
+.btnConfirm__line:nth-child(2)::before {
+  right: 0;
+}
+.btnConfirm:hover {
+  letter-spacing: 6px;
+}
+.btnConfirm:hover::before,
+.btnConfirm:hover .btnConfirm__text::before {
+  width: 8px;
+}
+.btnConfirm:hover::after,
+.btnConfirm:hover .btnConfirm__text::after {
+  width: calc(100% - 56px * 2 - 16px);
+}
+.btnConfirm__drow1,
+.btnConfirm__drow2 {
+  position: absolute;
+  z-index: -1;
+  border-radius: 16px;
+  transform-origin: 16px 16px;
+}
+.btnConfirm__drow1 {
+  top: -16px;
+  left: 40px;
+  width: 32px;
+  height: 0;
+  transform: rotate(30deg);
+}
+.btnConfirm__drow2 {
+  top: 44px;
+  left: 77px;
+  width: 32px;
+  height: 0;
+  transform: rotate(-127deg);
+}
+.btnConfirm__drow1::before,
+.btnConfirm__drow1::after,
+.btnConfirm__drow2::before,
+.btnConfirm__drow2::after {
+  content: "";
+  position: absolute;
+}
+.btnConfirm__drow1::before {
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 32px;
+  border-radius: 16px;
+  transform-origin: 16px 16px;
+  transform: rotate(-60deg);
+}
+.btnConfirm__drow1::after {
+  top: -10px;
+  left: 45px;
+  width: 0;
+  height: 32px;
+  border-radius: 16px;
+  transform-origin: 16px 16px;
+  transform: rotate(69deg);
+}
+.btnConfirm__drow2::before {
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 32px;
+  border-radius: 16px;
+  transform-origin: 16px 16px;
+  transform: rotate(-146deg);
+}
+.btnConfirm__drow2::after {
+  bottom: 26px;
+  left: -40px;
+  width: 0;
+  height: 32px;
+  border-radius: 16px;
+  transform-origin: 16px 16px;
+  transform: rotate(-262deg);
+}
+.btnConfirm__drow1,
+.btnConfirm__drow1::before,
+.btnConfirm__drow1::after,
+.btnConfirm__drow2,
+.btnConfirm__drow2::before,
+.btnConfirm__drow2::after {
+  background: var(--back_color);
+}
+.btnConfirm:hover .btnConfirm__drow1 {
+  animation: drow1 ease-in 0.06s;
+  animation-fill-mode: forwards;
+}
+.btnConfirm:hover .btnConfirm__drow1::before {
+  animation: drow2 linear 0.08s 0.06s;
+  animation-fill-mode: forwards;
+}
+.btnConfirm:hover .btnConfirm__drow1::after {
+  animation: drow3 linear 0.03s 0.14s;
+  animation-fill-mode: forwards;
+}
+.btnConfirm:hover .btnConfirm__drow2 {
+  animation: drow4 linear 0.06s 0.2s;
+  animation-fill-mode: forwards;
+}
+.btnConfirm:hover .btnConfirm__drow2::before {
+  animation: drow3 linear 0.03s 0.26s;
+  animation-fill-mode: forwards;
+}
+.btnConfirm:hover .btnConfirm__drow2::after {
+  animation: drow5 linear 0.06s 0.32s;
+  animation-fill-mode: forwards;
+}
+@keyframes drow1 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100px;
+  }
+}
+@keyframes drow2 {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  11% {
+    opacity: 1;
+  }
+  100% {
+    width: 120px;
+  }
+}
+@keyframes drow3 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80px;
+  }
+}
+@keyframes drow4 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 120px;
+  }
+}
+@keyframes drow5 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 124px;
+  }
+}
+
+.btnConfirm__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.btnConfirm:not(:last-child) {
+  margin-bottom: 64px;
+}
+
+/*? -------------------------- END: Btn confirm draw ------------------------- */
+
+/*? ------------------------ START: Btn confirm shine ------------------------ */
+/* From Uiverse.io by neerajbaniwal */
+.btn-shine {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 12px 48px;
+  color: #fff;
+  background: linear-gradient(to right, #9f9f9f 0, #fff 10%, #868686 20%);
+  background-position: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+}
+@-moz-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+@-webkit-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+@-o-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+
+/*? ------------------------ END: Btn confirm shine ------------------------ */
+
+/*? ------------------------ START: Form input------------------------ */
+
+/* From Uiverse.io by alexruix */
+.input-group-maker {
+  position: relative;
+}
+
+.input-maker {
+  border: solid 1.5px #fff;
+  border-radius: 8px;
+  background: none;
+  padding: 15px;
+  font-size: 1rem;
+  color: #f5f5f5;
+  transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 50vh;
+}
+
+.user-label-maker {
+  position: absolute;
+  left: 15px;
+  font-size: 1.1rem;
+  color: #e8e8e8;
+  pointer-events: none;
+  transform: translateY(1rem);
+  transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-maker:focus,
+input:valid {
+  outline: none;
+  border: 1.5px solid var(--primary-color-4);
+}
+
+.input-maker:focus ~ label,
+input:valid ~ label {
+  transform: translateY(-50%) scale(0.8);
+  background-color: var(--primary-color-3);
+  padding: 0 0.2em;
+  color: var(--primary-color-4);
+}
+/*? ------------------------ END: Form input------------------------ */
+
+/*? ------------------------ START: Form input Type 2 ------------------------ */
+/* type color */
+
+.color-confirm-1 {
+  --color-confirm: var(--primary-color-4);
+}
+/* From Uiverse.io by zjssun */
+.footer__registry-form-btn {
+  position: relative;
+  padding: 10px 22px;
+  border-radius: 6px;
+  border: none;
+  color: #000000;
+  cursor: pointer;
+  background-color: var(--color-confirm);
+  transition: all 0.2s ease;
+}
+
+.footer__registry-form-btn:active {
+  transform: scale(0.96);
+}
+
+.footer__registry-form-btn:before,
+.footer__registry-form-btn:after {
+  position: absolute;
+  content: "";
+  width: 150%;
+  left: 50%;
+  height: 100%;
+  transform: translateX(-50%);
+  z-index: -1000;
+  background-repeat: no-repeat;
+}
+
+.footer__registry-form-btn:hover:before {
+  z-index: 10;
+  top: -70%;
+  background-image: radial-gradient(
+      circle,
+      var(--color-confirm) 20%,
+      transparent 20%
+    ),
+    radial-gradient(
+      circle,
+      transparent 20%,
+      var(--color-confirm) 20%,
+      transparent 30%
+    ),
+    radial-gradient(circle, var(--color-confirm) 20%, transparent 20%),
+    radial-gradient(circle, var(--color-confirm) 20%, transparent 20%),
+    radial-gradient(
+      circle,
+      transparent 10%,
+      var(--color-confirm) 15%,
+      transparent 20%
+    ),
+    radial-gradient(circle, var(--color-confirm) 20%, transparent 20%),
+    radial-gradient(circle, var(--color-confirm) 20%, transparent 20%),
+    radial-gradient(circle, var(--color-confirm) 20%, transparent 20%),
+    radial-gradient(circle, var(--color-confirm) 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+    10% 10%, 18% 18%;
+  background-position: 50% 120%;
+  animation: greentopBubbles 0.6s ease;
+}
+
+@keyframes greentopBubbles {
+  0% {
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+      40% 90%, 55% 90%, 70% 90%;
+  }
+
+  50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+      50% 50%, 65% 20%, 90% 30%;
+  }
+
+  100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+      50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+.footer__registry-form-btn:hover::after {
+  z-index: 10;
+  bottom: -70%;
+  background-image: radial-gradient(
+      circle,
+      var(--color-confirm) 20%,
+      transparent 20%
+    ),
+    radial-gradient(circle, var(--color-confirm) 20%, transparent 20%),
+    radial-gradient(
+      circle,
+      transparent 10%,
+      var(--color-confirm) 15%,
+      transparent 20%
+    ),
+    radial-gradient(circle, var(--color-confirm) 20%, transparent 20%),
+    radial-gradient(circle, var(--color-confirm) 20%, transparent 20%),
+    radial-gradient(circle, var(--color-confirm) 20%, transparent 20%),
+    radial-gradient(circle, var(--color-confirm) 20%, transparent 20%);
+  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+  background-position: 50% 0%;
+  animation: greenbottomBubbles 0.6s ease;
+}
+
+@keyframes greenbottomBubbles {
+  0% {
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+      70% -10%, 70% 0%;
+  }
+
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+      105% 0%;
+  }
+
+  100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+      110% 10%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+/*? ------------------------ END: Form input Type 2 ------------------------ */
+
+/*? ------------------------ START: List card animation ------------------------ */
+/* From Uiverse.io by codebykay101 */
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .glass {
+  position: relative;
+  background: linear-gradient(#fff2, transparent);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  /* box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  border-radius: 10px;
+  margin: 0 -45px;
+  backdrop-filter: blur(10px);
+  transform: rotate(calc(var(--r) * 1deg));
+}
+
+.container:hover .glass {
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25) !important;
+  transform: rotate(0deg);
+  margin: 0 10px;
+}
+
+.container .glass::before {
+  content: attr(data-text);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.container .glass svg {
+  font-size: 2.5em;
+  fill: #fff;
+}
+
+/*? ------------------------ END: List card animation ------------------------ */
