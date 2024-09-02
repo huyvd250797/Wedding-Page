@@ -336,6 +336,9 @@
 .content__story-img-03 {
 }
 
+.content__story-text--heart {
+  margin-top: 20px;
+}
 .content__story-text-image {
   height: 5vh;
   animation: heartBeat 0.9s ease-in-out infinite;
@@ -457,6 +460,7 @@
 }
 
 .photo-container {
+  height: 200vh;
 }
 
 .photo-title {
@@ -464,12 +468,68 @@
 }
 
 .photo-album {
+  position: relative;
 }
 
 .photo-album-img {
+  --photo-padding: 8px;
+  padding: var(--photo-padding);
+  background-color: #fff;
+}
+
+/* img line 01 */
+.photo-album-line-01 {
 }
 
 .photo-album-img-01 {
+  height: 50vh;
+}
+
+.photo-album-img-02 {
+  height: 65vh;
+}
+
+.photo-album-img-03 {
+  height: 45vh;
+}
+
+/* img line 02 */
+.photo-album-line-02 {
+}
+
+.photo-album-img-04 {
+  position: absolute;
+  top: 98.2%;
+  left: 25%;
+  height: 50vh;
+  padding: calc(var(--photo-padding) * 2);
+}
+.photo-album-img-05 {
+  position: absolute;
+  top: 85%;
+  left: 69%;
+  height: 60vh;
+  padding: calc(var(--photo-padding) * 2);
+}
+
+/* img line 03 */
+.photo-album-line-03 {
+}
+
+.photo-album-img-06 {
+  position: absolute;
+  top: 90%;
+  left: 3%;
+  height: 50vh;
+  padding: calc(var(--photo-padding) * 2);
+}
+
+.photo-album-img-07 {
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  height: 60vh;
+  padding: calc(var(--photo-padding) * 2);
 }
 
 /*TODO ---------------------------------- Footer --------------------------------- */
