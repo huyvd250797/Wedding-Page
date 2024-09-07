@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 /*? --------------------------------- fonts --------------------------------- */
 .great-vibes-regular {
   font-family: "Great Vibes", cursive;
@@ -45,12 +49,10 @@
 
 .header {
   height: 100vh;
+  position: relative;
 }
 
 .header__img-slider {
-  background-image: url("../img/header/cover-photo.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
   /* background-image: url(../img/header/slider-img.JPG); */
   /* background-size: contain; */
   /* background-repeat: no-repeat; */
@@ -103,39 +105,70 @@
 /* SAVE THE DATE */
 .header-saveTheDate {
   /* background-image: url("../img/header/652A4794.JPG"); */
-  background-color: var(--primary-color-1);
+  /* background-color: var(--primary-color-1); */
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
+  background-image: url("../img/header/652A4794.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* filter */
+
+  filter: blur(1.5px) brightness(0.8);
+  /* -webkit-filter: blur(2.5px) opacity(30%); */
 }
 
 .header-title-and-img {
   height: 6vh;
 }
 
+.header__title-name {
+  position: relative;
+}
+
 .header-title-nameGroom,
 .header-title-nameBride,
 .header-title-and {
   color: #fff;
-  padding: 70px 50px 30px 50px;
-  font-size: 3.2rem;
+  /* padding: 70px 50px 30px 50px; */
+  font-size: 5rem;
 }
 
 .header__title-date {
   font-size: 2rem;
   color: #fff;
+  position: absolute;
+  content: "";
+  top: 27%;
+  left: 42.5%;
+  z-index: 10;
 }
 
 .header-title {
 }
 
 .header-title-nameGroom {
+  position: absolute;
+  content: "";
+  top: 10%;
+  left: 23%;
+  z-index: 10;
 }
 
 .header-title-and {
+  position: absolute;
+  content: "";
+  top: 10%;
+  right: 48%;
+  z-index: 10;
 }
 
 .header-title-nameBride {
+  position: absolute;
+  content: "";
+  top: 10%;
+  right: 23%;
 }
 /*? --------------------------------- content --------------------------------- */
 
@@ -143,6 +176,19 @@
 .content__wedding {
   background-color: var(--primary-color-4);
   height: 100vh;
+}
+
+.content__wedding-between {
+  width: 5%;
+}
+
+.content__wedding-heart {
+  height: 3vh;
+  margin: 10px 0;
+}
+
+.content__wedding-title {
+  font-size: 2.5rem;
 }
 
 .content__wedding-day {
@@ -184,6 +230,7 @@
 
 .content__event-title {
   font-size: 5rem;
+  text-align: center;
 }
 
 .content__event-container {
@@ -309,6 +356,113 @@
 }
 
 .content__event-party-text {
+}
+
+/*! --------------------------------- STYLE 2 -------------------------------- */
+.content__event02-ceremony,
+.content__event02-wedding {
+  width: 30%;
+  position: relative;
+  --left-line: 45%;
+  --line-horizontal: 1.5px;
+}
+
+.content__event02-ceremony-title,
+.content__event02-wedding-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 3rem;
+}
+
+/*! Vertical */
+.content__event02-ceremony-title::after {
+  content: "";
+  position: absolute;
+  width: var(--line-horizontal);
+  height: 75%;
+  background-color: var(--primary-color-1);
+  top: 16%;
+  left: var(--left-line);
+}
+
+.content__event02-wedding-title::after {
+  content: "";
+  position: absolute;
+  width: var(--line-horizontal);
+  height: 75%;
+  background-color: var(--primary-color-1);
+  top: 16%;
+  left: var(--left-line);
+}
+
+.content__event02-ceremony-timeline,
+.content__event02-wedding-timeline {
+  position: relative;
+}
+
+.content__event02-timeline-item {
+  margin-bottom: 50px;
+}
+
+/* event icon img */
+.content__event02-img {
+  height: 10vh;
+  text-align: center;
+}
+
+/* event time */
+.content__event02-time {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+/* event text */
+.content__event02--text {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.content__event02-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content__event02--info {
+  font-size: 2rem;
+}
+
+/*! Horizontal */
+
+.content__event02-welcome::before {
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: var(--line-horizontal);
+  background-color: var(--primary-color-1);
+  top: 12%;
+  left: var(--left-line);
+}
+
+.content__event02-subCeremony::before {
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: var(--line-horizontal);
+  background-color: var(--primary-color-1);
+  top: 45%;
+  left: var(--left-line);
+}
+
+.content__event02-dinner::before {
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: var(--line-horizontal);
+  background-color: var(--primary-color-1);
+  top: 78%;
+  left: var(--left-line);
 }
 
 /*TODO ---------------------------------- Story --------------------------------- */
@@ -505,7 +659,7 @@
 .photo-album-img-06 {
   position: absolute;
   top: 90%;
-  left: 3.1%;
+  left: 3%;
   height: 50vh;
   padding: calc(var(--photo-padding) * 2);
 }
@@ -521,7 +675,7 @@
   position: absolute;
   top: 85%;
   left: 69%;
-  height: 60vh;
+  height: 54vh;
   padding: calc(var(--photo-padding) * 2);
 }
 

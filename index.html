@@ -51,6 +51,7 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
     <link rel="stylesheet" href="./assets/css/template-component.css" />
+    <link rel="stylesheet" href="./assets/css/animation.css" />
   </head>
 
   <body>
@@ -93,53 +94,139 @@
         </div>
 
         <!-- header save the date -->
-        <div class="header-saveTheDate d-flex flex-column align-items-center">
-          <div class="header__title-name d-flex">
-            <div class="header-title-nameGroom great-vibes-regular">Huy Vo</div>
-            <div class="header-title-and great-vibes-regular">
-              &
-              <!-- <img
-              src="./assets/img/aisle/love.png"
-              alt=""
-              class="header-title-and-img"
-            /> -->
-            </div>
-            <div class="header-title-nameBride great-vibes-regular">
-              Sao Dao
-            </div>
-          </div>
-          <div class="header__title-date kanit-300">20 . 10 . 2024</div>
-        </div>
+        <div
+          class="header-saveTheDate d-flex flex-column align-items-center"
+        ></div>
+        <div class="header-title-nameGroom great-vibes-regular">Huy Vo</div>
+        <div class="header-title-and great-vibes-regular">&</div>
+        <div class="header-title-nameBride great-vibes-regular">Sao Dao</div>
+        <div class="header__title-date kanit-300">19 & 20 . 10 . 2024</div>
       </div>
 
       <!--? ------------------------------- content -------------------------------- -->
       <div id="content-section" class="content">
-        <!-- wedding -->
+        <!-- wedding invitation -->
         <div
-          class="content__wedding d-flex flex-column align-items-center justify-content-center"
+          class="content__wedding d-flex justify-content-center item-paraScroll"
         >
-          <div class="content__wedding-day distant-stroke mb-4">SUNDAY</div>
-          <div class="content__wedding-date kanit-500 mb-4">20.10.2024</div>
+          <!-- Vu Quy (wedding ceremony) -->
           <div
-            class="content__wedding-restaurant kanit-500 mb-2"
-            data-bs-toggle="tooltip"
-            data-bs-placement="right"
-            data-bs-title="Click to view map"
+            class="content__wedding-ceremony d-flex flex-column align-items-center justify-content-center"
           >
-            <a
-              class="content__wedding-restaurant--link"
-              href="https://maps.app.goo.gl/ACBsUu6mnEDdrUQRA"
-              target="_blank"
+            <div class="show-to-top content__wedding-title kanit-400">
+              Lễ Vu Quy
+            </div>
+            <!-- heart invite -->
+            <img
+              src="./assets/img/invite/heart-regular.png"
+              alt="heart-invite"
+              class="show-to-top content__wedding-heart"
+            />
+            <div
+              class="show-to-top content__wedding-day distant-stroke mb-2 delay-04"
             >
-              KIM CENTER
-            </a>
+              SATURDAY
+            </div>
+            <div
+              class="show-to-top content__wedding-date kanit-500 mb-3 delay-04"
+            >
+              19.10.2024
+            </div>
+            <div
+              class="content__wedding-restaurant kanit-500 mb-2"
+              data-bs-toggle="tooltip"
+              data-bs-placement="right"
+              data-bs-title="Xem bản đồ"
+            >
+              <a
+                class="show-to-top content__wedding-restaurant--link delay-10"
+                href="https://maps.app.goo.gl/6B24JsJ6YNJ5kVfk6"
+                target="_blank"
+              >
+                TƯ GIA
+              </a>
+            </div>
+            <div
+              class="show-to-top content__wedding-address kanit-300 delay-06"
+            >
+              <!-- 628 Pham Van Thuan Street, Tam Hiep ward, Bien Hoa city, Dong Nai -->
+              Đường Trần Đại Nghĩa, Xã Tân Nhựt
+            </div>
+            <!-- heart invite -->
+            <img
+              src="./assets/img/invite/heart-regular.png"
+              alt="heart-invite"
+              class="show-to-top content__wedding-heart delay-06"
+            />
+            <div
+              class="show-to-top content__wedding-address kanit-300 delay-06"
+            >
+              Bình Chánh, TP. Hồ Chí Minh
+            </div>
           </div>
-          <div class="content__wedding-address kanit-300">
-            628 Pham Van Thuan Street, Tam Hiep ward, Bien Hoa city, Dong Nai
+
+          <!-- block between -->
+          <div class="content__wedding-between"></div>
+          <!-- Tân hôn (Wedding) -->
+          <div
+            class="content__wedding-wedding d-flex flex-column align-items-center justify-content-center"
+          >
+            <div class="show-to-top content__wedding-title kanit-400">
+              Lễ Tân Hôn
+            </div>
+            <!-- heart invite -->
+            <img
+              src="./assets/img/invite/heart-regular.png"
+              alt="heart-invite"
+              class="show-to-top content__wedding-heart"
+            />
+            <div
+              class="show-to-top content__wedding-day distant-stroke mb-2 delay-04"
+            >
+              SUNDAY
+            </div>
+            <div
+              class="show-to-top content__wedding-date kanit-500 mb-3 delay-04"
+            >
+              20.10.2024
+            </div>
+            <div
+              class="content__wedding-restaurant kanit-500 mb-2"
+              data-bs-toggle="tooltip"
+              data-bs-placement="right"
+              data-bs-title="Xem bản đồ"
+            >
+              <a
+                class="show-to-top content__wedding-restaurant--link delay-10"
+                href="https://maps.app.goo.gl/ACBsUu6mnEDdrUQRA"
+                target="_blank"
+              >
+                KIM CENTER
+              </a>
+            </div>
+            <div
+              class="show-to-top content__wedding-address kanit-300 delay-06"
+            >
+              <!-- 628 Pham Van Thuan Street, Tam Hiep ward, Bien Hoa city, Dong Nai -->
+              628 Phạm Văn Thuận, phường Tam Hiệp
+            </div>
+            <!-- heart invite -->
+            <img
+              src="./assets/img/invite/heart-regular.png"
+              alt="heart-invite"
+              class="show-to-top content__wedding-heart delay-06"
+            />
+            <div
+              class="show-to-top content__wedding-address kanit-300 delay-06"
+            >
+              TP. Biên Hòa, Đồng Nai
+            </div>
           </div>
         </div>
 
         <!-- event -->
+
+        <!-- STYLE 1 -->
         <div
           class="content__event d-flex flex-column align-items-center justify-content-evenly"
         >
@@ -200,7 +287,7 @@
               <div
                 class="content__event--text content__event-dinner-text distant-stroke"
               >
-                Dinner
+                Lunch
               </div>
             </div>
 
@@ -219,6 +306,228 @@
                 class="content__event--text content__event-party-text distant-stroke"
               >
                 Party
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- STYLE 2 -->
+        <div class="content__event02 d-none">
+          <div
+            class="content__event-title justify-content-start italianno-regular"
+          >
+            Events
+          </div>
+          <div class="content__event02-container d-flex justify-content-around">
+            <!-- TODO    Vu Quy -->
+            <div class="content__event02-ceremony d-flex flex-column">
+              <!-- title Vu Quy -->
+              <div class="content__event02-ceremony-title italianno-regular">
+                Lễ Vu Quy
+              </div>
+
+              <!--? Timeline -->
+              <div
+                class="content__event02-ceremony-timeline d-flex flex-column"
+              >
+                <!-- welcome -->
+                <div
+                  class="content__event02-timeline-item content__event02-welcome d-flex justify-content-between"
+                >
+                  <!-- IMG -->
+                  <div class="content__event02-welcome-image">
+                    <img
+                      src="./assets/img/event/wedding-arch.png"
+                      alt=""
+                      class="content__event02-img content__event02-welcome-img"
+                    />
+                    <div
+                      class="content__event02--text content__event02-welcome-text distant-stroke"
+                    >
+                      Welcome
+                    </div>
+                  </div>
+
+                  <!-- TEXT -->
+                  <div
+                    class="content__event02-text content__event02-welcome--text"
+                  >
+                    <div class="content__event02-time kanit-300">11:00</div>
+
+                    <div
+                      class="content__event02--info content__event02-welcome-text italianno-regular"
+                    >
+                      Đón khách
+                    </div>
+                  </div>
+                </div>
+
+                <!-- ceremony -->
+                <div
+                  class="content__event02-timeline-item content__event02-subCeremony d-flex justify-content-between"
+                >
+                  <!-- IMG -->
+                  <div class="content__event02-ceremony-image">
+                    <img
+                      src="./assets/img/event/champagne.png"
+                      alt=""
+                      class="content__event02-img content__event02-ceremony-img"
+                    />
+                    <div
+                      class="content__event02--text content__event02-ceremony-text distant-stroke"
+                    >
+                      Ceremony
+                    </div>
+                  </div>
+
+                  <!-- TEXT -->
+                  <div
+                    class="content__event02-text content__event02-welcome--text"
+                  >
+                    <div class="content__event02-time kanit-300">12:00</div>
+                    <div
+                      class="content__event02--info content__event02-ceremony-text italianno-regular"
+                    >
+                      Làm lễ
+                    </div>
+                  </div>
+                </div>
+
+                <!-- dinner -->
+                <div
+                  class="content__event02-timeline-item content__event02-dinner d-flex justify-content-between"
+                >
+                  <!-- IMG -->
+                  <div class="content__event02-dinner-image">
+                    <img
+                      src="./assets/img/event/dinner.png"
+                      alt=""
+                      class="content__event02-img content__event02-dinner-img"
+                    />
+                    <div
+                      class="content__event02--text content__event02-dinner-text distant-stroke"
+                    >
+                      Party
+                    </div>
+                  </div>
+                  <!-- TEXT -->
+                  <div
+                    class="content__event02-text content__event02-welcome--text"
+                  >
+                    <div class="content__event02-time kanit-300">12:15</div>
+                    <div
+                      class="content__event02--info content__event02-ceremony-text italianno-regular"
+                    >
+                      Khai tiệc
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- TODO    Tân Hôn -->
+            <div class="content__event02-wedding">
+              <div class="content__event02-wedding-title italianno-regular">
+                Lễ Tân Hôn
+              </div>
+              <!--? Time line  -->
+              <div class="content__event02-wedding-timeline">
+                <div
+                  class="content__event02-wedding-timeline d-flex flex-column"
+                >
+                  <!-- welcome -->
+                  <div
+                    class="content__event02-timeline-item content__event02-welcome d-flex justify-content-between"
+                  >
+                    <!-- IMG -->
+                    <div class="content__event02-welcome-image">
+                      <img
+                        src="./assets/img/event/wedding-arch.png"
+                        alt=""
+                        class="content__event02-img content__event02-welcome-img"
+                      />
+                      <div
+                        class="content__event02--text content__event02-welcome-text distant-stroke"
+                      >
+                        Welcome
+                      </div>
+                    </div>
+
+                    <!-- TEXT -->
+                    <div
+                      class="content__event02-text content__event02-welcome--text"
+                    >
+                      <div class="content__event02-time kanit-300">11:00</div>
+
+                      <div
+                        class="content__event02--info content__event02-welcome-text italianno-regular"
+                      >
+                        Đón khách
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- ceremony -->
+                  <div
+                    class="content__event02-timeline-item content__event02-subCeremony d-flex justify-content-between"
+                  >
+                    <!-- IMG -->
+                    <div class="content__event02-wedding-image">
+                      <img
+                        src="./assets/img/event/champagne.png"
+                        alt=""
+                        class="content__event02-img content__event02-wedding-img"
+                      />
+                      <div
+                        class="content__event02--text content__event02-wedding-text distant-stroke"
+                      >
+                        Ceremony
+                      </div>
+                    </div>
+
+                    <!-- TEXT -->
+                    <div
+                      class="content__event02-text content__event02-welcome--text"
+                    >
+                      <div class="content__event02-time kanit-300">12:00</div>
+                      <div
+                        class="content__event02--info content__event02-wedding-text italianno-regular"
+                      >
+                        Làm lễ
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- dinner -->
+                  <div
+                    class="content__event02-timeline-item content__event02-dinner d-flex justify-content-between"
+                  >
+                    <!-- IMG -->
+                    <div class="content__event02-dinner-image">
+                      <img
+                        src="./assets/img/event/dinner.png"
+                        alt=""
+                        class="content__event02-img content__event02-dinner-img"
+                      />
+                      <div
+                        class="content__event02--text content__event02-dinner-text distant-stroke"
+                      >
+                        Party
+                      </div>
+                    </div>
+                    <!-- TEXT -->
+                    <div
+                      class="content__event02-text content__event02-welcome--text"
+                    >
+                      <div class="content__event02-time kanit-300">12:15</div>
+                      <div
+                        class="content__event02--info content__event02-wedding-text italianno-regular"
+                      >
+                        Khai tiệc
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -405,7 +714,9 @@
                   Mình luôn tìm kiếm một tình yêu lãng mạn vì tính mình thì hay
                   bay bổng, ham vui mà, nên là sau hơn 26 năm gửi tín hiệu lên
                   vũ trụ thì người ấy cũng xuất hiện để yêu thương và chăm sóc
-                  tui rồi he he. <br />
+                  tui rồi he he.
+                  <br />
+                  <br />
                   Mình là người cực kì yêu âm nhạc & mong muốn trong tương lai
                   sẽ học một loại nhạc cụ nào đấy ví dụ như guitar chẳng hạn
                   (cái này thì anh chồng nhà mình có thể làm gia sư rồi 😂).

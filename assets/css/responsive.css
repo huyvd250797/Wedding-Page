@@ -1,5 +1,42 @@
 /* PC  large*/
 @media (min-width: 1900px) {
+  /* header */
+
+  .header__title-date {
+    font-size: 2rem;
+    color: #fff;
+    position: absolute;
+    content: "";
+    top: 25%;
+    left: 44%;
+    z-index: 10;
+  }
+
+  .header-title-nameGroom {
+    position: absolute;
+    content: "";
+    top: 10%;
+    left: 28%;
+    z-index: 10;
+  }
+
+  .header-title-and {
+    position: absolute;
+    content: "";
+    top: 10%;
+    right: 48.5%;
+    z-index: 10;
+  }
+
+  .header-title-nameBride {
+    position: absolute;
+    content: "";
+    top: 10%;
+    right: 28%;
+  }
+
+  /* content */
+
   .content__registry-blank {
     margin: 0 38px;
   }
