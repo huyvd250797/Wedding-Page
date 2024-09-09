@@ -270,7 +270,11 @@ html {
 .content__event-welcome {
 }
 
-.content__event-welcome-image {
+.content__event-welcome-image,
+.content__event-ceremony-image,
+.content__event-dinner-image,
+.content__event-party-image {
+  text-align: center;
 }
 
 .content__event-welcome-image::after {
@@ -280,7 +284,7 @@ html {
   height: 12%;
   background-color: var(--primary-color-1);
   top: 45%;
-  left: 18%;
+  left: 45%;
 }
 
 .content__event-welcome-img {
@@ -303,7 +307,7 @@ html {
   height: 12%;
   background-color: var(--primary-color-1);
   top: 45%;
-  left: 40%;
+  left: 47%;
 }
 
 .content__event-ceremony-img {
@@ -326,7 +330,7 @@ html {
   height: 12%;
   background-color: var(--primary-color-1);
   top: 45%;
-  left: 61.5%;
+  left: 55%;
 }
 
 .content__event-dinner-img {
@@ -349,7 +353,7 @@ html {
   height: 12%;
   background-color: var(--primary-color-1);
   top: 45%;
-  left: 81.67%;
+  left: 46%;
 }
 
 .content__event-party-img {
