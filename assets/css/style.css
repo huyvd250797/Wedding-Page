@@ -115,7 +115,7 @@ html {
 
   /* filter */
 
-  filter: blur(1.5px) brightness(0.8);
+  filter: blur(1.2px) brightness(0.8);
   /* -webkit-filter: blur(2.5px) opacity(30%); */
 }
 
@@ -602,9 +602,11 @@ html {
 }
 
 .content__introduce-bride-name {
+  z-index: 10;
 }
 
 .content__introduce-bride-text {
+  z-index: 10;
 }
 
 .content__introduce-bride-image {
@@ -751,4 +753,9 @@ html {
 /* btn send  */
 .footer__registry-btn-send {
   z-index: 5;
+}
+
+.btn-confirm-2 {
+  scale: 0.9;
+  left: -7px;
 }
