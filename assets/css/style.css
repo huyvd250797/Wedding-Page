@@ -106,8 +106,6 @@ html {
 .header-saveTheDate {
   /* background-image: url("../img/header/652A4794.JPG"); */
   /* background-color: var(--primary-color-1); */
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 100%;
   background-image: url("../img/header/652A4794.JPG");
   background-repeat: no-repeat;

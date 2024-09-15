@@ -70,7 +70,7 @@
 @media (max-width: 1023px) {
 }
 
-/* MOBILE */
+/*!!! MOBILE */
 @media (max-width: 739px) {
   .header__nav {
     display: none;
@@ -82,5 +82,60 @@
 
   .content__aisle-title {
     flex-direction: column;
+  }
+
+  /* TODO --------------------------------- header --------------------------------- */
+  .header-saveTheDate {
+    background-image: url("../img/header/652A4794.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+  }
+
+  .header-title-nameGroom,
+  .header-title-nameBride,
+  .header-title-and {
+    color: #fff;
+    /* padding: 70px 50px 30px 50px; */
+    font-size: 2.9rem;
+  }
+
+  .header__title-date {
+    font-size: 1.5rem;
+    color: #fff;
+    position: absolute;
+    content: "";
+    top: 51%;
+    left: 29%;
+    z-index: 10;
+  }
+
+  .header-title-nameGroom {
+    position: absolute;
+    content: "";
+    top: 5%;
+    left: 26%;
+    z-index: 10;
+  }
+
+  .header-title-and {
+    position: absolute;
+    content: "";
+    top: 23%;
+    right: 48%;
+    z-index: 10;
+  }
+
+  .header-title-nameBride {
+    position: absolute;
+    content: "";
+    top: 39%;
+    right: 29%;
+  }
+
+  /* TODO --------------------------------- Story --------------------------------- */
+  .content__story {
+    display: none !important;
   }
 }
