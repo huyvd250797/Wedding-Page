@@ -85,12 +85,18 @@
   }
 
   /* TODO --------------------------------- header --------------------------------- */
+  .header {
+    height: 100%;
+    --height-cover: 75vh;
+    --top-date: calc(var(--height-cover) - 10vh);
+  }
+
   .header-saveTheDate {
-    background-image: url("../img/header/652A4794.JPG");
+    background-image: url("../img/header/652A4794-mobile.JPG");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 60vh;
+    height: var(--height-cover);
   }
 
   .header-title-nameGroom,
@@ -98,7 +104,7 @@
   .header-title-and {
     color: #fff;
     /* padding: 70px 50px 30px 50px; */
-    font-size: 2.9rem;
+    font-size: 3.5rem;
   }
 
   .header__title-date {
@@ -106,7 +112,7 @@
     color: #fff;
     position: absolute;
     content: "";
-    top: 51%;
+    top: var(--top-date);
     left: 29%;
     z-index: 10;
   }
@@ -114,15 +120,15 @@
   .header-title-nameGroom {
     position: absolute;
     content: "";
-    top: 5%;
-    left: 26%;
+    top: 8vh;
+    left: 25%;
     z-index: 10;
   }
 
   .header-title-and {
     position: absolute;
     content: "";
-    top: 23%;
+    top: 30vh;
     right: 48%;
     z-index: 10;
   }
@@ -130,12 +136,149 @@
   .header-title-nameBride {
     position: absolute;
     content: "";
-    top: 39%;
-    right: 29%;
+    top: 50vh;
+    right: 25%;
+  }
+
+  /* TODO ----------------------------- WEDDING ------------------------------ */
+
+  .content__wedding {
+    flex-direction: column;
+    height: 120vh;
+  }
+
+  .content__wedding-between {
+    height: 8%;
+  }
+
+  .content__wedding-ceremony {
+    /* display: block !important; */
+  }
+
+  .content__wedding-heart {
+    height: 2.5vh;
+    margin: 10px 0;
+  }
+
+  .content__wedding-title {
+    font-size: 2rem;
+  }
+
+  .content__wedding-day {
+    font-size: 2.5rem;
+  }
+
+  .content__wedding-date {
+    font-size: 2.8rem;
+    letter-spacing: 10px;
+  }
+
+  .content__wedding-restaurant {
+    font-size: 1.8rem;
+  }
+
+  .content__wedding-address {
+    font-size: 1.2rem;
+  }
+
+  /* TODO --------------------------------- Event --------------------------------- */
+
+  .content__event {
+    display: none !important;
+  }
+  .content__event02 {
+    display: block !important;
+    position: relative;
+  }
+
+  .content__event02-wedding {
+    display: none;
+  }
+
+  .content__event02-ceremony-title {
+    display: none;
+  }
+
+  .content__event02-ceremony {
+    width: 100%;
+  }
+
+  .content__event02-timeline-item {
+    justify-content: space-around !important;
+  }
+
+  /* ! Vertical */
+  .content__event-title::after {
+    content: "";
+    position: absolute;
+    width: 1.5px;
+    height: 75%;
+    background-color: var(--primary-color-1);
+    top: 16%;
+    left: 45.6%;
+  }
+
+  /*! Horizontal */
+
+  .content__event02-welcome::before {
+    content: "";
+    position: absolute;
+    width: 13%;
+    height: var(--line-horizontal);
+    background-color: var(--primary-color-1);
+    top: 9%;
+    left: var(--left-line);
+  }
+
+  .content__event02-subCeremony::before {
+    content: "";
+    position: absolute;
+    width: 13%;
+    height: var(--line-horizontal);
+    background-color: var(--primary-color-1);
+    top: 32%;
+    left: var(--left-line);
+  }
+
+  .content__event02-dinner::before {
+    content: "";
+    position: absolute;
+    width: 13%;
+    height: var(--line-horizontal);
+    background-color: var(--primary-color-1);
+    top: 59%;
+    left: var(--left-line);
+  }
+
+  .content__event02-party::before {
+    content: "";
+    position: absolute;
+    width: 13%;
+    height: var(--line-horizontal);
+    background-color: var(--primary-color-1);
+    top: 82%;
+    left: var(--left-line);
   }
 
   /* TODO --------------------------------- Story --------------------------------- */
   .content__story {
     display: none !important;
   }
+}
+
+/* TODO --------------------------------- INTRODUCE --------------------------------- */
+
+.content__introduce {
+  display: none !important;
+}
+
+/* TODO --------------------------------- PHOTO --------------------------------- */
+
+.photo {
+  display: none;
+}
+
+/* TODO --------------------------------- FGooter --------------------------------- */
+.footer__registry {
+  display: none !important;
 }

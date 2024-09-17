@@ -365,7 +365,7 @@ html {
 .content__event02-wedding {
   width: 30%;
   position: relative;
-  --left-line: 45%;
+  --left-line: 46%;
   --line-horizontal: 1.5px;
 }
 
@@ -464,6 +464,16 @@ html {
   height: var(--line-horizontal);
   background-color: var(--primary-color-1);
   top: 78%;
+  left: var(--left-line);
+}
+
+.content__event02-party::before {
+  content: "";
+  position: absolute;
+  width: 15%;
+  height: var(--line-horizontal);
+  background-color: var(--primary-color-1);
+  top: 82%;
   left: var(--left-line);
 }
 
