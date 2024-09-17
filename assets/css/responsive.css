@@ -92,6 +92,10 @@
   }
 
   .header-saveTheDate {
+    filter: blur(1.1px) brightness(0.8);
+  }
+
+  .header-saveTheDate {
     background-image: url("../img/header/652A4794-mobile.JPG");
     background-repeat: no-repeat;
     background-size: cover;
@@ -113,7 +117,7 @@
     position: absolute;
     content: "";
     top: var(--top-date);
-    left: 29%;
+    left: 31%;
     z-index: 10;
   }
 
@@ -189,6 +193,8 @@
   .content__event02 {
     display: block !important;
     position: relative;
+    height: 100vh;
+    align-content: center;
   }
 
   .content__event02-wedding {
@@ -202,9 +208,24 @@
   .content__event02-ceremony {
     width: 100%;
   }
+  .content__event02-ceremony-timeline {
+    margin-top: 5vh;
+  }
+
+  .content__event02-img {
+    height: 9vh;
+  }
 
   .content__event02-timeline-item {
     justify-content: space-around !important;
+  }
+
+  .content__event02-time {
+    font-size: 1.7rem;
+  }
+
+  .content__event02--text {
+    font-size: 2.9rem;
   }
 
   /* ! Vertical */
@@ -212,9 +233,9 @@
     content: "";
     position: absolute;
     width: 1.5px;
-    height: 75%;
+    height: 66%;
     background-color: var(--primary-color-1);
-    top: 16%;
+    top: 22%;
     left: 45.6%;
   }
 
@@ -236,7 +257,7 @@
     width: 13%;
     height: var(--line-horizontal);
     background-color: var(--primary-color-1);
-    top: 32%;
+    top: 32.2%;
     left: var(--left-line);
   }
 
@@ -246,7 +267,7 @@
     width: 13%;
     height: var(--line-horizontal);
     background-color: var(--primary-color-1);
-    top: 59%;
+    top: 57.5%;
     left: var(--left-line);
   }
 
@@ -256,7 +277,7 @@
     width: 13%;
     height: var(--line-horizontal);
     background-color: var(--primary-color-1);
-    top: 82%;
+    top: 82.2%;
     left: var(--left-line);
   }
 
