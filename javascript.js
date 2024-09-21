@@ -45,7 +45,7 @@ if (pc.matches) {
   );
   document.addEventListener("scroll", (e) => {
     paraScrollItemsIntro.forEach((item) => {
-      if (item.offsetTop - window.scrollY < 560) {
+      if (item.offsetTop - window.scrollY < 500) {
         item.classList.add("active");
       }
     });
@@ -57,9 +57,9 @@ if (pc.matches) {
   );
   document.addEventListener("scroll", (e) => {
     paraScrollItemsPhoto.forEach((item) => {
-      if (item.offsetTop - window.scrollY < 800) {
+      if (item.offsetTop - window.scrollY < 1100) {
         item.classList.add("active");
-        randDisplay();
+        sequenceDisplay();
       }
     });
   });
@@ -130,103 +130,50 @@ else if (mobile.matches) {
       }
     });
   });
-
   // PHOTO
   let paraScrollItemsPhoto = document.querySelectorAll(
     ".item-paraScroll-photo"
   );
   document.addEventListener("scroll", (e) => {
     paraScrollItemsPhoto.forEach((item) => {
-      if (item.offsetTop - window.scrollY < 500) {
+      if (item.offsetTop - window.scrollY < 800) {
         item.classList.add("active");
-      }
-    });
-  });
-
-  // PHOTO2
-  let paraScrollItemsPhoto2 = document.querySelectorAll(
-    ".item-paraScroll-photo2"
-  );
-  document.addEventListener("scroll", (e) => {
-    paraScrollItemsPhoto2.forEach((item) => {
-      if (item.offsetTop - window.scrollY < 400) {
-        item.classList.add("active");
-      }
-    });
-  });
-
-  // PHOTO3
-  let paraScrollItemsPhoto3 = document.querySelectorAll(
-    ".item-paraScroll-photo3"
-  );
-  document.addEventListener("scroll", (e) => {
-    paraScrollItemsPhoto3.forEach((item) => {
-      if (item.offsetTop - window.scrollY < 400) {
-        item.classList.add("active");
-      }
-    });
-  });
-
-  // PHOTO4
-  let paraScrollItemsPhoto4 = document.querySelectorAll(
-    ".item-paraScroll-photo4"
-  );
-  document.addEventListener("scroll", (e) => {
-    paraScrollItemsPhoto4.forEach((item) => {
-      if (item.offsetTop - window.scrollY < 400) {
-        item.classList.add("active");
-      }
-    });
-  });
-
-  // PHOTO5
-  let paraScrollItemsPhoto5 = document.querySelectorAll(
-    ".item-paraScroll-photo5"
-  );
-  document.addEventListener("scroll", (e) => {
-    paraScrollItemsPhoto5.forEach((item) => {
-      if (item.offsetTop - window.scrollY < 400) {
-        item.classList.add("active");
-      }
-    });
-  });
-
-  // PHOTO6
-  let paraScrollItemsPhoto6 = document.querySelectorAll(
-    ".item-paraScroll-photo6"
-  );
-  document.addEventListener("scroll", (e) => {
-    paraScrollItemsPhoto6.forEach((item) => {
-      if (item.offsetTop - window.scrollY < 400) {
-        item.classList.add("active");
-      }
-    });
-  });
-
-  // PHOTO7
-  let paraScrollItemsPhoto7 = document.querySelectorAll(
-    ".item-paraScroll-photo7"
-  );
-  document.addEventListener("scroll", (e) => {
-    paraScrollItemsPhoto7.forEach((item) => {
-      if (item.offsetTop - window.scrollY < 400) {
-        item.classList.add("active");
-      }
-    });
-  });
-
-  // PHOTO8
-  let paraScrollItemsPhoto8 = document.querySelectorAll(
-    ".item-paraScroll-photo8"
-  );
-  document.addEventListener("scroll", (e) => {
-    paraScrollItemsPhoto8.forEach((item) => {
-      if (item.offsetTop - window.scrollY < 400) {
-        item.classList.add("active");
+        sequenceDisplay();
       }
     });
   });
 }
+
+// Hàm  thứ tự hiển thị
+const sequenceDisplay = () => {
+  let getItemPhoto = document.querySelectorAll(".photo-album-img");
+
+  let getItem = [];
+
+  for (let i = 1; i < 9; i++) {
+    getItem.push(i * Math.floor(1 + Math.random()));
+  }
+
+  //?!! sort random index element off array getItem
+  // getItem.sort(() => Math.random() - 0.5
+  let randomIndexArr = [1, 2, 3, 4, 5, 6, 7, 8];
+
+  // Tạo mảng random
+  // let randomIndexArr = getItem.sort(() => Math.random() - 0.5);
+
+  for (let i = 0; i < getItemPhoto.length; i++) {
+    if (getItemPhoto[i].classList.contains("active")) {
+      break;
+    } else {
+      // add class active
+      getItemPhoto[i].classList.add(`active`);
+
+      // add class delay với giá trị là giá trị index mảng random
+      getItemPhoto[i].classList.add(`delay-${randomIndexArr[i]}`);
+    }
+    console.log(getItemPhoto[i]);
+  }
+};
 
 // Hàm random thứ tự hiển thị
 const randDisplay = () => {
@@ -240,6 +187,8 @@ const randDisplay = () => {
 
   //?!! sort random index element off array getItem
   // getItem.sort(() => Math.random() - 0.5
+
+  // Tạo mảng random
   let randomIndexArr = getItem.sort(() => Math.random() - 0.5);
 
   for (let i = 0; i < getItemPhoto.length; i++) {

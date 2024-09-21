@@ -172,7 +172,9 @@ html {
 
 /*TODO ---------------------------------- Wedding --------------------------------- */
 .content__wedding {
-  background-color: var(--primary-color-4);
+  background-image: url(../img/background/embossed-blank-greeting-invitation-card-mockup-floral-background.jpg);
+  background-repeat: repeat;
+  background-size: contain;
   height: 100vh;
 }
 
@@ -549,6 +551,9 @@ html {
 /*TODO ---------------------------------- Introduce --------------------------------- */
 .content__introduce {
   padding: 20vh 0;
+  background-image: url(../img/background/652A5748.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /** common */
@@ -557,10 +562,17 @@ html {
   font-size: 4rem;
   word-spacing: 8px;
   letter-spacing: 3px;
+  color: #fff;
 }
 
 .content__introduce--content {
   width: 60%;
+  color: #fff;
+  background-color: rgba(27, 27, 27, 0.6);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  padding: 20px;
+  margin: 30px;
 }
 
 .content__introduce-img {
@@ -633,11 +645,14 @@ html {
 
 .photo-container {
   height: 200vh;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .photo-title {
   font-size: 4rem;
   margin-bottom: 10vh;
+  margin-top: 10vh;
 }
 
 .photo-album {
