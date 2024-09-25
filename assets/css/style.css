@@ -4,6 +4,13 @@
 
 html {
   scroll-behavior: smooth;
+  --bg-page: url(../img/background/paperboard-texture.jpg);
+}
+
+.wedding-page {
+  background-image: var(--bg-page);
+  background-repeat: repeat;
+  background-size: cover;
 }
 
 /*? --------------------------------- fonts --------------------------------- */
@@ -172,9 +179,9 @@ html {
 
 /*TODO ---------------------------------- Wedding --------------------------------- */
 .content__wedding {
-  background-image: url(../img/background/embossed-blank-greeting-invitation-card-mockup-floral-background.jpg);
+  background-image: var(--bg-page);
   background-repeat: repeat;
-  background-size: contain;
+  background-size: cover;
   height: 100vh;
 }
 
@@ -226,6 +233,12 @@ html {
 .content__event {
   background-color: var(--primary-color-4-op);
   height: 80vh;
+  background-size: contain;
+}
+
+.content__event02 {
+  background-image: var(--bg-page);
+  background-size: contain;
 }
 
 .content__event-title {
@@ -480,72 +493,54 @@ html {
 }
 
 /*TODO ---------------------------------- Story --------------------------------- */
+
 .content__story {
   height: 100vh;
-  background-color: var(--primary-color-4);
-  padding: 25% 0;
+  background-image: var(--bg-page);
+  background-repeat: repeat;
+  background-size: cover;
 }
 
-.content__story-container {
-  height: 100%;
-}
-
-.content__story-image {
+.content__story-title {
+  text-align: center;
+  font-size: 3rem;
   position: relative;
+  padding: 20px 0;
+}
+
+.content__story-title-letter2 {
+  position: absolute;
+  top: 45%;
+  left: 52%;
 }
 
 .content__story-img {
-  height: 55vh;
-  box-shadow: 0px 0px 20px 5px var(--primary-color-4) !important;
+  height: 70vh;
 }
 
-.content__story-img-01 {
+.content__story-container {
+  margin-top: 5vh;
 }
 
-.content__story-img-02 {
+.content__story-image {
 }
 
-.content__story-img-03 {
-}
-
-.content__story-text--heart {
-  margin-top: 20px;
-}
-.content__story-text-image {
-  height: 5vh;
-  animation: heartBeat 0.9s ease-in-out infinite;
-}
-
-/* animation img center */
-@keyframes heartBeat {
-  0% {
-    scale: 0.8;
-  }
-  50% {
-    scale: 1;
-  }
-  100% {
-    scale: 0.8;
-  }
-}
-
-.content__story-text {
+.content__story-content {
   width: 40%;
 }
 
-.content__story-text--title {
-  text-align: center;
-  margin-bottom: 10px;
-  font-size: 3.5rem;
+.content__story-content--img {
+  height: 40vh;
 }
 
-.content__story-text--content {
+.content__story-content--text {
 }
 
-.btn-like {
+.content__story-content--text-detail span {
 }
 
-.btn-like:hover {
+.empty-flex-area {
+  width: 5%;
 }
 
 /*TODO ---------------------------------- Introduce --------------------------------- */
@@ -645,6 +640,7 @@ html {
 
 .photo-container {
   height: 200vh;
+  background-image: var(--bg-page);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -653,6 +649,7 @@ html {
   font-size: 4rem;
   margin-bottom: 10vh;
   margin-top: 10vh;
+  color: #fff;
 }
 
 .photo-album {

@@ -356,7 +356,7 @@
   }
 
   .photo-album-img {
-    --photo-padding: 6px;
+    --photo-padding: 10px;
     position: unset !important;
     object-fit: contain;
     height: 100%;
