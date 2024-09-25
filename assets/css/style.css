@@ -8,7 +8,7 @@ html {
 }
 
 .wedding-page {
-  background-image: var(--bg-page);
+  /* background-image: var(--bg-page); */
   background-repeat: repeat;
   background-size: cover;
 }
@@ -649,7 +649,6 @@ html {
   font-size: 4rem;
   margin-bottom: 10vh;
   margin-top: 10vh;
-  color: #fff;
 }
 
 .photo-album {
