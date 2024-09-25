@@ -495,7 +495,7 @@ html {
 /*TODO ---------------------------------- Story --------------------------------- */
 
 .content__story {
-  height: 100vh;
+  height: 110vh;
   background-image: var(--bg-page);
   background-repeat: repeat;
   background-size: cover;
@@ -503,9 +503,9 @@ html {
 
 .content__story-title {
   text-align: center;
-  font-size: 3rem;
+  font-size: 4rem;
   position: relative;
-  padding: 20px 0;
+  padding: 40px 0 20px 0;
 }
 
 .content__story-title-letter2 {
@@ -516,6 +516,9 @@ html {
 
 .content__story-img {
   height: 70vh;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 3px 3px 8px 2px #b9b9b9;
 }
 
 .content__story-container {
@@ -640,9 +643,9 @@ html {
 
 .photo-container {
   height: 200vh;
-  background-image: var(--bg-page);
+  /* background-image: var(--bg-page);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
 
 .photo-title {
