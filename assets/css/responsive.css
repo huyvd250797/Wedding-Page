@@ -373,5 +373,12 @@
   /* TODO --------------------------------- Footer --------------------------------- */
   .footer__registry {
     display: none !important;
+    position: relative;
+    bottom: 0;
+  }
+
+  .footer__registry-content {
+    position: absolute;
+    bottom: 0;
   }
 }

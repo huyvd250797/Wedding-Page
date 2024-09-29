@@ -45,7 +45,7 @@ if (pc.matches) {
   );
   document.addEventListener("scroll", (e) => {
     paraScrollItemsIntro.forEach((item) => {
-      if (item.offsetTop - window.scrollY < 500) {
+      if (item.offsetTop - window.scrollY < 700) {
         item.classList.add("active");
       }
     });
