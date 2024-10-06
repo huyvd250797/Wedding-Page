@@ -686,7 +686,7 @@ input:valid ~ label {
 
 /*? ------------------------ START: Gift Box ------------------------ */
 body {
-  background: black;
+  /* background: black; */
 }
 
 .box {
