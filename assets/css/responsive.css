@@ -384,8 +384,11 @@
   /* TODO --------------------------------- Footer --------------------------------- */
 
   .footer__registry {
-    display: none !important;
     position: relative;
+  }
+
+  .footer__registry-PC {
+    display: none !important;
   }
   .footer__registry-container {
     height: 80vh;
@@ -408,5 +411,9 @@
 
   .input-group-maker input {
     width: 100%;
+  }
+
+  .sendGift-img {
+    height: 50vh;
   }
 }
