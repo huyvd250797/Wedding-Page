@@ -8,9 +8,9 @@ html {
 }
 
 .wedding-page {
-  /* background-image: var(--bg-page); */
+  background-image: var(--bg-page);
   background-repeat: repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 /*? --------------------------------- fonts --------------------------------- */
@@ -179,7 +179,7 @@ html {
 
 /*TODO ---------------------------------- Wedding --------------------------------- */
 .content__wedding {
-  background-image: var(--bg-page);
+  /* background-image: var(--bg-page); */
   background-repeat: repeat;
   background-size: cover;
   height: 100vh;
@@ -232,8 +232,10 @@ html {
 /*TODO ---------------------------------- Event --------------------------------- */
 .content__event {
   background-color: var(--primary-color-4-op);
+  /* background-image: var(--bg-page); */
+
   height: 80vh;
-  background-size: contain;
+  background-size: cover;
 }
 
 .content__event02 {
@@ -496,7 +498,7 @@ html {
 
 .content__story {
   height: 110vh;
-  background-image: var(--bg-page);
+  /* background-image: var(--bg-page); */
   background-repeat: repeat;
   background-size: cover;
 }
@@ -511,7 +513,7 @@ html {
 .content__story-title-letter2 {
   position: absolute;
   top: 45%;
-  left: 52%;
+  left: 52.7%;
 }
 
 .content__story-img {
@@ -643,6 +645,7 @@ html {
 
 .photo-container {
   height: 200vh;
+  background-color: #fff;
   /* background-image: var(--bg-page);
   background-repeat: no-repeat;
   background-size: cover; */
@@ -729,6 +732,9 @@ html {
 
 /*TODO ---------------------------------- Footer --------------------------------- */
 .footer__registry {
+}
+
+.footer__registry-container {
   padding: 100px;
   background-color: var(--primary-color-3);
 }

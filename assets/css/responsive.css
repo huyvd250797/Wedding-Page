@@ -49,16 +49,27 @@
     background-color: #fff;
     transition: all 0.8s;
   }
+
+  .for-mobile {
+    display: none !important;
+  }
 }
 
 /* PC */
 @media (min-width: 1024px) {
+  .for-mobile {
+    display: none !important;
+  }
 }
 
 /* TABLET & PC */
 @media (min-width: 740px) {
   .btn-compare-mobile {
     display: none;
+  }
+
+  .for-mobile {
+    display: none !important;
   }
 }
 
@@ -371,14 +382,31 @@
   }
 
   /* TODO --------------------------------- Footer --------------------------------- */
+
   .footer__registry {
     display: none !important;
     position: relative;
-    bottom: 0;
+  }
+  .footer__registry-container {
+    height: 80vh;
+    padding: 20px;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-evenly !important;
+    margin-top: 13px;
   }
 
   .footer__registry-content {
     position: absolute;
-    bottom: 0;
+    width: 100% !important;
+    position: unset;
+  }
+
+  .footer__registry-form {
+    position: unset;
+  }
+
+  .input-group-maker input {
+    width: 100%;
   }
 }
