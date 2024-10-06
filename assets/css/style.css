@@ -732,6 +732,7 @@ html {
 
 /*TODO ---------------------------------- Footer --------------------------------- */
 .footer__registry {
+  position: relative;
 }
 
 .footer__registry-container {
@@ -786,4 +787,55 @@ html {
 .btn-confirm-2 {
   scale: 0.9;
   left: -7px;
+}
+
+/*TODO ---------------------------------- GIFT --------------------------------- */
+.box {
+  position: fixed !important;
+  right: -3%;
+  bottom: -7%;
+}
+
+.box-body {
+  transition: all 0.5s;
+  scale: 0.2;
+  opacity: 0.5;
+}
+
+.box-body:hover {
+  opacity: 1;
+  scale: 0.3;
+}
+
+.sendGift-content {
+}
+
+.sendGift-header {
+}
+
+.sendGift-body {
+}
+
+.sendGift-footer {
+}
+
+.sendGift-img {
+  height: 60vh;
+  object-fit: contain;
+}
+
+.sendGift-img-copy {
+  height: 2vh;
+  position: absolute;
+  left: 59%;
+  top: 12.6%;
+}
+
+.sendGift-img-copy:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.sendGift-thanks-text {
+  text-align: center;
 }

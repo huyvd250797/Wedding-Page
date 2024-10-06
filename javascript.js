@@ -204,3 +204,19 @@ const randDisplay = () => {
     console.log(getItemPhoto[i]);
   }
 };
+
+//TODO -------------------------------- COPY TEXT ------------------------------- */
+
+const copySTK = () => {
+  let getSTK = document.getElementById("myNumberBank");
+
+  // Select the text field
+  getSTK.select();
+  getSTK.setSelectionRange(0, 99999); // For mobile devices
+
+  // Copy the text inside the text field
+  navigator.clipboard.writeText(getSTK.value);
+
+  // Alert the copied text
+  alert("Đã copy số tài khoản");
+};

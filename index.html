@@ -813,7 +813,7 @@
                     Hẹn gặp bạn
                   </div>
                   <div class="footer__registry-text">
-                    chúng mình rất chờ đón sự kiện trọng đại này của cuộc đời.
+                    Chúng mình rất chờ đón sự kiện trọng đại này của cuộc đời.
                     Đám cưới của chúng mình sẽ trọn vẹn hơn khi có thêm lời chúc
                     phúc và sự hiện diện của các bạn.
                     <br />
@@ -1114,6 +1114,87 @@
             >
               <i class="fa-solid fa-paper-plane"></i>
             </button>
+          </div>
+        </div>
+        <!-- TODO ---------------------------- GIFT QR CODE ----------------------------- -->
+        <div class="box">
+          <div
+            class="box-body"
+            data-bs-toggle="modal"
+            data-bs-target="#sendGift"
+          >
+            <img
+              class="img img-box-body"
+              src="./assets/img/gift/dollars.png"
+              height="170px"
+            />
+            <div class="box-lid">
+              <div class="box-bowtie"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TODO -------------------------------- MODAL -------------------------------- -->
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="sendGift"
+          tabindex="-1"
+          aria-labelledby="sendGiftLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header sendGift-header">
+                <h1 class="modal-title fs-5" id="sendGiftLabel">Thank You</h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body sendGift-body">
+                <div class="sendGift-content d-flex justify-content-center">
+                  <img
+                    src="./assets/img/gift/QR-code-detail.jpg"
+                    alt=""
+                    class="sendGift-img"
+                  />
+                  <!-- STK -->
+                  <input
+                    id="myNumberBank"
+                    type="number"
+                    value="0090125071997"
+                    class="d-none"
+                  />
+                  <!-- COPY STK -->
+                  <img
+                    onclick="copySTK()"
+                    src="/assets/img/gift/copy.png"
+                    alt=""
+                    class="sendGift-img-copy"
+                  />
+                </div>
+              </div>
+              <div class="modal-footer sendGift-footer kanit-300">
+                <p class="sendGift-thanks-text">
+                  Cảm ơn bạn đã dành thời gian quý báu và những quà tặng dễ
+                  thương để chúc mừng đám cưới của chúng mình.
+                </p>
+                <!-- <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="button" class="btn btn-primary">
+                  
+                </button> -->
+              </div>
+            </div>
           </div>
         </div>
       </div>
