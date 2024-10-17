@@ -52,6 +52,7 @@
     <link rel="stylesheet" href="./assets/css/responsive.css" />
     <link rel="stylesheet" href="./assets/css/template-component.css" />
     <link rel="stylesheet" href="./assets/css/animation.css" />
+    <link rel="stylesheet" href="./assets/css/toast.css" />
   </head>
 
   <body>
@@ -1129,7 +1130,7 @@
           aria-labelledby="sendGiftLabel"
           aria-hidden="true"
         >
-          <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-header sendGift-header">
                 <h1 class="modal-title fs-5" id="sendGiftLabel">Thank You</h1>
@@ -1141,20 +1142,68 @@
                 ></button>
               </div>
               <div class="modal-body sendGift-body">
-                <div class="sendGift-content d-flex justify-content-center">
+                <!-- Radio btn -->
+                <div class="sendGift-body-radioBtn d-flex for-mobile">
+                  <div class="form-check">
+                    <input
+                      onclick="checkRadioBtn()"
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault1"
+                      checked
+                    />
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Chú rễ
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      onclick="checkRadioBtn()"
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault2"
+                    />
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Cô dâu
+                    </label>
+                  </div>
+                </div>
+                <div class="sendGift-content d-flex justify-content-evenly">
+                  <!--! QR code 1 -->
                   <img
+                    id="QRGroom"
                     src="./assets/img/gift/QR-code-detail.jpg"
                     alt=""
                     class="sendGift-img"
                   />
-                  <!-- STK -->
-                  <p id="myNumberBank" class="d-none">0090125071997</p>
-                  <!-- COPY STK -->
+                  <!-- STK 1-->
+                  <p id="myNumberBank1" class="d-none">0090125071997</p>
+                  <!-- COPY STK 1 -->
                   <img
-                    onclick="copyContent()"
+                    id="liveToastBtn1"
+                    onclick="copyContent1()"
                     src="/assets/img/gift/copy.png"
                     alt=""
-                    class="sendGift-img-copy"
+                    class="sendGift-img-copy1"
+                  />
+                  <!--! QR code 2 -->
+                  <img
+                    id="QRBride"
+                    src="./assets/img/gift/QR-code-detail-SaoDao.jpg"
+                    alt=""
+                    class="sendGift-img display-none-form"
+                  />
+                  <!-- STK 2 -->
+                  <p id="myNumberBank2" class="d-none">0050174411808</p>
+                  <!-- COPY STK 2 -->
+                  <img
+                    id="liveToastBtn2"
+                    onclick="copyContent2()"
+                    src="/assets/img/gift/copy.png"
+                    alt=""
+                    class="sendGift-img-copy2 display-none-form"
                   />
                 </div>
               </div>
@@ -1179,7 +1228,7 @@
         </div>
       </div>
 
-      <!-- TODO ---------------------------- GIFT QR CODE ----------------------------- -->
+      <!-- TODO ---------------------------- GIFT ----------------------------- -->
       <div class="box">
         <div class="box-body" data-bs-toggle="modal" data-bs-target="#sendGift">
           <img
@@ -1191,6 +1240,40 @@
             <div class="box-bowtie"></div>
           </div>
         </div>
+      </div>
+    </div>
+
+    <!-- TODO ---------------------------- TOAST ----------------------------- -->
+
+    <!-- <button type="button" class="btn btn-primary" id="liveToastBtn">
+      Show live toast
+    </button> -->
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div
+        id="liveToast"
+        class="toast"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div
+          class="toast align-items-center text-bg-primary border-0"
+          role="alert"
+          aria-live="assertive"
+          aria-atomic="true"
+        >
+          <div class="d-flex">
+            <div class="toast-body"></div>
+            <button
+              type="button"
+              class="btn-close btn-close-white me-2 m-auto"
+              data-bs-dismiss="toast"
+              aria-label="Close"
+            ></button>
+          </div>
+        </div>
+        <div id="toastContent" class="toast-body"></div>
       </div>
     </div>
 

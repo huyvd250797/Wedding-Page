@@ -207,12 +207,74 @@ const randDisplay = () => {
 
 //TODO -------------------------------- COPY TEXT ------------------------------- */
 
-let getSTK = document.getElementById("myNumberBank").innerHTML;
-const copyContent = async () => {
+let getSTK1 = document.getElementById("myNumberBank1").innerHTML;
+let copied1 = document.getElementById("toastContent");
+
+const copyContent1 = async () => {
   try {
-    await navigator.clipboard.writeText(getSTK);
-    alert(`Đã copy số tài khoản ${getSTK}`);
+    await navigator.clipboard.writeText(getSTK1);
+    copied1.innerHTML = `<i class="color-copied fa-solid fa-check"></i> Đã copy số tài khoản <b>MB - ${getSTK1}</b>`;
+    // alert(`Đã copy số tài khoản ${getSTK1}`);
   } catch (err) {
     console.error("Failed to copy: ", err);
+  }
+};
+
+let getSTK2 = document.getElementById("myNumberBank2").innerHTML;
+let copied2 = document.getElementById("toastContent");
+const copyContent2 = async () => {
+  try {
+    await navigator.clipboard.writeText(getSTK2);
+    copied2.innerHTML = `<i class="color-copied fa-solid fa-check"></i> Đã copy số tài khoản <b>MB - ${getSTK2}</b>`;
+    // alert(`Đã copy số tài khoản ${getSTK2}`);
+  } catch (err) {
+    console.error("Failed to copy: ", err);
+  }
+};
+
+//TODO -------------------------------- TOAST ------------------------------- */
+const toastTrigger1 = document.getElementById("liveToastBtn1");
+const toastLiveExample = document.getElementById("liveToast");
+
+if (toastTrigger1) {
+  const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample);
+  toastTrigger1.addEventListener("click", () => {
+    toastBootstrap.show();
+  });
+}
+
+const toastTrigger2 = document.getElementById("liveToastBtn2");
+
+if (toastTrigger2) {
+  const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample);
+  toastTrigger2.addEventListener("click", () => {
+    toastBootstrap.show();
+  });
+}
+
+//TODO ------------------------------ RADIO BUTTON ------------------------------ */
+
+const checkRadioBtn = () => {
+  let checkedGroom = document.getElementById("flexRadioDefault1");
+  let checkedBride = document.getElementById("flexRadioDefault2");
+
+  let qrGroom = document.getElementById("QRGroom");
+  let qrBride = document.getElementById("QRBride");
+
+  let qrGroomCopy = document.getElementById("liveToastBtn1");
+  let qrBrideCopy = document.getElementById("liveToastBtn2");
+
+  if (checkedGroom.checked == true) {
+    qrBride.classList.add("display-none-form");
+    qrGroom.classList.remove("display-none-form");
+    // display copy
+    qrBrideCopy.classList.add("display-none-form");
+    qrGroomCopy.classList.remove("display-none-form");
+  } else if (checkedBride.checked == true) {
+    qrGroom.classList.add("display-none-form");
+    qrBride.classList.remove("display-none-form");
+    // display copy
+    qrGroomCopy.classList.add("display-none-form");
+    qrBrideCopy.classList.remove("display-none-form");
   }
 };

@@ -822,20 +822,33 @@ html {
 .sendGift-img {
   height: 50vh;
   object-fit: contain;
+  box-shadow: 3px 3px 8px 2px #b9b9b9;
 }
 
-.sendGift-img-copy {
+.sendGift-img-copy1 {
   height: 2vh;
   position: absolute;
-  left: 59%;
-  top: 12.6%;
+  left: 31.5%;
+  top: 12.7%;
 }
 
-.sendGift-img-copy:hover {
+.sendGift-img-copy2 {
+  height: 2vh;
+  position: absolute;
+  left: 76.7%;
+  top: 13.6%;
+}
+
+.sendGift-img-copy1:hover,
+.sendGift-img-copy2:hover {
   cursor: pointer;
   opacity: 0.5;
 }
 
 .sendGift-thanks-text {
   text-align: center;
+}
+
+.color-copied {
+  color: rgb(9, 163, 35);
 }

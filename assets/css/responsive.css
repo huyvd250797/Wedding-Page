@@ -60,6 +60,9 @@
   .for-mobile {
     display: none !important;
   }
+  .display-none-form {
+    display: block !important;
+  }
 }
 
 /* TABLET & PC */
@@ -426,5 +429,44 @@
     bottom: -9.5%;
     opacity: 0.7;
     scale: 0.8;
+  }
+
+  /* QR code */
+  .sendGift-body-radioBtn {
+    display: flex;
+    justify-content: center;
+  }
+
+  .form-check-label {
+    margin-top: 10px;
+    background-color: #fff !important;
+    color: #000 !important;
+    font-size: 1.2rem;
+  }
+
+  .form-check {
+    margin-right: 10%;
+  }
+
+  .form-check-input {
+    padding: 0;
+  }
+
+  .display-none-form {
+    display: none !important;
+  }
+
+  .sendGift-img-copy1 {
+    height: 2vh;
+    position: absolute;
+    left: 59.4%;
+    top: 21.1%;
+  }
+
+  .sendGift-img-copy2 {
+    height: 2vh;
+    position: absolute;
+    left: 58%;
+    top: 21.7%;
   }
 }
