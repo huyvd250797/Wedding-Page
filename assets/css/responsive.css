@@ -297,7 +297,40 @@
 
   /* TODO --------------------------------- Story --------------------------------- */
   .content__story {
-    display: none !important;
+    /* display: none !important; */
+    height: 165vh;
+    /* background-image: url(../img/our-story/652A5599.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+  }
+
+  .content__story-container {
+    display: flex;
+    flex-direction: column-reverse !important;
+    padding: 5%;
+
+    /* background-color: rgba(250, 250, 250, 0.7);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    padding: 20px;
+    margin: 30px; */
+  }
+
+  .content__story-content {
+    width: 100%;
+  }
+
+  .content__story-title-letter1 {
+    margin-right: 18%;
+  }
+
+  .content__story-image {
+    /* display: none !important; */
+  }
+
+  .content__story-img {
+    height: 60vh;
   }
 
   /* TODO --------------------------------- INTRODUCE --------------------------------- */
