@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+  --bg-page: url(../img/background/paperboard-texture.jpg);
+}
+
+.wedding-page {
+  background-image: var(--bg-page);
+  background-repeat: repeat;
+  background-size: contain;
+}
+
 /*? --------------------------------- fonts --------------------------------- */
 .great-vibes-regular {
   font-family: "Great Vibes", cursive;
@@ -37,16 +48,18 @@
   margin-top: 5rem !important;
 }
 
+.hide-this {
+  display: none;
+}
+
 /*? --------------------------------- header --------------------------------- */
 
 .header {
   height: 100vh;
+  position: relative;
 }
 
 .header__img-slider {
-  background-image: url("../img/header/cover-photo.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
   /* background-image: url(../img/header/slider-img.JPG); */
   /* background-size: contain; */
   /* background-repeat: no-repeat; */
@@ -99,46 +112,90 @@
 /* SAVE THE DATE */
 .header-saveTheDate {
   /* background-image: url("../img/header/652A4794.JPG"); */
-  background-color: var(--primary-color-1);
+  /* background-color: var(--primary-color-1); */
+  height: 100%;
+  background-image: url("../img/header/652A4794.JPG");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
+
+  /* filter */
+
+  filter: blur(1.2px) brightness(0.8);
+  /* -webkit-filter: blur(2.5px) opacity(30%); */
 }
 
 .header-title-and-img {
   height: 6vh;
 }
 
+.header__title-name {
+  position: relative;
+}
+
 .header-title-nameGroom,
 .header-title-nameBride,
 .header-title-and {
   color: #fff;
-  padding: 70px 50px 30px 50px;
-  font-size: 3.2rem;
+  /* padding: 70px 50px 30px 50px; */
+  font-size: 5rem;
 }
 
 .header__title-date {
   font-size: 2rem;
   color: #fff;
+  position: absolute;
+  content: "";
+  top: 27%;
+  left: 42.5%;
+  z-index: 10;
 }
 
 .header-title {
 }
 
 .header-title-nameGroom {
+  position: absolute;
+  content: "";
+  top: 10%;
+  left: 23%;
+  z-index: 10;
 }
 
 .header-title-and {
+  position: absolute;
+  content: "";
+  top: 10%;
+  right: 48%;
+  z-index: 10;
 }
 
 .header-title-nameBride {
+  position: absolute;
+  content: "";
+  top: 10%;
+  right: 23%;
 }
 /*? --------------------------------- content --------------------------------- */
 
 /*TODO ---------------------------------- Wedding --------------------------------- */
 .content__wedding {
-  background-color: var(--primary-color-4);
+  /* background-image: var(--bg-page); */
+  background-repeat: repeat;
+  background-size: cover;
   height: 100vh;
+}
+
+.content__wedding-between {
+  width: 5%;
+}
+
+.content__wedding-heart {
+  height: 3vh;
+  margin: 10px 0;
+}
+
+.content__wedding-title {
+  font-size: 2.5rem;
 }
 
 .content__wedding-day {
@@ -175,11 +232,20 @@
 /*TODO ---------------------------------- Event --------------------------------- */
 .content__event {
   background-color: var(--primary-color-4-op);
+  /* background-image: var(--bg-page); */
+
   height: 80vh;
+  background-size: cover;
+}
+
+.content__event02 {
+  background-image: var(--bg-page);
+  background-size: contain;
 }
 
 .content__event-title {
   font-size: 5rem;
+  text-align: center;
 }
 
 .content__event-container {
@@ -219,7 +285,11 @@
 .content__event-welcome {
 }
 
-.content__event-welcome-image {
+.content__event-welcome-image,
+.content__event-ceremony-image,
+.content__event-dinner-image,
+.content__event-party-image {
+  text-align: center;
 }
 
 .content__event-welcome-image::after {
@@ -229,7 +299,7 @@
   height: 12%;
   background-color: var(--primary-color-1);
   top: 45%;
-  left: 18%;
+  left: 45%;
 }
 
 .content__event-welcome-img {
@@ -252,7 +322,7 @@
   height: 12%;
   background-color: var(--primary-color-1);
   top: 45%;
-  left: 40%;
+  left: 47%;
 }
 
 .content__event-ceremony-img {
@@ -275,7 +345,7 @@
   height: 12%;
   background-color: var(--primary-color-1);
   top: 45%;
-  left: 61.5%;
+  left: 55%;
 }
 
 .content__event-dinner-img {
@@ -298,7 +368,7 @@
   height: 12%;
   background-color: var(--primary-color-1);
   top: 45%;
-  left: 81.67%;
+  left: 46%;
 }
 
 .content__event-party-img {
@@ -307,75 +377,183 @@
 .content__event-party-text {
 }
 
-/*TODO ---------------------------------- Story --------------------------------- */
-.content__story {
-  height: 100vh;
-  background-color: var(--primary-color-4);
-  padding: 25% 0;
+/*! --------------------------------- STYLE 2 -------------------------------- */
+.content__event02-ceremony,
+.content__event02-wedding {
+  width: 30%;
+  position: relative;
+  --left-line: 46%;
+  --line-horizontal: 1.5px;
 }
 
-.content__story-container {
-  height: 100%;
+.content__event02-ceremony-title,
+.content__event02-wedding-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 3rem;
 }
 
-.content__story-image {
+/*! Vertical */
+.content__event02-ceremony-title::after {
+  content: "";
+  position: absolute;
+  width: var(--line-horizontal);
+  height: 75%;
+  background-color: var(--primary-color-1);
+  top: 16%;
+  left: var(--left-line);
+}
+
+.content__event02-wedding-title::after {
+  content: "";
+  position: absolute;
+  width: var(--line-horizontal);
+  height: 75%;
+  background-color: var(--primary-color-1);
+  top: 16%;
+  left: var(--left-line);
+}
+
+.content__event02-ceremony-timeline,
+.content__event02-wedding-timeline {
   position: relative;
 }
 
+.content__event02-timeline-item {
+  margin-bottom: 50px;
+}
+
+/* event icon img */
+.content__event02-img {
+  height: 10vh;
+  text-align: center;
+}
+
+/* event time */
+.content__event02-time {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+/* event text */
+.content__event02--text {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.content__event02-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content__event02--info {
+  font-size: 2rem;
+}
+
+/*! Horizontal */
+
+.content__event02-welcome::before {
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: var(--line-horizontal);
+  background-color: var(--primary-color-1);
+  top: 12%;
+  left: var(--left-line);
+}
+
+.content__event02-subCeremony::before {
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: var(--line-horizontal);
+  background-color: var(--primary-color-1);
+  top: 45%;
+  left: var(--left-line);
+}
+
+.content__event02-dinner::before {
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: var(--line-horizontal);
+  background-color: var(--primary-color-1);
+  top: 78%;
+  left: var(--left-line);
+}
+
+.content__event02-party::before {
+  content: "";
+  position: absolute;
+  width: 15%;
+  height: var(--line-horizontal);
+  background-color: var(--primary-color-1);
+  top: 82%;
+  left: var(--left-line);
+}
+
+/*TODO ---------------------------------- Story --------------------------------- */
+
+.content__story {
+  height: 110vh;
+  /* background-image: var(--bg-page); */
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+.content__story-title {
+  text-align: center;
+  font-size: 4rem;
+  position: relative;
+  padding: 40px 0 20px 0;
+}
+
+.content__story-title-letter2 {
+  position: absolute;
+  top: 45%;
+  left: 52.7%;
+}
+
 .content__story-img {
-  height: 55vh;
-  box-shadow: 0px 0px 20px 5px var(--primary-color-4) !important;
+  height: 70vh;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 3px 3px 8px 2px #b9b9b9;
 }
 
-.content__story-img-01 {
+.content__story-container {
+  margin-top: 5vh;
 }
 
-.content__story-img-02 {
+.content__story-image {
 }
 
-.content__story-img-03 {
-}
-
-.content__story-text-image {
-  height: 5vh;
-  animation: heartBeat 0.9s ease-in-out infinite;
-}
-
-/* animation img center */
-@keyframes heartBeat {
-  0% {
-    scale: 0.8;
-  }
-  50% {
-    scale: 1;
-  }
-  100% {
-    scale: 0.8;
-  }
-}
-
-.content__story-text {
+.content__story-content {
   width: 40%;
 }
 
-.content__story-text--title {
-  text-align: center;
-  margin-bottom: 10px;
-  font-size: 3.5rem;
+.content__story-content--img {
+  height: 40vh;
 }
 
-.content__story-text--content {
+.content__story-content--text {
 }
 
-.btn-like {
+.content__story-content--text-detail span {
 }
 
-.btn-like:hover {
+.empty-flex-area {
+  width: 5%;
 }
 
 /*TODO ---------------------------------- Introduce --------------------------------- */
 .content__introduce {
   padding: 20vh 0;
+  background-image: url(../img/background/652A5748.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /** common */
@@ -384,10 +562,17 @@
   font-size: 4rem;
   word-spacing: 8px;
   letter-spacing: 3px;
+  color: #fff;
 }
 
 .content__introduce--content {
   width: 60%;
+  color: #fff;
+  background-color: rgba(27, 27, 27, 0.6);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  padding: 20px;
+  margin: 30px;
 }
 
 .content__introduce-img {
@@ -437,9 +622,11 @@
 }
 
 .content__introduce-bride-name {
+  z-index: 10;
 }
 
 .content__introduce-bride-text {
+  z-index: 10;
 }
 
 .content__introduce-bride-image {
@@ -457,23 +644,98 @@
 }
 
 .photo-container {
+  height: 200vh;
+  background-color: #fff;
+  /* background-image: var(--bg-page);
+  background-repeat: no-repeat;
+  background-size: cover; */
 }
 
 .photo-title {
   font-size: 4rem;
+  margin-bottom: 10vh;
+  margin-top: 10vh;
 }
 
 .photo-album {
+  position: relative;
 }
 
 .photo-album-img {
+  --photo-padding: 8px;
+  padding: var(--photo-padding);
+  background-color: #fff;
+}
+
+/* img line 01 */
+.photo-album-line-01 {
 }
 
 .photo-album-img-01 {
+  height: 50vh;
+}
+
+.photo-album-img-02 {
+  height: 65vh;
+}
+
+.photo-album-img-03 {
+  height: 45vh;
+}
+
+/* img line 02 */
+.photo-album-line-02 {
+}
+
+.photo-album-img-06 {
+  position: absolute;
+  top: 90%;
+  left: 3%;
+  height: 50vh;
+  padding: calc(var(--photo-padding) * 2);
+}
+
+.photo-album-img-04 {
+  position: absolute;
+  top: 98.2%;
+  left: 25%;
+  height: 50vh;
+  padding: calc(var(--photo-padding) * 2);
+}
+.photo-album-img-05 {
+  position: absolute;
+  top: 85%;
+  left: 69%;
+  height: 54vh;
+  padding: calc(var(--photo-padding) * 2);
+}
+
+/* img line 03 */
+.photo-album-line-03 {
+}
+
+.photo-album-img-07 {
+  position: absolute;
+  top: 158%;
+  left: 11.7%;
+  height: 50vh;
+  padding: calc(var(--photo-padding) * 2);
+}
+
+.photo-album-img-08 {
+  position: absolute;
+  top: 150%;
+  left: 59%;
+  height: 60vh;
+  padding: calc(var(--photo-padding) * 2);
 }
 
 /*TODO ---------------------------------- Footer --------------------------------- */
 .footer__registry {
+  position: relative;
+}
+
+.footer__registry-container {
   padding: 100px;
   background-color: var(--primary-color-3);
 }
@@ -485,6 +747,9 @@
 
 .footer__registry-text {
   color: #fff;
+}
+.footer__registry-form {
+  position: relative;
 }
 
 .footer__registry-form-wish {
@@ -498,6 +763,9 @@
   background-color: #fff !important;
   color: #000 !important;
 }
+.footer__registry-form-wish:focus ~ .footer__registry-btn-send {
+  display: block !important;
+}
 
 .footer__registry-form-wish::placeholder {
   color: #fff;
@@ -509,4 +777,78 @@
 }
 
 .footer__registry-confirm-btn {
+}
+
+/* btn send  */
+.footer__registry-btn-send {
+  z-index: 5;
+}
+
+.btn-confirm-2 {
+  scale: 0.9;
+  left: -7px;
+}
+
+/*TODO ---------------------------------- GIFT --------------------------------- */
+.box {
+  position: fixed !important;
+  right: -3%;
+  bottom: -7%;
+}
+
+.box-body {
+  transition: all 0.5s;
+  scale: 0.2;
+  opacity: 0.5;
+}
+
+.box-body:hover {
+  opacity: 1;
+  scale: 0.3;
+}
+
+.sendGift-content {
+}
+
+.sendGift-header {
+}
+
+.sendGift-body {
+}
+
+.sendGift-footer {
+}
+
+.sendGift-img {
+  height: 50vh;
+  object-fit: contain;
+  box-shadow: 3px 3px 8px 2px #b9b9b9;
+}
+
+.sendGift-img-copy1 {
+  height: 2vh;
+  position: absolute;
+  left: 31.5%;
+  top: 12.7%;
+}
+
+.sendGift-img-copy2 {
+  height: 2vh;
+  position: absolute;
+  left: 76.7%;
+  top: 13.6%;
+}
+
+.sendGift-img-copy1:hover,
+.sendGift-img-copy2:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.sendGift-thanks-text {
+  text-align: center;
+}
+
+.color-copied {
+  color: rgb(9, 163, 35);
 }
