@@ -4,7 +4,10 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
-<meta content="#f8f6f1" name="theme-color"/>
+<meta content="#f5f1e9" name="theme-color"/>
+<meta name="color-scheme" content="light"/>
+<meta name="application-name" content="Huy & Sao — Wedding"/>
+<meta property="og:locale" content="vi_VN"/>
 <meta content="Kỷ niệm ngày chung đôi của Huy &amp; Sao — 19 và 20 tháng 10 năm 2024. Cùng xem câu chuyện tình yêu, lịch lễ cưới và album ảnh của chúng mình." name="description"/>
 <meta content="website" property="og:type"/>
 <meta content="Huy &amp; Sao | Our Wedding Story" property="og:title"/>
@@ -17,15 +20,17 @@
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600&amp;family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=Great+Vibes&amp;display=swap" rel="stylesheet"/>
 <link as="image" fetchpriority="high" href="assets/img/header/652A4794.webp" media="(min-width: 701px)" rel="preload"/>
 <link as="image" fetchpriority="high" href="assets/img/header/652A4794-mobile.webp" media="(max-width: 700px)" rel="preload"/>
-<link href="assets/css/style.css" rel="stylesheet"/>
-<script defer="" src="assets/js/main.js"></script>
+<link href="assets/css/style.css?v=2.0.0" rel="stylesheet"/>
+<link href="assets/css/luxury.css?v=2.0.0" rel="stylesheet"/>
+<script defer src="assets/js/main.js?v=2.0.0"></script>
+<script defer src="assets/js/cinematic.js?v=2.0.0"></script>
 </head>
 <body>
 <div aria-hidden="true" class="scroll-progress" id="scrollProgress"></div>
 <a class="skip-link" href="#main">Bỏ qua menu</a>
 <header class="site-header" id="siteHeader">
 <div class="header-wrap container">
-<a aria-label="Huy và Sao - về đầu trang" class="brand" href="#top"><span class="brand-mark">H<span>♡</span>S</span><span class="brand-caption">OUR WEDDING</span></a>
+<a aria-label="Huy và Sao - về đầu trang" class="brand" href="#top"><span class="brand-mark">H<span>&amp;</span>S</span><span class="brand-caption">OUR WEDDING</span></a>
 <nav aria-label="Điều hướng chính" class="nav" id="siteNav">
 <a href="#ceremony">Lễ cưới</a><a href="#story">Chuyện chúng mình</a><a href="#couple">Cô dâu &amp; Chú rể</a><a href="#gallery">Album</a>
 <button class="nav-gift mobile-only" data-open-gift="" type="button">Gửi quà mừng ♡</button>
@@ -40,23 +45,24 @@
 <section aria-label="Huy và Sao" class="hero" id="top">
 <picture class="hero-media">
 <source media="(max-width:700px)" srcset="assets/img/header/652A4794-mobile.webp"/>
-<img alt="Ảnh cưới của Huy và Sao giữa khu vườn xanh" decoding="async" fetchpriority="high" height="1267" src="assets/img/header/652A4794.webp" width="1900"/>
+<img alt="Ảnh cưới của Huy và Sao giữa khu vườn xanh" decoding="async" fetchpriority="high" height="1106" src="assets/img/header/652A4794.webp" width="1600"/>
 </picture>
 <div class="hero-shade"></div>
 <div class="hero-content container">
-<p class="hero-kicker">THE WEDDING CELEBRATION</p>
+<p class="hero-kicker">A CELEBRATION OF LOVE</p>
 <div aria-hidden="true" class="hero-ornament"><span></span>✦<span></span></div>
-<h1 class="hero-name">Huy <em>&amp;</em> Sao</h1>
-<p class="hero-subtitle">And so the adventure begins</p>
-<div class="hero-date"><span>19</span><span class="hero-date-month">THÁNG 10 <b>2024</b></span><span>20</span></div>
-<a class="button button-light" href="#ceremony">Khám phá câu chuyện <span aria-hidden="true">↗</span></a>
+<h1 class="hero-name"><span>Huy</span><em>&amp;</em><span>Sao</span></h1>
+<p class="hero-subtitle">The beginning of our forever</p>
+<div class="hero-date" aria-label="Ngày 19 và 20 tháng 10 năm 2024"><span>19</span><span class="hero-date-month">OCTOBER <b>2024</b></span><span>20</span></div>
+<a class="button button-light" href="#ceremony">Bước vào câu chuyện <span aria-hidden="true">↗</span></a>
 </div>
 <a aria-label="Cuộn xuống xem lễ cưới" class="scroll-hint" href="#ceremony"><span>SCROLL TO EXPLORE</span><i></i></a>
-<div class="hero-index">HUY VO <span>·</span> SAO DAO</div>
+<div class="hero-index">HO CHI MINH CITY <span>·</span> DONG NAI</div>
+<div class="hero-issue" aria-hidden="true">01 <span>/</span> OUR FOREVER</div>
 </section>
 <section class="section intro" id="ceremony">
 <div class="container">
-<div class="section-heading reveal">
+<div class="section-heading reveal" data-chapter="01 — THE WEDDING">
 <span class="eyebrow">SAVE THE DATE</span><h2>Ngày chung đôi</h2><span aria-hidden="true" class="section-flourish">❦</span>
 <p>Hai ngày đặc biệt, một lời hẹn ước trọn đời. Cảm ơn vì đã là một phần trong hành trình của chúng mình.</p>
 </div>
@@ -76,7 +82,7 @@
 </section>
 <section class="section timeline-section" id="events">
 <div class="container">
-<div class="section-heading reveal"><span class="eyebrow">THE CELEBRATION</span><h2>Khoảnh khắc đáng nhớ</h2><span aria-hidden="true" class="section-flourish">❦</span><p>Những dấu mốc nhỏ làm nên một ngày thật đặc biệt.</p></div>
+<div class="section-heading reveal" data-chapter="02 — THE CELEBRATION"><span class="eyebrow">THE CELEBRATION</span><h2>Khoảnh khắc đáng nhớ</h2><span aria-hidden="true" class="section-flourish">❦</span><p>Những dấu mốc nhỏ làm nên một ngày thật đặc biệt.</p></div>
 <div class="timeline">
 <div class="timeline-item reveal"><div class="timeline-icon"><img alt="" height="56" loading="lazy" src="assets/img/event/wedding-arch.png" width="56"/></div><span class="timeline-time">11:00</span><h3>Đón khách</h3><p>Welcome</p></div>
 <div class="timeline-item reveal"><div class="timeline-icon"><img alt="" height="56" loading="lazy" src="assets/img/event/champagne.png" width="56"/></div><span class="timeline-time">12:00</span><h3>Làm lễ</h3><p>Ceremony</p></div>
@@ -88,7 +94,7 @@
 <section class="section story-section" id="story">
 <div class="container story-layout">
 <div class="story-visual reveal"><img alt="Khoảnh khắc ảnh cưới của Huy và Sao" class="story-photo" decoding="async" height="1600" loading="lazy" src="assets/img/our-story/652A5599.webp" width="1200"/><div class="story-stamp">Est.<strong>2020</strong><span>Our Story</span></div></div>
-<div class="story-copy reveal"><span class="eyebrow">HOW IT ALL BEGAN</span><h2>Our <em>Love Story</em></h2><span class="thin-rule"></span>
+<div class="story-copy reveal"><span class="eyebrow">03 / HOW IT ALL BEGAN</span><h2>Our <em>Love Story</em></h2><span class="thin-rule"></span>
 <p class="lead">Từ những ngày đầu gặp gỡ, đến lời hẹn cùng đi hết cuộc đời.</p>
 
 
@@ -111,9 +117,18 @@
 </div>
 </div>
 </section>
+<section class="cinematic-interlude" aria-label="Lời hẹn ước của Huy và Sao">
+<div class="interlude-media" aria-hidden="true"><img src="assets/img/our-story/652A5682.webp" width="1600" height="1067" alt="" loading="lazy" decoding="async"/></div>
+<div class="interlude-overlay" aria-hidden="true"></div>
+<div class="interlude-content container reveal"><span class="eyebrow">A LITTLE LOVE NOTE</span>
+<span class="interlude-rule" aria-hidden="true"></span>
+<blockquote>Every love story is beautiful,<br/><em>but ours is my favorite.</em></blockquote>
+<p>Và từ đây, mọi ngày bình thường đều trở thành kỷ niệm đáng nhớ.</p>
+<span class="interlude-monogram" aria-hidden="true">H &amp; S</span>
+</div></section>
 <section class="section couple-section" id="couple">
 <div class="container">
-<div class="section-heading reveal"><span class="eyebrow">BETTER TOGETHER</span><h2>The Bride &amp; Groom</h2><span aria-hidden="true" class="section-flourish">❦</span><p>Một người yêu sự giản dị, một người thích những điều lãng mạn. Và rồi chúng mình tìm thấy nhau.</p></div>
+<div class="section-heading reveal" data-chapter="04 — THE TWO OF US"><span class="eyebrow">BETTER TOGETHER</span><h2>The Bride &amp; Groom</h2><span aria-hidden="true" class="section-flourish">❦</span><p>Một người yêu sự giản dị, một người thích những điều lãng mạn. Và rồi chúng mình tìm thấy nhau.</p></div>
 <div class="couple-grid">
 <article class="person-card reveal"><div class="person-image"><img alt="Chân dung chú rể Huy Vo" decoding="async" height="1200" loading="lazy" src="assets/img/introduce/652A5044.webp" width="900"/></div><div class="person-content"><span class="eyebrow">THE GROOM</span><h3>Huy Vo</h3><p>Thích bắt đầu ngày mới với cà phê và sự bình yên. Mình yêu những điều đơn giản, sự rõ ràng, và đã tìm thấy ánh “Sao” của cuộc đời mình.</p><details><summary>Đọc lời nhắn của Huy <span aria-hidden="true">＋</span></summary><div class="person-more"><p>Xin chào mọi người.</p><p>Mình thích bắt đầu mỗi ngày với một tách cà phê thơm phức và một tinh thần thoải mái để đón nhận những điều mới mẻ. Mình thường được biết đến là một người khá khô khan, ít nói và có xu hướng tập trung vào công việc hơn là trò chuyện xã giao. Mình thích sự rõ ràng, logic và luôn có xu hướng suy nghĩ kỹ lưỡng trước khi đưa ra quyết định.</p><p>Là một người yêu thích những điều đơn giản và luôn mong muốn tìm kiếm được niềm vui trong cuộc sống. Sau khoảng thời gian miệt mài tìm kiếm, thì mình cũng đã tìm thấy được nửa kia của mình, một cô nàng ngoan hiền, tốt bụng, xinh xắn, "sáng nắng chiều mưa", nhưng sau cơn mưa trời lại tối và khi ấy ánh sáng duy nhất của cuộc đời mình chính là ánh "Sao ✨"</p><p>Cuộc sống sẽ tuyệt vời hơn khi chúng ta có thể cùng nhau cười và tận hưởng từng khoảnh khắc!</p></div></details></div></article>
 <article class="person-card reveal"><div class="person-image"><img alt="Chân dung cô dâu Sao Dao" decoding="async" height="1200" loading="lazy" src="assets/img/introduce/652A4982.webp" width="900"/></div><div class="person-content"><span class="eyebrow">THE BRIDE</span><h3>Sao Dao</h3><p>Một cô gái yêu âm nhạc, thích những câu chuyện lãng mạn và những cuộc trò chuyện thật lâu. Hạnh phúc là khi có người cùng đồng hành.</p><details><summary>Đọc lời nhắn của Sao <span aria-hidden="true">＋</span></summary><div class="person-more"><p>Say hii mọi người, mình là Sư Tử lai Thiên Bình đây.</p><p>Mình luôn tìm kiếm một tình yêu lãng mạn vì tính mình thì hay bay bổng, ham vui mà, nên là sau hơn 26 năm gửi tín hiệu lên vũ trụ thì người ấy cũng xuất hiện để yêu thương và chăm sóc tui rồi he he.</p><p>Mình là người cực kì yêu âm nhạc &amp; mong muốn trong tương lai sẽ học một loại nhạc cụ nào đấy ví dụ như guitar chẳng hạn (cái này thì anh chồng nhà mình có thể làm gia sư rồi 😂). Mình thích được giao tiếp với mọi người xung quanh, tự thấy bản thân khá là thân thiện và cởi mở nhen nhưng ko vì thế lại bỏ qua cái tính “sáng nắng chiều mưa” hơi mệt này của mình.</p><p>Vậy nên là xin hẹn một buổi tà tưa để cùng tâm sự</p><p>về những điều mới của người sắp lập gia đình nhé!</p></div></details></div></article>
@@ -122,7 +137,8 @@
 </section>
 <section class="section gallery-section" id="gallery">
 <div class="container">
-<div class="section-heading reveal"><span class="eyebrow">MOMENTS IN TIME</span><h2>Our Photo Album</h2><span aria-hidden="true" class="section-flourish">❦</span><p>Cất giữ từng khoảnh khắc, để mỗi lần nhìn lại đều thấy yêu thương như ngày đầu.</p></div>
+<div class="section-heading reveal" data-chapter="05 — THE GALLERY"><span class="eyebrow">MOMENTS IN TIME</span><h2>Our Photo Album</h2><span aria-hidden="true" class="section-flourish">❦</span><p>Cất giữ từng khoảnh khắc, để mỗi lần nhìn lại đều thấy yêu thương như ngày đầu.</p></div>
+<div class="gallery-topline"><span>THE COLLECTION / 2024</span><span>11 PHOTOGRAPHS</span></div>
 <div class="gallery-grid" id="galleryGrid">
 <button aria-label="Xem ảnh cưới 1" class="gallery-photo reveal" data-full="assets/img/photo/652A4880.webp"><img alt="Huy và Sao giữa vườn hoa" decoding="async" height="800" loading="lazy" src="assets/img/photo/652A4880-thumb.webp" width="600"/><span aria-hidden="true" class="gallery-zoom">↗</span></button>
 <button aria-label="Xem ảnh cưới 2" class="gallery-photo reveal" data-full="assets/img/photo/652A4830.webp"><img alt="Cả hai trong khu vườn xanh" decoding="async" height="800" loading="lazy" src="assets/img/photo/652A4830-thumb.webp" width="600"/><span aria-hidden="true" class="gallery-zoom">↗</span></button>
@@ -149,7 +165,7 @@
 </div>
 </section>
 </main>
-<footer class="site-footer"><div class="container footer-inner"><span class="footer-mark">Huy <i>&amp;</i> Sao</span><p>Two hearts, one beautiful story · 19 &amp; 20.10.2024</p><span>Made with ♡</span></div></footer>
+<footer class="site-footer"><div class="container footer-inner"><span class="footer-mark">Huy <i>&amp;</i> Sao</span><p>Two hearts, one beautiful story · 19 &amp; 20.10.2024</p><span>© 2026 HuyVo. All rights reserved · v2.0.0</span></div></footer>
 <button aria-label="Về đầu trang" class="back-top" id="backTop" type="button">↑</button>
 <button aria-label="Mở quà mừng cưới" class="floating-gift" data-open-gift="" type="button"><span aria-hidden="true">♡</span><span>Mừng cưới</span></button>
 <dialog aria-labelledby="giftTitle" class="dialog gift-dialog" id="giftDialog"><div class="dialog-inner"><button aria-label="Đóng" class="dialog-close" data-close-dialog="" type="button">×</button><span class="eyebrow">THANK YOU FOR YOUR LOVE</span><h2 id="giftTitle">Gửi chút yêu thương</h2><p>Cảm ơn bạn đã dành tình cảm và lời chúc phúc cho chúng mình.</p>

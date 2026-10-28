@@ -1,5 +1,19 @@
 # Changelog
 
+## v2.0.0 — Luxury Minimalist + Cinematic Motion (2026-10-28)
+
+- Thiết kế lại art direction: ivory/champagne/evergreen, chữ serif editorial, spacing, section chapter numbers.
+- Rework hero full-screen, cinematic slow-image reveal, title transition, gradient, framed image, responsive image crop.
+- Hero desktop tối ưu ~354 KiB, mobile ~117 KiB (giảm từ ~548 KiB mỗi ảnh ở v1).
+- Ceremony invitation layout, timeline refresh, story, full-bleed photo interlude, portrait cards và gallery.
+- Scroll chapter highlighting, chỉ kích hoạt ảnh chuyển cảnh khi vào viewport, vuốt album trên mobile.
+- Tôn trọng prefers-reduced-motion; giữ semantic HTML, navigation, các dialog, QR và clipboard.
+- Bổ sung responsive refinements 375/390px, docs và ghi chú QA.
+- Không thay đổi tài khoản mừng cưới, địa chỉ, nội dung câu chuyện hay backend.
+
+---
+
+
 ## v1.0.0 — Elegant Wedding & Performance Refresh
 
 **Giao diện:** làm mới hero, navbar, lịch lễ cưới, timeline, chuyện tình yêu, chân dung cô dâu/chú rể, gallery và chân trang theo phong cách editorial. Responsive cho mobile và desktop, không còn tràn ngang trong kích thước thử nghiệm 390px.

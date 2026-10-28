@@ -1,3 +1,17 @@
+Wedding Page v2.0.0 — Image Optimization Report
+
+This version retains the WebP gallery/thumbnail architecture of v1.0.0.
+The two above-the-fold HERO images have been re-encoded for responsive loading:
+
+* Desktop: assets/img/header/652A4794.webp — 1600 x 1106 — approx. 354 KiB (v1: ~548 KiB).
+* Mobile:  assets/img/header/652A4794-mobile.webp — 760 x 1156 portrait crop — approx. 117 KiB (v1: ~548 KiB).
+* Mobile image keeps both the bride and groom visible in portrait view.
+* The HTML <picture> element provides mobile/desktop source selection; fetchpriority=high for hero.
+* Album retains thumbnails and full-size WebP images; full-size gallery photos load only when opened.
+
+Original JPEG files are not included. Keep your original photo archives separately.
+
+--- Original v1.0.0 WebP conversion log (historical, not current hero sizes) ---
 Source images have been encoded to WebP at dimensions suited for web delivery. Original JPEGs are not included to keep this deployable archive small. Keep your original photo backups separately.
 header/652A4794-mobile.JPG: 6611 KiB -> 546 KiB
 header/652A4794.JPG: 6904 KiB -> 547 KiB
